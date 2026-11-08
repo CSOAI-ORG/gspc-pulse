@@ -1,0 +1,48 @@
+name: gspc-pulse-watcher
+
+# Independent public-surface pulse watcher — permissionless reproduction node.
+# Hourly; commits ONLY when the frozen layer moves (see ci_pulse.py).
+#
+# Activation notes (see m2/evidence/gspc-pulse/SCALE-PLAN.md §5):
+# - GitHub runs *scheduled* workflows only when this file exists on the DEFAULT
+#   branch; until the lane merges via the repo's protected release process, run
+#   it with workflow_dispatch (works from any branch), or FORK the repo — a fork
+#   with this file on its default branch becomes its own watcher node.
+# - Public HTTP surfaces only; independent reproduction cross-check of the
+#   board (the MCP tools remain the canonical reader on M2).
+
+on:
+  schedule:
+    - cron: "11 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gspc-pulse-watcher
+  cancel-in-progress: false
+
+jobs:
+  pulse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pulse (frozen-gated append)
+        run: python node_runner.py
+      - name: Commit frozen deltas only
+        run: |
+          git config user.name "gspc-pulse-bot"
+          git config user.email "agents@csoai.org"
+          git pull --rebase origin "$(git branch --show-current)" || true
+          git add pulse.jsonl
+          if git diff --cached --quiet; then
+            echo "no frozen delta — nothing to commit"
+          else
+            git commit -m "Agent: ci pulse $(date -u +%FT%TZ) — frozen delta"
+            git push
+          fi
