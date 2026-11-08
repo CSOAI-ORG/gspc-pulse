@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GSPC Pulse — free tools &amp; features</title>
+<style>
+ body{font-family:-apple-system,system-ui,sans-serif;margin:2rem auto;max-width:960px;
+      padding:0 1rem;color:#1a1a2e;background:#f7f7fb}
+ h1{margin-bottom:.2rem}.sub{color:#555;margin-top:0}
+ table{border-collapse:collapse;width:100%;font-size:.85rem;margin-top:1rem;background:#fff}
+ th,td{border:1px solid #ddd;padding:.4rem .55rem;text-align:left;vertical-align:top}
+ th{background:#eef} code{background:#eee;border-radius:.3rem;padding:.05rem .3rem;font-size:.8rem}
+ .tag{display:inline-block;background:#e8e8ff;border-radius:.4rem;padding:.05rem .5rem;font-size:.75rem;margin-right:.4rem}
+ footer{margin-top:2rem;font-size:.8rem;color:#666} li{margin:.3rem 0}
+</style></head><body>
+<h1>Free tools &amp; features</h1>
+<p class="sub">Everything here is free, machine-first, and re-verifiable.
+<span class="tag">CC BY 4.0</span><span class="tag">no account</span><span class="tag">states only</span></p>
+
+<h2>1 · Live evidence feeds (this lane)</h2>
+<table><tr><th>Tool</th><th>For</th><th>Fetch</th></tr>
+<tr><td>Current state, one GET</td><td>agents, dashboards</td><td><code>latest.json</code></td></tr>
+<tr><td>Full append-only series</td><td>pipelines, audits, training</td><td><code>feed.json</code></td></tr>
+<tr><td>Tabular counters</td><td>pandas / R / sheets</td><td><code>timeseries.csv</code></td></tr>
+<tr><td>Agent discovery</td><td>LLM agents</td><td><code>llms.txt</code></td></tr>
+<tr><td>Human dashboard</td><td>everyone</td><td><code>index.html</code></td></tr></table>
+
+<h2>2 · Daily swan watch</h2>
+<ul>
+ <li>Outlier scan of CISA KEV: cadence surges, shortest patch windows, perimeter-vendor entries, ransomware-flag flips, catalog releases.</li>
+ <li>EPSS enrichment on perimeter entries (FIRST.org) — scores ride in every row, <code>unscored</code> is never read as zero.</li>
+ <li>Leak-site ransomware sample (ransomware.live) — a measured series, not news-scavenging.</li>
+ <li>Change-only escalation: <code>NEEDS HUMAN EYES</code> stamps in <code>watch/</code> reports; nothing is ever sent anywhere.</li>
+</ul>
+
+<h2>3 · Interop censuses</h2>
+<ul>
+ <li><b>MCP handshake trust</b> — how many internet-facing MCP servers answer a correct initialize; auth challenges are term sheets, not delivery.</li>
+ <li><b>x402 catalog trust</b> — how many catalogued resources open a correct 402 challenge; 0 phantoms in the latest round.</li>
+</ul>
+
+<h2>4 · Verify anything (permissionless)</h2>
+<ul>
+ <li>Card/capsule verification rule: <a href="https://councilof.ai/signed/HOW-TO-VERIFY.md">councilof.ai/signed/HOW-TO-VERIFY.md</a></li>
+ <li>Public root: <a href="https://councilof.ai/root.json">councilof.ai/root.json</a> · signed index: <a href="https://councilof.ai/signed/card_index.json">/signed/card_index.json</a></li>
+ <li>Framework readiness checklists (deterministic, run-anywhere): EU AI Act, DORA, NIS2, GDPR, ISO 27001, NIST CSF, SOC 2, PCI DSS, CRA — via the GSPC MCP tools. Checklists lay out what evidence <i>would</i> be measured; they are not conformity assessments.</li>
+</ul>
+
+<h2>5 · Layer-0 matrix — the join of everything measured</h2>
+<ul>
+ <li><a href="matrix.json"><code>matrix.json</code></a> — 34 axes × 9 frameworks × 48 provision seed mappings (EU AI Act, DORA, NIS2, GDPR, ISO 27001, NIST CSF, SOC 2, PCI DSS, CRA) × 12 industries × regulators × evidence endpoints</li>
+ <li><a href="slices.json"><code>slices.json</code></a> — industry slices (finance, healthcare, energy, transport, public sector, telecoms, retail, legal, media, education, HR/labour, agent developers) with in-scope axes</li>
+ <li>Every cell names its evidence endpoints (board, signed cards, capsules, checklists, verify). Cells state evidence and freshness — never scores, never conformity verdicts.</li>
+ <li>Full index: <a href="sitemap.txt"><code>sitemap.txt</code></a> — every public surface in this lane, one per line</li>
+</ul>
+
+<h2>6 · Run your own watcher node</h2>
+<ul>
+ <li><code>python3 m2/evidence/gspc-pulse/ci_pulse.py</code> — public-HTTP-only, frozen-gated; any fork becomes its own independent node.</li>
+ <li>Rows carry <code>meta.runner</code>; independent reproduction is a feature, not a threat.</li>
+</ul>
+
+<h2>6 · Learn — guides &amp; explainers</h2>
+<ul>
+ <li><a href="posts/2026-11-04-swan-watch-launch.md">CISA KEV catalog explained — how to prioritize patching</a> (worked Ivanti example, EPSS vs CVSS)</li>
+ <li><a href="posts/2026-11-04-one-million-x.md">AI compliance evidence — EU AI Act &amp; ISO 42001</a> (what passes audits, free checklists)</li>
+ <li><a href="posts/2026-11-04-measurement-not-endorsement.md">Ransomware statistics 2026</a> (the record year's numbers + free daily tracker)</li>
+ <li>Daily verdicts: <a href="watch/">watch reports</a> · live dashboard: <a href="index.html">index.html</a></li>
+</ul>
+
+<footer>measurement, not endorsement — never a certification ·
+<a href="index.html">dashboard</a> · <a href="latest.json">latest.json</a> ·
+<a href="feed.json">feed.json</a> · <a href="posts/">posts/</a> ·
+CSOAI / Council of AI (councilof.ai)</footer>
+</body></html>

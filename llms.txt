@@ -1,0 +1,49 @@
+# GSPC Live Pulse — compounding public measurement evidence
+
+> Autonomous, append-only, multi-runner time series of LIVE measurements from
+> public surfaces (GSPC board, measurement capsules, signed cards, public root,
+> HuggingFace, CISA KEV + EPSS, DID keys, domain liveness, MCP/x402/ecosystem
+> censuses). 21 rows since 2026-11-03, committed to git (tamper-evident).
+> CC-BY-4.0 — reuse freely with attribution. Measurement, not endorsement; never a
+> certification.
+
+## Feeds (machine-readable; fetch latest.json first)
+- [latest.json](latest.json): one-GET current state, schema csoai.gspc-pulse-latest/0.1
+- [feed.json](feed.json): full append-only series, schema csoai.gspc-pulse-feed/0.1, with per-row source URLs
+- [timeseries.csv](timeseries.csv): flat canonical counters, one row per pulse (pandas/R ready)
+- [index.html](index.html): self-contained human dashboard (no build, no JS deps)
+
+## Verify (free, permissionless)
+- [HOW-TO-VERIFY.md](https://councilof.ai/signed/HOW-TO-VERIFY.md): pinned-key Ed25519 card verification
+- [gspc-verify](https://councilof.ai/gspc-verify): verify any signed card in the browser
+- [verification-log.jsonl](verification-log.jsonl): our verification cadence — head-card verdicts, inclusion sweeps, anchor states, each with ts + content sha256
+- pulse_freeze.py: the series itself is frozen — canonical row shas, hash-chain, Merkle root, Ed25519-signed manifest (`verify` / `prove --ts` / `self-test`); lane key, trust anchor = this repo's git history
+- [RECONCILIATION.md](RECONCILIATION.md): declared vs carried vs store, frozen-framing vs live, anchoring gaps — measuring the measurer
+
+## Reproduce (be a node)
+- [PULSE-NODE.md](PULSE-NODE.md): run an independent reproduction node in 60 seconds — same surfaces, same doctrine, your fork = a federation node
+- [ci_pulse.py](ci_pulse.py): hourly public-HTTP-only watcher (frozen-gated commits)
+
+## Reports
+- [watch/](watch/): security watch reports (swan outlier scan, NEEDS-HUMAN-EYES rules)
+- Audit digest: regenerated on every audit run beside the pulse state; feed.json `updated` + the index.html table are the hosted equivalents
+- [tools.html](tools.html): free tools & features — feeds, swan watch, interop censuses, verification
+- [posts/](posts/): published write-ups (swan watch launch, scaling, doctrine)
+
+## Layer-0 matrix (the join)
+- [matrix.json](matrix.json): 34 axes × 9 frameworks × 48 provision seed mappings × industries × regulators × evidence endpoints — schema csoai.layer0-matrix/0.1
+- [slices.json](slices.json): 12 industry slices (finance, healthcare, energy…) with regulators + in-scope axes — schema csoai.layer0-slices/0.1
+- Cells state evidence and freshness; provision mappings maturity:seed; never conformity verdicts
+- [sitemap.txt](sitemap.txt): every public surface in this lane, one URL per line — the self-serve index
+
+## Doctrine (binding on every consumer)
+- Every value is traceable to the source URL in feed.json `sources` at row `ts`.
+- Absent sections mean the fetch failed (UNREACHABLE) — never read them as zero.
+- Slots and measurements are different kinds; never sum or swap them.
+- KEV = confirmed exploitation; EPSS = predicted 30-day probability (model-dated; young CVEs lag; absent score = unscored, not zero).
+- A 402 or auth challenge is a term sheet, not delivery; unreachable is never FAIL.
+- Never a raw downloads leaderboard for models: trending + new-with-traction (30-day cohort) only.
+
+## Sources
+- GSPC instruments: https://councilof.ai/api/gspc · capsule index https://councilof.ai/measurement-capsules/latest.json · public root https://councilof.ai/root.json · signed cards https://councilof.ai/signed/card_index.json
+- Models: HuggingFace trendingScore + conversational cohort · KEV: CISA feed · EPSS: FIRST/Empirical Security daily bulk file (model-dated)

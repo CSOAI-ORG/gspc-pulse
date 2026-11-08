@@ -1,0 +1,12 @@
+# Vertical: planthire.ai
+
+**Industry**: construction-plant-hire · **Endpoint state**: 200
+**Regulators (candidates)**: hse, dvsa
+**Demographics**: construction-smes, site-managers
+**Obligations**: cra
+**Axes**: machinery-conformity, lab-practice, safety
+**Sensitive**: False
+
+*APPLICABILITY CANDIDATES — counsel/trade-body verifiable, never a determination.*
+
+*Measurement, not endorsement — never a certification. Data: GSPC live pulse (CC BY 4.0 OR CC0-1.0). Verify: pulse_freeze.py verify.*

@@ -1,0 +1,91 @@
+{
+  "artifacts": {
+    "JOURNEYS.md": {
+      "bytes": 3584,
+      "purpose": "end-user journeys",
+      "sha256": "8627b595f1a67705ff60fe6e6029f4f0d040dd244e3c7dfab480c9b813f211ee"
+    },
+    "LANE-SOP.md": {
+      "bytes": 6464,
+      "purpose": "operating procedure",
+      "sha256": "6caac8b4b723f45927180d6e7be0d8528b13ad890ea18f30749a23e8d66b1fb1"
+    },
+    "PULSE-NODE.md": {
+      "bytes": 4220,
+      "purpose": "node onboarding",
+      "sha256": "579395ad767da98ab5b938b8b51f83bcd020742a908edea0db2eba23bdd30f95"
+    },
+    "README.md": {
+      "bytes": 8886,
+      "purpose": "operations doc",
+      "sha256": "4b472c868ac0747b7d3043c4115620fe602058b58eafcca81376bea9863a3cd9"
+    },
+    "RECONCILIATION.md": {
+      "bytes": 1441,
+      "purpose": "measuring the measurer",
+      "sha256": "1fc01c31ee8fb004988354f37c1b56f257b965d0c6051e00972c9694f5efdb7a"
+    },
+    "alerts.jsonl": {
+      "bytes": 3994,
+      "purpose": "alert stream",
+      "sha256": "0a21b598eebe3b8e099b7427be1581d817e174cdb103bdb5498232080a0884f1"
+    },
+    "dashboard.html": {
+      "bytes": 12108,
+      "purpose": "delta dashboard",
+      "sha256": "3d366054093ab47f3c484791667993eb61d7b1497fb98e62e53f4f21c8bcbc87"
+    },
+    "feed.json": {
+      "bytes": 102604,
+      "purpose": "full series",
+      "sha256": "570990d6f8bda44c9477f591a90c2a0bf0c4825cfad7625bc298283bb8bc409d"
+    },
+    "index.html": {
+      "bytes": 72684,
+      "purpose": "human dashboard",
+      "sha256": "99bdee56630a6791b2a28d82b8bdf3ef86210c66e135b88d83626a0c3b7a290b"
+    },
+    "latest.json": {
+      "bytes": 4140,
+      "purpose": "one-GET current state",
+      "sha256": "2bd67ed8527855243c4ff64dc09ea73e407ae7eed6d8ff105802adb395751b63"
+    },
+    "llms.txt": {
+      "bytes": 3301,
+      "purpose": "agent discovery",
+      "sha256": "d98b323ecf0896aff2c82ab8411f2fbab4d851352150345ac59698ff225ca92c"
+    },
+    "pulse-freeze-manifest.json": {
+      "bytes": 656,
+      "purpose": "freeze manifest",
+      "sha256": "b92837ad565882964816bbb79134df6888d1396bd986262fa79e16aee6ded6e3"
+    },
+    "pulse-freeze-manifest.sig": {
+      "bytes": 128,
+      "purpose": "manifest signature",
+      "sha256": "beafb9d441aa1d2fa07ed14ceb889b07de3828bde0ef1bcd0e916b0501ac9646"
+    },
+    "pulse-leaves.json": {
+      "bytes": 2543,
+      "purpose": "frozen leaves",
+      "sha256": "f7acad2ec70967b0f8c43786774a716f6ed9965a2f5e8174ea930d912d8bcf73"
+    },
+    "timeseries.csv": {
+      "bytes": 7005,
+      "purpose": "flat counters",
+      "sha256": "ef3511f69e396b198c6275aa5e12973d4bde75296e1d29652dfedddee161e6f8"
+    },
+    "tools.html": {
+      "bytes": 4429,
+      "purpose": "free tools",
+      "sha256": "3e55341b67bed6cb39ecbb32a853603c0bae661bea2effc8f4901ee1c2681e5d"
+    },
+    "verification-log.jsonl": {
+      "bytes": 6538,
+      "purpose": "verification cadence",
+      "sha256": "11fddba5fc0a630e246de04da908b98b562878b818c81da321c327f44345bd53"
+    }
+  },
+  "generated_by": "engine.py",
+  "schema": "csoai.pulse-surface-index/0.1"
+}

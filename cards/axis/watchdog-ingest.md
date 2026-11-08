@@ -1,0 +1,16 @@
+# Axis: watchdog-ingest — frozen presence bank (5 classes, 3-of-5 bar)
+
+**Task**: does the subject offer a third party a documented route to report a problem, with a response commitment and a machine-readable path · **Family**: subject · **Kind**: measured-subject
+
+**Items tested (n)**: 106 · **Fleet mean**: None · **Mean harm**: None · **CVaR05 harm**: None · **MDE**: None
+
+**Separation**: None —  (method: None, p: None)
+
+**Leader**: — (card state: —, )
+
+**Dataset**:  ()
+**Per-item sha**: 
+**Interval**:  · **Measurement time**: {'state': 'EXACT', 'precision': 'instant', 'observed_at': '2026-11-02T04:17:24.499Z', 'source': '/interop/axis-banks/watchdog-ingest-20261102.json', 'source_field': 'facts_as_of', 'note': 'Exact producer/run as_of. Serve, build and deploy time do not refresh it.'}
+**Historical record**: 
+
+*Measurement, not endorsement — never a certification. Data: GSPC live pulse (CC BY 4.0 OR CC0-1.0). Verify: pulse_freeze.py verify.*

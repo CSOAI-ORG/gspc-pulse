@@ -1,0 +1,13 @@
+{
+  "schema": "csoai.pulse-freeze-manifest/0.1",
+  "produced_at": "2026-11-08T04:17:41Z",
+  "n_rows": 21,
+  "first_ts": "2026-11-03T05:37:18Z",
+  "last_ts": "2026-11-07T12:06:40Z",
+  "chain_head": "e09d29f6aea874447f214ea20fe05b9ed7220ce2735062e55b9144ec163e2bdf",
+  "merkle_root": "3ed6049561b74abe42657e3b89d2ca0729fa02428c6da72e2049b39b5ef14377",
+  "leaf_count": 21,
+  "pubkey": "4a50f0d758fbd7c7770fea7fd3fd69b14f94ee0b4b6a2833a15f008b0185f54a",
+  "pubkey_fp": "3bab58b52e8370a2492a854068902e9a43cf11305744c8f5a8d4616a582bfc9f",
+  "doctrine": "measurement, not endorsement; signature-frozen, not ledger-frozen; trust anchor = this repo's git history"
+}

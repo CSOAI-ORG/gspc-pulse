@@ -1,0 +1,587 @@
+{
+  "as_of": "2026-11-08T03:44:51Z",
+  "domains": {
+    "asisecurity-portal.com": {
+      "axes": [
+        "company-practice",
+        "safety"
+      ],
+      "demographics": [
+        "security-firms",
+        "venues"
+      ],
+      "endpoint_state": "ERR",
+      "industry": "security-services",
+      "industry_regulator_pairs": [
+        {
+          "industry": "security-services",
+          "regulator": "sia"
+        },
+        {
+          "industry": "security-services",
+          "regulator": "ico"
+        }
+      ],
+      "obligations": [
+        "gdpr",
+        "soc2"
+      ],
+      "regulators": [
+        "sia",
+        "ico"
+      ]
+    },
+    "councilof.ai": {
+      "axes": [
+        "governance",
+        "regulatory-framework",
+        "openness",
+        "conformance"
+      ],
+      "demographics": [
+        "ai-developers",
+        "enterprises",
+        "policy"
+      ],
+      "endpoint_state": "200",
+      "industry": "ai-governance",
+      "industry_regulator_pairs": [
+        {
+          "industry": "ai-governance",
+          "regulator": "ico"
+        },
+        {
+          "industry": "ai-governance",
+          "regulator": "uk-aisi"
+        },
+        {
+          "industry": "ai-governance",
+          "regulator": "eu-ai-act-office"
+        }
+      ],
+      "obligations": [
+        "eu-ai-act",
+        "iso-42001",
+        "gdpr"
+      ],
+      "regulators": [
+        "ico",
+        "uk-aisi",
+        "eu-ai-act-office"
+      ]
+    },
+    "csoai.org": {
+      "axes": [
+        "governance",
+        "measurer-integrity",
+        "conformance"
+      ],
+      "demographics": [
+        "enterprises",
+        "regulators",
+        "academia"
+      ],
+      "endpoint_state": "308",
+      "industry": "standards-body",
+      "industry_regulator_pairs": [
+        {
+          "industry": "standards-body",
+          "regulator": "ico"
+        },
+        {
+          "industry": "standards-body",
+          "regulator": "uk-dsit"
+        }
+      ],
+      "obligations": [
+        "iso-42001",
+        "eu-ai-act"
+      ],
+      "regulators": [
+        "ico",
+        "uk-dsit"
+      ]
+    },
+    "diyhelp.ai": {
+      "axes": [
+        "lab-practice",
+        "safety"
+      ],
+      "demographics": [
+        "homeowners"
+      ],
+      "endpoint_state": "200",
+      "industry": "diy-guidance",
+      "industry_regulator_pairs": [
+        {
+          "industry": "diy-guidance",
+          "regulator": "hse"
+        }
+      ],
+      "obligations": [],
+      "regulators": [
+        "hse"
+      ]
+    },
+    "fishkeeper.ai": {
+      "axes": [
+        "company-practice"
+      ],
+      "demographics": [
+        "hobbyists",
+        "retailers"
+      ],
+      "endpoint_state": "200",
+      "industry": "aquatics-pet",
+      "industry_regulator_pairs": [
+        {
+          "industry": "aquatics-pet",
+          "regulator": "animal-welfare"
+        },
+        {
+          "industry": "aquatics-pet",
+          "regulator": "ico"
+        }
+      ],
+      "obligations": [
+        "gdpr"
+      ],
+      "regulators": [
+        "animal-welfare",
+        "ico"
+      ]
+    },
+    "grabhire.ai": {
+      "axes": [
+        "machinery-conformity",
+        "distribution-integrity"
+      ],
+      "demographics": [
+        "construction-smes"
+      ],
+      "endpoint_state": "200",
+      "industry": "waste-hire",
+      "industry_regulator_pairs": [
+        {
+          "industry": "waste-hire",
+          "regulator": "environment-agency"
+        },
+        {
+          "industry": "waste-hire",
+          "regulator": "hse"
+        }
+      ],
+      "obligations": [
+        "cra"
+      ],
+      "regulators": [
+        "environment-agency",
+        "hse"
+      ]
+    },
+    "haulage.app": {
+      "axes": [
+        "continuity",
+        "company-practice",
+        "lab-practice"
+      ],
+      "demographics": [
+        "hgv-operators",
+        "shippers"
+      ],
+      "endpoint_state": "200",
+      "industry": "haulage-logistics",
+      "industry_regulator_pairs": [
+        {
+          "industry": "haulage-logistics",
+          "regulator": "traffic-commissioner"
+        },
+        {
+          "industry": "haulage-logistics",
+          "regulator": "dvsa"
+        }
+      ],
+      "obligations": [
+        "cra",
+        "dora"
+      ],
+      "regulators": [
+        "traffic-commissioner",
+        "dvsa"
+      ]
+    },
+    "industrial-domains.com": {
+      "axes": [
+        "machinery-conformity"
+      ],
+      "demographics": [
+        "industrial-smes"
+      ],
+      "endpoint_state": "ERR",
+      "industry": "industrial-portfolio",
+      "industry_regulator_pairs": [
+        {
+          "industry": "industrial-portfolio",
+          "regulator": "hse"
+        }
+      ],
+      "obligations": [
+        "cra"
+      ],
+      "regulators": [
+        "hse"
+      ]
+    },
+    "industrial-hire-ai.com": {
+      "axes": [
+        "machinery-conformity",
+        "safety"
+      ],
+      "demographics": [
+        "industrial-smes"
+      ],
+      "endpoint_state": "ERR",
+      "industry": "industrial-hire",
+      "industry_regulator_pairs": [
+        {
+          "industry": "industrial-hire",
+          "regulator": "hse"
+        },
+        {
+          "industry": "industrial-hire",
+          "regulator": "puwer"
+        }
+      ],
+      "obligations": [
+        "cra"
+      ],
+      "regulators": [
+        "hse",
+        "puwer"
+      ]
+    },
+    "koikeeper.ai": {
+      "axes": [
+        "company-practice"
+      ],
+      "demographics": [
+        "hobbyists",
+        "breeders"
+      ],
+      "endpoint_state": "200",
+      "industry": "koi-aquaculture",
+      "industry_regulator_pairs": [
+        {
+          "industry": "koi-aquaculture",
+          "regulator": "animal-welfare"
+        },
+        {
+          "industry": "koi-aquaculture",
+          "regulator": "environment-agency"
+        }
+      ],
+      "obligations": [
+        "gdpr"
+      ],
+      "regulators": [
+        "animal-welfare",
+        "environment-agency"
+      ]
+    },
+    "loopfactory.ai": {
+      "axes": [
+        "ai-adoption-components",
+        "harness-fidelity"
+      ],
+      "demographics": [
+        "ai-developers"
+      ],
+      "endpoint_state": "200",
+      "industry": "ai-tooling",
+      "industry_regulator_pairs": [
+        {
+          "industry": "ai-tooling",
+          "regulator": "ico"
+        }
+      ],
+      "obligations": [
+        "eu-ai-act"
+      ],
+      "regulators": [
+        "ico"
+      ]
+    },
+    "meok.ai": {
+      "axes": [
+        "affect",
+        "care",
+        "interpretability-reproducibility"
+      ],
+      "demographics": [
+        "consumers"
+      ],
+      "endpoint_state": "unmeasured-this-row",
+      "industry": "personal-ai",
+      "industry_regulator_pairs": [
+        {
+          "industry": "personal-ai",
+          "regulator": "ico"
+        },
+        {
+          "industry": "personal-ai",
+          "regulator": "eu-ai-act-office"
+        }
+      ],
+      "obligations": [
+        "eu-ai-act",
+        "gdpr"
+      ],
+      "regulators": [
+        "ico",
+        "eu-ai-act-office"
+      ],
+      "sensitive": true
+    },
+    "muckaway.ai": {
+      "axes": [
+        "distribution-integrity",
+        "lab-practice"
+      ],
+      "demographics": [
+        "construction-smes",
+        "homeowners"
+      ],
+      "endpoint_state": "200",
+      "industry": "waste-removal",
+      "industry_regulator_pairs": [
+        {
+          "industry": "waste-removal",
+          "regulator": "environment-agency"
+        }
+      ],
+      "obligations": [
+        "cra"
+      ],
+      "regulators": [
+        "environment-agency"
+      ]
+    },
+    "optomobile.ai": {
+      "axes": [
+        "company-practice",
+        "serving-fidelity"
+      ],
+      "demographics": [
+        "patients"
+      ],
+      "endpoint_state": "ERR",
+      "industry": "mobile-optical",
+      "industry_regulator_pairs": [
+        {
+          "industry": "mobile-optical",
+          "regulator": "goc"
+        }
+      ],
+      "obligations": [
+        "gdpr"
+      ],
+      "regulators": [
+        "goc"
+      ]
+    },
+    "planthire.ai": {
+      "axes": [
+        "machinery-conformity",
+        "lab-practice",
+        "safety"
+      ],
+      "demographics": [
+        "construction-smes",
+        "site-managers"
+      ],
+      "endpoint_state": "200",
+      "industry": "construction-plant-hire",
+      "industry_regulator_pairs": [
+        {
+          "industry": "construction-plant-hire",
+          "regulator": "hse"
+        },
+        {
+          "industry": "construction-plant-hire",
+          "regulator": "dvsa"
+        }
+      ],
+      "obligations": [
+        "cra"
+      ],
+      "regulators": [
+        "hse",
+        "dvsa"
+      ]
+    },
+    "pokerhud.ai": {
+      "axes": [
+        "company-practice",
+        "serving-fidelity"
+      ],
+      "demographics": [
+        "players"
+      ],
+      "endpoint_state": "200",
+      "industry": "poker-tooling",
+      "industry_regulator_pairs": [
+        {
+          "industry": "poker-tooling",
+          "regulator": "gambling-commission"
+        },
+        {
+          "industry": "poker-tooling",
+          "regulator": "ico"
+        }
+      ],
+      "obligations": [
+        "gdpr"
+      ],
+      "regulators": [
+        "gambling-commission",
+        "ico"
+      ],
+      "sensitive": true
+    },
+    "proofof.ai": {
+      "axes": [
+        "detector-interop",
+        "provenance",
+        "safety"
+      ],
+      "demographics": [
+        "media",
+        "platforms",
+        "elections"
+      ],
+      "endpoint_state": "301",
+      "industry": "deepfake-detection",
+      "industry_regulator_pairs": [
+        {
+          "industry": "deepfake-detection",
+          "regulator": "ofcom-osa"
+        },
+        {
+          "industry": "deepfake-detection",
+          "regulator": "ico"
+        },
+        {
+          "industry": "deepfake-detection",
+          "regulator": "eu-ai-act-office"
+        }
+      ],
+      "obligations": [
+        "eu-ai-act",
+        "gdpr"
+      ],
+      "regulators": [
+        "ofcom-osa",
+        "ico",
+        "eu-ai-act-office"
+      ]
+    },
+    "safetyof.ai": {
+      "axes": [
+        "safety",
+        "watchdog-ingest",
+        "company-practice"
+      ],
+      "demographics": [
+        "enterprises",
+        "safety-officers"
+      ],
+      "endpoint_state": "200",
+      "industry": "safety-posture",
+      "industry_regulator_pairs": [
+        {
+          "industry": "safety-posture",
+          "regulator": "ico"
+        },
+        {
+          "industry": "safety-posture",
+          "regulator": "hse"
+        }
+      ],
+      "obligations": [
+        "iso-42001",
+        "gdpr"
+      ],
+      "regulators": [
+        "ico",
+        "hse"
+      ]
+    },
+    "suicidestop.ai": {
+      "axes": [
+        "care",
+        "affect",
+        "safety"
+      ],
+      "demographics": [
+        "at-risk-individuals",
+        "carers",
+        "nhs"
+      ],
+      "endpoint_state": "200",
+      "industry": "crisis-intervention",
+      "industry_regulator_pairs": [
+        {
+          "industry": "crisis-intervention",
+          "regulator": "cqc"
+        },
+        {
+          "industry": "crisis-intervention",
+          "regulator": "charity-commission"
+        },
+        {
+          "industry": "crisis-intervention",
+          "regulator": "ico"
+        }
+      ],
+      "obligations": [
+        "gdpr"
+      ],
+      "regulators": [
+        "cqc",
+        "charity-commission",
+        "ico"
+      ],
+      "sensitive": true
+    },
+    "templeman-opticians.com": {
+      "axes": [
+        "company-practice",
+        "serving-fidelity"
+      ],
+      "demographics": [
+        "patients"
+      ],
+      "endpoint_state": "200",
+      "industry": "optical-retail",
+      "industry_regulator_pairs": [
+        {
+          "industry": "optical-retail",
+          "regulator": "goc"
+        }
+      ],
+      "obligations": [
+        "gdpr"
+      ],
+      "regulators": [
+        "goc"
+      ]
+    }
+  },
+  "note": "APPLICABILITY CANDIDATES per vertical \u2014 counsel/trade-body verifiable, never a determination. Endpoint state joined from the newest measured pulse row.",
+  "schema": "csoai.gspc-ecosystem-matrix/0.1",
+  "totals": {
+    "domain_regulator_pairs": 37,
+    "domains": 20,
+    "sensitive_verticals": 3
+  }
+}

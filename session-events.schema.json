@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "csoai.gspc-session-event/0.1",
+  "title": "GSPC session event ledger entry",
+  "description": "One append-only event binding a session/task to observations, checks and decisions. Sentinel-ARCHITECTURE §8: the session-specific event stream between Reported plan, Observed action and Verified outcome. Coverage state is carried on every entry — the panel can never claim more than the stream grants.",
+  "type": "object",
+  "required": ["ts", "kind", "session_id", "coverage"],
+  "properties": {
+    "ts": {"type": "string", "format": "date-time"},
+    "kind": {
+      "type": "string",
+      "enum": ["run_started", "plan_reported", "tool_called", "check_passed",
+               "check_failed", "check_uncheckable", "awaiting_human",
+               "human_decided", "outcome_verified", "run_completed",
+               "observation_interrupted"]
+    },
+    "session_id": {"type": "string", "description": "opaque per-task id — no PII"},
+    "host": {"type": "string", "description": "platform adapter id, e.g. chatgpt-app, claude-code-hook, sentinel-browser"},
+    "coverage": {"type": "string", "enum": ["observing", "gated", "not_connected", "stale"],
+                 "description": "mandatory per SENTINEL-ARCHITECTURE §1 — the panel may never claim more than this grants"},
+    "actor": {"type": "string", "description": "tool/agent that acted"},
+    "subject": {"type": "string", "description": "what the event is about (path, tool, axis)"},
+    "detail": {"type": "string"},
+    "evidence": {"type": "object", "description": "links/shas to supporting artifacts"},
+    "labels": {"type": "array", "items": {"type": "string"}},
+    "sha256": {"type": "string", "description": "canonical hash of this entry, chained to prev via ledger"}
+  },
+  "ledger_rules": {
+    "append_only": "never edit or delete an entry; corrections are new entries",
+    "chained": "entry.sha256 = sha256(prev_entry_sha256 + canonical(entry))",
+    "human_in_loop": "kind=awaiting_human blocks until human_decided references the same session_id",
+    "separation": "plan_reported never proves outcome_verified — keep the three labels distinct"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "GSPC live pulse: a proof-carrying public time series of global AI-safety, security and model-ecosystem state",
+  "creators": [{"name": "CSOAI / Council of AI (councilof.ai)"}],
+  "description": "Append-only, multi-runner, hash-chained, Merkle-rooted and Ed25519-signed time series of public AI-safety and security surfaces: GSPC board (34 axes), measurement capsules (11,529), public root (428 cards), CISA KEV with EPSS/CWE/due-date enrichment, HuggingFace trending and new-with-traction cohorts, MCP handshake census, x402 catalog trust, DORA/CRA/AI-Act evidence corpora, and estate domain liveness. Includes the freeze stack (pulse_freeze.py), remote verifier, reconciliation report, curriculum freeze, and the Sentinel overlay kit. Dual-licensed CC BY 4.0 OR CC0-1.0. Measurement, not endorsement; never a certification; UNREACHABLE is never zero.",
+  "keywords": ["AI safety", "transparency", "measurement", "time series", "CISA KEV", "EPSS", "MCP", "x402", "A2A", "Merkle", "Ed25519", "certificate transparency"],
+  "license": "CC-BY-4.0 OR CC0-1.0",
+  "upload_type": "dataset",
+  "related_identifiers": [
+    {"identifier": "https://huggingface.co/datasets/csoai/evidence-index", "relation": "isSupplementTo", "resource_type": "dataset"},
+    {"identifier": "https://github.com/CSOAI-ORG/clawd-workspace", "relation": "isSupplementTo", "resource_type": "software"}
+  ],
+  "notes": "Owner step: needs a Zenodo token; upload zenodo-deposit files = gspc-pulse/2026-11-04 set (feed.json, timeseries.csv, frozen manifest+sig+leaves, RECONCILIATION.md, white paper). Version per curriculum/series freeze."
+}

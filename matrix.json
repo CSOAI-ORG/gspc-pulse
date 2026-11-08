@@ -1,0 +1,890 @@
+{
+ "axes": [
+  {
+   "axis": "governance",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "soc2",
+    "iso-27001",
+    "nist-csf",
+    "gdpr"
+   ],
+   "provisions": [
+    {
+     "framework": "soc2",
+     "maturity": "seed",
+     "provision": "SOC 2 CC1"
+    },
+    {
+     "framework": "iso-27001",
+     "maturity": "seed",
+     "provision": "ISO 27001 A.5"
+    },
+    {
+     "framework": "nist-csf",
+     "maturity": "seed",
+     "provision": "NIST CSF GV"
+    },
+    {
+     "framework": "gdpr",
+     "maturity": "seed",
+     "provision": "GDPR Art. 5"
+    }
+   ]
+  },
+  {
+   "axis": "care",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "gdpr"
+   ],
+   "provisions": [
+    {
+     "framework": "gdpr",
+     "maturity": "seed",
+     "provision": "GDPR Art. 25"
+    }
+   ]
+  },
+  {
+   "axis": "safety",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "cra",
+    "eu-ai-act"
+   ],
+   "provisions": [
+    {
+     "framework": "cra",
+     "maturity": "seed",
+     "provision": "CRA Annex I safety"
+    },
+    {
+     "framework": "eu-ai-act",
+     "maturity": "seed",
+     "provision": "EU AI Act Art. 15"
+    }
+   ]
+  },
+  {
+   "axis": "jail",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "eu-ai-act"
+   ],
+   "provisions": [
+    {
+     "framework": "eu-ai-act",
+     "maturity": "seed",
+     "provision": "EU AI Act Art. 15 (robustness)"
+    }
+   ]
+  },
+  {
+   "axis": "swarm",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "nis2"
+   ],
+   "provisions": [
+    {
+     "framework": "nis2",
+     "maturity": "seed",
+     "provision": "NIS2 Art. 20"
+    }
+   ]
+  },
+  {
+   "axis": "provenance",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "cra",
+    "eu-ai-act"
+   ],
+   "provisions": [
+    {
+     "framework": "cra",
+     "maturity": "seed",
+     "provision": "CRA provenance/SBOM"
+    },
+    {
+     "framework": "eu-ai-act",
+     "maturity": "seed",
+     "provision": "EU AI Act Art. 12"
+    }
+   ]
+  },
+  {
+   "axis": "provenance-controls",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "gdpr",
+    "iso-27001"
+   ],
+   "provisions": [
+    {
+     "framework": "gdpr",
+     "maturity": "seed",
+     "provision": "GDPR Art. 32"
+    }
+   ]
+  },
+  {
+   "axis": "custody-disclosure",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "gdpr",
+    "iso-27001"
+   ],
+   "provisions": [
+    {
+     "framework": "gdpr",
+     "maturity": "seed",
+     "provision": "GDPR Art. 13/14 (disclosure)"
+    }
+   ]
+  },
+  {
+   "axis": "distribution-integrity",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "cra",
+    "nist-csf"
+   ],
+   "provisions": [
+    {
+     "framework": "cra",
+     "maturity": "seed",
+     "provision": "CRA secure update/distribution"
+    },
+    {
+     "framework": "nist-csf",
+     "maturity": "seed",
+     "provision": "NIST CSF PR"
+    }
+   ]
+  },
+  {
+   "axis": "serving-fidelity",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "iso-27001",
+    "soc2"
+   ],
+   "provisions": [
+    {
+     "framework": "iso-27001",
+     "maturity": "seed",
+     "provision": "ISO 27001 A.7 (operations)"
+    }
+   ]
+  },
+  {
+   "axis": "harness-fidelity",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "nist-csf"
+   ],
+   "provisions": [
+    {
+     "framework": "nist-csf",
+     "maturity": "seed",
+     "provision": "NIST CSF PR/DE"
+    }
+   ]
+  },
+  {
+   "axis": "measurer-integrity",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "iso-27001",
+    "soc2"
+   ],
+   "provisions": [
+    {
+     "framework": "iso-27001",
+     "maturity": "seed",
+     "provision": "ISO 27001 A.8"
+    }
+   ]
+  },
+  {
+   "axis": "interpretability-reproducibility",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "cra"
+   ],
+   "provisions": [
+    {
+     "framework": "cra",
+     "maturity": "seed",
+     "provision": "CRA Annex I (documentation)"
+    }
+   ]
+  },
+  {
+   "axis": "detector-interop",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "nist-csf"
+   ],
+   "provisions": [
+    {
+     "framework": "nist-csf",
+     "maturity": "seed",
+     "provision": "NIST CSF DE"
+    }
+   ]
+  },
+  {
+   "axis": "cross-reality",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "cra"
+   ],
+   "provisions": [
+    {
+     "framework": "cra",
+     "maturity": "seed",
+     "provision": "CRA emerging device classes"
+    }
+   ]
+  },
+  {
+   "axis": "effect-binding",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "nist-csf"
+   ],
+   "provisions": [
+    {
+     "framework": "nist-csf",
+     "maturity": "seed",
+     "provision": "NIST CSF DE/RS"
+    }
+   ]
+  },
+  {
+   "axis": "claim-maintenance",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "soc2",
+    "cra"
+   ],
+   "provisions": [
+    {
+     "framework": "soc2",
+     "maturity": "seed",
+     "provision": "SOC 2 claim upkeep"
+    },
+    {
+     "framework": "cra",
+     "maturity": "seed",
+     "provision": "CRA vulnerability handling"
+    }
+   ]
+  },
+  {
+   "axis": "company-practice",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "soc2",
+    "gdpr"
+   ],
+   "provisions": [
+    {
+     "framework": "soc2",
+     "maturity": "seed",
+     "provision": "SOC 2 CC-series (governance)"
+    },
+    {
+     "framework": "gdpr",
+     "maturity": "seed",
+     "provision": "GDPR Art. 24 (accountability)"
+    }
+   ]
+  },
+  {
+   "axis": "conformance",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "cra",
+    "iso-27001"
+   ],
+   "provisions": [
+    {
+     "framework": "cra",
+     "maturity": "seed",
+     "provision": "CRA Annex I (essential requirements)"
+    }
+   ]
+  },
+  {
+   "axis": "continuity",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "dora",
+    "iso-27001",
+    "nist-csf"
+   ],
+   "provisions": [
+    {
+     "framework": "dora",
+     "maturity": "seed",
+     "provision": "DORA Art. 12 (business continuity)"
+    },
+    {
+     "framework": "iso-27001",
+     "maturity": "seed",
+     "provision": "ISO 27001 A.17"
+    },
+    {
+     "framework": "nist-csf",
+     "maturity": "seed",
+     "provision": "NIST CSF RC"
+    }
+   ]
+  },
+  {
+   "axis": "interop-conformance",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "cra",
+    "nist-csf"
+   ],
+   "provisions": [
+    {
+     "framework": "cra",
+     "maturity": "seed",
+     "provision": "CRA interoperability"
+    },
+    {
+     "framework": "nist-csf",
+     "maturity": "seed",
+     "provision": "NIST CSF ID"
+    }
+   ]
+  },
+  {
+   "axis": "machinery-conformity",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "cra"
+   ],
+   "provisions": [
+    {
+     "framework": "cra",
+     "maturity": "seed",
+     "provision": "CRA (products with digital elements)"
+    }
+   ]
+  },
+  {
+   "axis": "lab-practice",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "iso-27001"
+   ],
+   "provisions": [
+    {
+     "framework": "iso-27001",
+     "maturity": "seed",
+     "provision": "ISO 27001 A.6"
+    }
+   ]
+  },
+  {
+   "axis": "openness",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "eu-ai-act"
+   ],
+   "provisions": [
+    {
+     "framework": "eu-ai-act",
+     "maturity": "seed",
+     "provision": "EU AI Act Art. 10/11"
+    }
+   ]
+  },
+  {
+   "axis": "regulator-transparency",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "eu-ai-act",
+    "nis2"
+   ],
+   "provisions": [
+    {
+     "framework": "eu-ai-act",
+     "maturity": "seed",
+     "provision": "EU AI Act Art. 13"
+    },
+    {
+     "framework": "nis2",
+     "maturity": "seed",
+     "provision": "NIS2 supervision"
+    }
+   ]
+  },
+  {
+   "axis": "regulatory-framework",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "eu-ai-act",
+    "dora",
+    "nis2",
+    "gdpr",
+    "cra"
+   ],
+   "provisions": [
+    {
+     "framework": "eu-ai-act",
+     "maturity": "seed",
+     "provision": "framework-level applicability"
+    }
+   ]
+  },
+  {
+   "axis": "reserve-attestation",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "dora"
+   ],
+   "provisions": [
+    {
+     "framework": "dora",
+     "maturity": "seed",
+     "provision": "DORA Art. 11 (backup/restore resilience)"
+    }
+   ]
+  },
+  {
+   "axis": "watchdog-ingest",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "nis2",
+    "dora"
+   ],
+   "provisions": [
+    {
+     "framework": "nis2",
+     "maturity": "seed",
+     "provision": "NIS2 Art. 23 (incident reporting)"
+    },
+    {
+     "framework": "dora",
+     "maturity": "seed",
+     "provision": "DORA Art. 19 (ICT incident management)"
+    }
+   ]
+  },
+  {
+   "axis": "art50-marking",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "eu-ai-act"
+   ],
+   "provisions": [
+    {
+     "framework": "eu-ai-act",
+     "maturity": "seed",
+     "provision": "EU AI Act Art. 50 (transparency/marking)"
+    }
+   ]
+  },
+  {
+   "axis": "art5-safeguard",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "eu-ai-act"
+   ],
+   "provisions": [
+    {
+     "framework": "eu-ai-act",
+     "maturity": "seed",
+     "provision": "EU AI Act Art. 5 (safeguards)"
+    }
+   ]
+  },
+  {
+   "axis": "ai-adoption-components",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "eu-ai-act",
+    "soc2"
+   ],
+   "provisions": [
+    {
+     "framework": "eu-ai-act",
+     "maturity": "seed",
+     "provision": "EU AI Act Art. 26 (deployer duties)"
+    },
+    {
+     "framework": "soc2",
+     "maturity": "seed",
+     "provision": "SOC 2 processing integrity"
+    }
+   ]
+  },
+  {
+   "axis": "labour-components",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "gdpr"
+   ],
+   "provisions": [
+    {
+     "framework": "gdpr",
+     "maturity": "seed",
+     "provision": "GDPR Art. 22"
+    }
+   ]
+  },
+  {
+   "axis": "humanoid-deployment",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "cra"
+   ],
+   "provisions": [
+    {
+     "framework": "cra",
+     "maturity": "seed",
+     "provision": "CRA / Machinery Regulation 2023/1230 (robotics)"
+    }
+   ]
+  },
+  {
+   "axis": "humanoid-labour-index",
+   "evidence_endpoints": [
+    "board",
+    "axis_cards",
+    "capsules",
+    "verify"
+   ],
+   "frameworks": [
+    "gdpr"
+   ],
+   "provisions": [
+    {
+     "framework": "gdpr",
+     "maturity": "seed",
+     "provision": "GDPR Art. 22 + labour law pointers"
+    }
+   ]
+  }
+ ],
+ "doctrine": "measurement, not endorsement \u2014 cells state evidence and freshness, never scores or conformity verdicts; provision mappings maturity:seed until verified against framework_readiness",
+ "endpoints": {
+  "axis_cards": "gspc signed cards \u2014 verify per HOW-TO-VERIFY.md",
+  "board": "GET https://councilof.ai/api/gspc (or gspc board MCP tool)",
+  "capsules": "GET https://councilof.ai/measurement-capsules/latest.json",
+  "checklists": "gspc framework_readiness MCP tool (deterministic, free)",
+  "pulse": "gspc-pulse feed.json / latest.json (this lane)",
+  "verify": "https://councilof.ai/signed/HOW-TO-VERIFY.md"
+ },
+ "frameworks": [
+  {
+   "id": "eu-ai-act",
+   "regulator": "EU AI Office / national market surveillance authorities"
+  },
+  {
+   "id": "dora",
+   "regulator": "European Supervisory Authorities (ESAs)"
+  },
+  {
+   "id": "nis2",
+   "regulator": "National CSIRTs / NIS2 competent authorities"
+  },
+  {
+   "id": "gdpr",
+   "regulator": "DPAs / EDPB"
+  },
+  {
+   "id": "iso-27001",
+   "regulator": "Accredited certification bodies (voluntary)"
+  },
+  {
+   "id": "nist-csf",
+   "regulator": "Voluntary (US NIST)"
+  },
+  {
+   "id": "soc2",
+   "regulator": "AICPA-licensed CPA firms (attestation)"
+  },
+  {
+   "id": "pci-dss",
+   "regulator": "PCI SSC / card brands"
+  },
+  {
+   "id": "cra",
+   "regulator": "EU national market surveillance authorities (from 2027)"
+  }
+ ],
+ "generated": "2026-11-08T03:58:14Z",
+ "industries": {
+  "agent-developers": {
+   "frameworks": [
+    "cra",
+    "nist-csf",
+    "eu-ai-act"
+   ]
+  },
+  "education": {
+   "frameworks": [
+    "gdpr",
+    "eu-ai-act",
+    "nist-csf"
+   ]
+  },
+  "energy": {
+   "frameworks": [
+    "nis2",
+    "iso-27001",
+    "nist-csf"
+   ]
+  },
+  "finance": {
+   "frameworks": [
+    "eu-ai-act",
+    "dora",
+    "nis2",
+    "gdpr",
+    "iso-27001"
+   ]
+  },
+  "healthcare": {
+   "frameworks": [
+    "eu-ai-act",
+    "gdpr",
+    "iso-27001",
+    "nist-csf"
+   ]
+  },
+  "hr-labour": {
+   "frameworks": [
+    "eu-ai-act",
+    "gdpr"
+   ]
+  },
+  "legal": {
+   "frameworks": [
+    "gdpr",
+    "eu-ai-act",
+    "iso-27001"
+   ]
+  },
+  "media": {
+   "frameworks": [
+    "eu-ai-act",
+    "gdpr"
+   ]
+  },
+  "public-sector": {
+   "frameworks": [
+    "eu-ai-act",
+    "nis2",
+    "gdpr"
+   ]
+  },
+  "retail": {
+   "frameworks": [
+    "gdpr",
+    "pci-dss",
+    "cra"
+   ]
+  },
+  "telecoms": {
+   "frameworks": [
+    "nis2",
+    "gdpr",
+    "iso-27001"
+   ]
+  },
+  "transport": {
+   "frameworks": [
+    "nis2",
+    "cra",
+    "iso-27001"
+   ]
+  }
+ },
+ "live_layer0": {
+  "board": {
+   "as_of": null,
+   "public_count": null
+  },
+  "capsules": {
+   "as_of": "2026-11-01T08:30:40Z",
+   "n_batches": 0
+  },
+  "mcp_census_hosts": 2459
+ },
+ "schema": "csoai.layer0-matrix/0.1"
+}

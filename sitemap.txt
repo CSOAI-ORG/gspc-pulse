@@ -1,0 +1,23 @@
+# GSPC pulse lane — public surfaces (one per line; serve raw from the repo default branch or mirror at a councilof.ai subdomain)
+index.html
+tools.html
+latest.json
+feed.json
+timeseries.csv
+matrix.json
+slices.json
+llms.txt
+sitemap.txt
+README.md
+PRODUCT.md
+SCALE-PLAN.md
+LAYER0-HARNESS.md
+DISTRIBUTION.md
+MANIFEST.md
+LICENSE-EVIDENCE.md
+posts/2026-11-04-swan-watch-launch.md
+posts/2026-11-04-one-million-x.md
+posts/2026-11-04-measurement-not-endorsement.md
+watch/2026-11-03.md
+watch/2026-11-04.md
+watch/2026-11-07.md

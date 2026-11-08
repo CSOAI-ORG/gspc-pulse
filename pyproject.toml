@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gspc-pulse-verifier"
+version = "0.5.0"
+description = "Verify the GSPC live pulse series: hash-chain, Merkle root, Ed25519 freeze manifest — from the public mirror alone. Measurement, not endorsement."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "CC-BY-4.0 OR CC0-1.0"}
+authors = [{name = "CSOAI / Council of AI", url = "https://councilof.ai"}]
+keywords = ["ai-safety", "transparency", "merkle", "ed25519", "kev", "verification"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Topic :: Security",
+]
+dependencies = ["cryptography>=42"]
+
+[project.scripts]
+gspc-verify = "pulse_freeze:main"
+
+[tool.setuptools]
+py-modules = ["pulse_freeze", "verify_remote", "engine"]

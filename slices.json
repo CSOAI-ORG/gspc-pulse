@@ -1,0 +1,545 @@
+{
+ "generated": "2026-11-08T03:58:14Z",
+ "schema": "csoai.layer0-slices/0.1",
+ "slices": [
+  {
+   "axes_in_scope": [
+    "governance",
+    "safety",
+    "jail",
+    "provenance",
+    "distribution-integrity",
+    "harness-fidelity",
+    "interpretability-reproducibility",
+    "detector-interop",
+    "cross-reality",
+    "effect-binding",
+    "claim-maintenance",
+    "conformance",
+    "continuity",
+    "interop-conformance",
+    "machinery-conformity",
+    "openness",
+    "regulator-transparency",
+    "regulatory-framework",
+    "art50-marking",
+    "art5-safeguard",
+    "ai-adoption-components",
+    "humanoid-deployment"
+   ],
+   "endpoints": {
+    "axis_cards": "gspc signed cards \u2014 verify per HOW-TO-VERIFY.md",
+    "board": "GET https://councilof.ai/api/gspc (or gspc board MCP tool)",
+    "capsules": "GET https://councilof.ai/measurement-capsules/latest.json",
+    "checklists": "gspc framework_readiness MCP tool (deterministic, free)",
+    "pulse": "gspc-pulse feed.json / latest.json (this lane)",
+    "verify": "https://councilof.ai/signed/HOW-TO-VERIFY.md"
+   },
+   "frameworks": [
+    "cra",
+    "nist-csf",
+    "eu-ai-act"
+   ],
+   "industry": "agent-developers",
+   "note": "evidence would be measured here; not a conformity assessment; not legal advice",
+   "regulators": [
+    "EU national market surveillance authorities (from 2027)",
+    "Voluntary (US NIST)",
+    "EU AI Office / national market surveillance authorities"
+   ],
+   "schema": "csoai.layer0-slice/0.1"
+  },
+  {
+   "axes_in_scope": [
+    "governance",
+    "care",
+    "safety",
+    "jail",
+    "provenance",
+    "provenance-controls",
+    "custody-disclosure",
+    "distribution-integrity",
+    "harness-fidelity",
+    "detector-interop",
+    "effect-binding",
+    "company-practice",
+    "continuity",
+    "interop-conformance",
+    "openness",
+    "regulator-transparency",
+    "regulatory-framework",
+    "art50-marking",
+    "art5-safeguard",
+    "ai-adoption-components",
+    "labour-components",
+    "humanoid-labour-index"
+   ],
+   "endpoints": {
+    "axis_cards": "gspc signed cards \u2014 verify per HOW-TO-VERIFY.md",
+    "board": "GET https://councilof.ai/api/gspc (or gspc board MCP tool)",
+    "capsules": "GET https://councilof.ai/measurement-capsules/latest.json",
+    "checklists": "gspc framework_readiness MCP tool (deterministic, free)",
+    "pulse": "gspc-pulse feed.json / latest.json (this lane)",
+    "verify": "https://councilof.ai/signed/HOW-TO-VERIFY.md"
+   },
+   "frameworks": [
+    "gdpr",
+    "eu-ai-act",
+    "nist-csf"
+   ],
+   "industry": "education",
+   "note": "evidence would be measured here; not a conformity assessment; not legal advice",
+   "regulators": [
+    "DPAs / EDPB",
+    "EU AI Office / national market surveillance authorities",
+    "Voluntary (US NIST)"
+   ],
+   "schema": "csoai.layer0-slice/0.1"
+  },
+  {
+   "axes_in_scope": [
+    "governance",
+    "swarm",
+    "provenance-controls",
+    "custody-disclosure",
+    "distribution-integrity",
+    "serving-fidelity",
+    "harness-fidelity",
+    "measurer-integrity",
+    "detector-interop",
+    "effect-binding",
+    "conformance",
+    "continuity",
+    "interop-conformance",
+    "lab-practice",
+    "regulator-transparency",
+    "regulatory-framework",
+    "watchdog-ingest"
+   ],
+   "endpoints": {
+    "axis_cards": "gspc signed cards \u2014 verify per HOW-TO-VERIFY.md",
+    "board": "GET https://councilof.ai/api/gspc (or gspc board MCP tool)",
+    "capsules": "GET https://councilof.ai/measurement-capsules/latest.json",
+    "checklists": "gspc framework_readiness MCP tool (deterministic, free)",
+    "pulse": "gspc-pulse feed.json / latest.json (this lane)",
+    "verify": "https://councilof.ai/signed/HOW-TO-VERIFY.md"
+   },
+   "frameworks": [
+    "nis2",
+    "iso-27001",
+    "nist-csf"
+   ],
+   "industry": "energy",
+   "note": "evidence would be measured here; not a conformity assessment; not legal advice",
+   "regulators": [
+    "National CSIRTs / NIS2 competent authorities",
+    "Accredited certification bodies (voluntary)",
+    "Voluntary (US NIST)"
+   ],
+   "schema": "csoai.layer0-slice/0.1"
+  },
+  {
+   "axes_in_scope": [
+    "governance",
+    "care",
+    "safety",
+    "jail",
+    "swarm",
+    "provenance",
+    "provenance-controls",
+    "custody-disclosure",
+    "serving-fidelity",
+    "measurer-integrity",
+    "company-practice",
+    "conformance",
+    "continuity",
+    "lab-practice",
+    "openness",
+    "regulator-transparency",
+    "regulatory-framework",
+    "reserve-attestation",
+    "watchdog-ingest",
+    "art50-marking",
+    "art5-safeguard",
+    "ai-adoption-components",
+    "labour-components",
+    "humanoid-labour-index"
+   ],
+   "endpoints": {
+    "axis_cards": "gspc signed cards \u2014 verify per HOW-TO-VERIFY.md",
+    "board": "GET https://councilof.ai/api/gspc (or gspc board MCP tool)",
+    "capsules": "GET https://councilof.ai/measurement-capsules/latest.json",
+    "checklists": "gspc framework_readiness MCP tool (deterministic, free)",
+    "pulse": "gspc-pulse feed.json / latest.json (this lane)",
+    "verify": "https://councilof.ai/signed/HOW-TO-VERIFY.md"
+   },
+   "frameworks": [
+    "eu-ai-act",
+    "dora",
+    "nis2",
+    "gdpr",
+    "iso-27001"
+   ],
+   "industry": "finance",
+   "note": "evidence would be measured here; not a conformity assessment; not legal advice",
+   "regulators": [
+    "EU AI Office / national market surveillance authorities",
+    "European Supervisory Authorities (ESAs)",
+    "National CSIRTs / NIS2 competent authorities",
+    "DPAs / EDPB",
+    "Accredited certification bodies (voluntary)"
+   ],
+   "schema": "csoai.layer0-slice/0.1"
+  },
+  {
+   "axes_in_scope": [
+    "governance",
+    "care",
+    "safety",
+    "jail",
+    "provenance",
+    "provenance-controls",
+    "custody-disclosure",
+    "distribution-integrity",
+    "serving-fidelity",
+    "harness-fidelity",
+    "measurer-integrity",
+    "detector-interop",
+    "effect-binding",
+    "company-practice",
+    "conformance",
+    "continuity",
+    "interop-conformance",
+    "lab-practice",
+    "openness",
+    "regulator-transparency",
+    "regulatory-framework",
+    "art50-marking",
+    "art5-safeguard",
+    "ai-adoption-components",
+    "labour-components",
+    "humanoid-labour-index"
+   ],
+   "endpoints": {
+    "axis_cards": "gspc signed cards \u2014 verify per HOW-TO-VERIFY.md",
+    "board": "GET https://councilof.ai/api/gspc (or gspc board MCP tool)",
+    "capsules": "GET https://councilof.ai/measurement-capsules/latest.json",
+    "checklists": "gspc framework_readiness MCP tool (deterministic, free)",
+    "pulse": "gspc-pulse feed.json / latest.json (this lane)",
+    "verify": "https://councilof.ai/signed/HOW-TO-VERIFY.md"
+   },
+   "frameworks": [
+    "eu-ai-act",
+    "gdpr",
+    "iso-27001",
+    "nist-csf"
+   ],
+   "industry": "healthcare",
+   "note": "evidence would be measured here; not a conformity assessment; not legal advice",
+   "regulators": [
+    "EU AI Office / national market surveillance authorities",
+    "DPAs / EDPB",
+    "Accredited certification bodies (voluntary)",
+    "Voluntary (US NIST)"
+   ],
+   "schema": "csoai.layer0-slice/0.1"
+  },
+  {
+   "axes_in_scope": [
+    "governance",
+    "care",
+    "safety",
+    "jail",
+    "provenance",
+    "provenance-controls",
+    "custody-disclosure",
+    "company-practice",
+    "openness",
+    "regulator-transparency",
+    "regulatory-framework",
+    "art50-marking",
+    "art5-safeguard",
+    "ai-adoption-components",
+    "labour-components",
+    "humanoid-labour-index"
+   ],
+   "endpoints": {
+    "axis_cards": "gspc signed cards \u2014 verify per HOW-TO-VERIFY.md",
+    "board": "GET https://councilof.ai/api/gspc (or gspc board MCP tool)",
+    "capsules": "GET https://councilof.ai/measurement-capsules/latest.json",
+    "checklists": "gspc framework_readiness MCP tool (deterministic, free)",
+    "pulse": "gspc-pulse feed.json / latest.json (this lane)",
+    "verify": "https://councilof.ai/signed/HOW-TO-VERIFY.md"
+   },
+   "frameworks": [
+    "eu-ai-act",
+    "gdpr"
+   ],
+   "industry": "hr-labour",
+   "note": "evidence would be measured here; not a conformity assessment; not legal advice",
+   "regulators": [
+    "EU AI Office / national market surveillance authorities",
+    "DPAs / EDPB"
+   ],
+   "schema": "csoai.layer0-slice/0.1"
+  },
+  {
+   "axes_in_scope": [
+    "governance",
+    "care",
+    "safety",
+    "jail",
+    "provenance",
+    "provenance-controls",
+    "custody-disclosure",
+    "serving-fidelity",
+    "measurer-integrity",
+    "company-practice",
+    "conformance",
+    "continuity",
+    "lab-practice",
+    "openness",
+    "regulator-transparency",
+    "regulatory-framework",
+    "art50-marking",
+    "art5-safeguard",
+    "ai-adoption-components",
+    "labour-components",
+    "humanoid-labour-index"
+   ],
+   "endpoints": {
+    "axis_cards": "gspc signed cards \u2014 verify per HOW-TO-VERIFY.md",
+    "board": "GET https://councilof.ai/api/gspc (or gspc board MCP tool)",
+    "capsules": "GET https://councilof.ai/measurement-capsules/latest.json",
+    "checklists": "gspc framework_readiness MCP tool (deterministic, free)",
+    "pulse": "gspc-pulse feed.json / latest.json (this lane)",
+    "verify": "https://councilof.ai/signed/HOW-TO-VERIFY.md"
+   },
+   "frameworks": [
+    "gdpr",
+    "eu-ai-act",
+    "iso-27001"
+   ],
+   "industry": "legal",
+   "note": "evidence would be measured here; not a conformity assessment; not legal advice",
+   "regulators": [
+    "DPAs / EDPB",
+    "EU AI Office / national market surveillance authorities",
+    "Accredited certification bodies (voluntary)"
+   ],
+   "schema": "csoai.layer0-slice/0.1"
+  },
+  {
+   "axes_in_scope": [
+    "governance",
+    "care",
+    "safety",
+    "jail",
+    "provenance",
+    "provenance-controls",
+    "custody-disclosure",
+    "company-practice",
+    "openness",
+    "regulator-transparency",
+    "regulatory-framework",
+    "art50-marking",
+    "art5-safeguard",
+    "ai-adoption-components",
+    "labour-components",
+    "humanoid-labour-index"
+   ],
+   "endpoints": {
+    "axis_cards": "gspc signed cards \u2014 verify per HOW-TO-VERIFY.md",
+    "board": "GET https://councilof.ai/api/gspc (or gspc board MCP tool)",
+    "capsules": "GET https://councilof.ai/measurement-capsules/latest.json",
+    "checklists": "gspc framework_readiness MCP tool (deterministic, free)",
+    "pulse": "gspc-pulse feed.json / latest.json (this lane)",
+    "verify": "https://councilof.ai/signed/HOW-TO-VERIFY.md"
+   },
+   "frameworks": [
+    "eu-ai-act",
+    "gdpr"
+   ],
+   "industry": "media",
+   "note": "evidence would be measured here; not a conformity assessment; not legal advice",
+   "regulators": [
+    "EU AI Office / national market surveillance authorities",
+    "DPAs / EDPB"
+   ],
+   "schema": "csoai.layer0-slice/0.1"
+  },
+  {
+   "axes_in_scope": [
+    "governance",
+    "care",
+    "safety",
+    "jail",
+    "swarm",
+    "provenance",
+    "provenance-controls",
+    "custody-disclosure",
+    "company-practice",
+    "openness",
+    "regulator-transparency",
+    "regulatory-framework",
+    "watchdog-ingest",
+    "art50-marking",
+    "art5-safeguard",
+    "ai-adoption-components",
+    "labour-components",
+    "humanoid-labour-index"
+   ],
+   "endpoints": {
+    "axis_cards": "gspc signed cards \u2014 verify per HOW-TO-VERIFY.md",
+    "board": "GET https://councilof.ai/api/gspc (or gspc board MCP tool)",
+    "capsules": "GET https://councilof.ai/measurement-capsules/latest.json",
+    "checklists": "gspc framework_readiness MCP tool (deterministic, free)",
+    "pulse": "gspc-pulse feed.json / latest.json (this lane)",
+    "verify": "https://councilof.ai/signed/HOW-TO-VERIFY.md"
+   },
+   "frameworks": [
+    "eu-ai-act",
+    "nis2",
+    "gdpr"
+   ],
+   "industry": "public-sector",
+   "note": "evidence would be measured here; not a conformity assessment; not legal advice",
+   "regulators": [
+    "EU AI Office / national market surveillance authorities",
+    "National CSIRTs / NIS2 competent authorities",
+    "DPAs / EDPB"
+   ],
+   "schema": "csoai.layer0-slice/0.1"
+  },
+  {
+   "axes_in_scope": [
+    "governance",
+    "care",
+    "safety",
+    "provenance",
+    "provenance-controls",
+    "custody-disclosure",
+    "distribution-integrity",
+    "interpretability-reproducibility",
+    "cross-reality",
+    "claim-maintenance",
+    "company-practice",
+    "conformance",
+    "interop-conformance",
+    "machinery-conformity",
+    "regulatory-framework",
+    "labour-components",
+    "humanoid-deployment",
+    "humanoid-labour-index"
+   ],
+   "endpoints": {
+    "axis_cards": "gspc signed cards \u2014 verify per HOW-TO-VERIFY.md",
+    "board": "GET https://councilof.ai/api/gspc (or gspc board MCP tool)",
+    "capsules": "GET https://councilof.ai/measurement-capsules/latest.json",
+    "checklists": "gspc framework_readiness MCP tool (deterministic, free)",
+    "pulse": "gspc-pulse feed.json / latest.json (this lane)",
+    "verify": "https://councilof.ai/signed/HOW-TO-VERIFY.md"
+   },
+   "frameworks": [
+    "gdpr",
+    "pci-dss",
+    "cra"
+   ],
+   "industry": "retail",
+   "note": "evidence would be measured here; not a conformity assessment; not legal advice",
+   "regulators": [
+    "DPAs / EDPB",
+    "PCI SSC / card brands",
+    "EU national market surveillance authorities (from 2027)"
+   ],
+   "schema": "csoai.layer0-slice/0.1"
+  },
+  {
+   "axes_in_scope": [
+    "governance",
+    "care",
+    "swarm",
+    "provenance-controls",
+    "custody-disclosure",
+    "serving-fidelity",
+    "measurer-integrity",
+    "company-practice",
+    "conformance",
+    "continuity",
+    "lab-practice",
+    "regulator-transparency",
+    "regulatory-framework",
+    "watchdog-ingest",
+    "labour-components",
+    "humanoid-labour-index"
+   ],
+   "endpoints": {
+    "axis_cards": "gspc signed cards \u2014 verify per HOW-TO-VERIFY.md",
+    "board": "GET https://councilof.ai/api/gspc (or gspc board MCP tool)",
+    "capsules": "GET https://councilof.ai/measurement-capsules/latest.json",
+    "checklists": "gspc framework_readiness MCP tool (deterministic, free)",
+    "pulse": "gspc-pulse feed.json / latest.json (this lane)",
+    "verify": "https://councilof.ai/signed/HOW-TO-VERIFY.md"
+   },
+   "frameworks": [
+    "nis2",
+    "gdpr",
+    "iso-27001"
+   ],
+   "industry": "telecoms",
+   "note": "evidence would be measured here; not a conformity assessment; not legal advice",
+   "regulators": [
+    "National CSIRTs / NIS2 competent authorities",
+    "DPAs / EDPB",
+    "Accredited certification bodies (voluntary)"
+   ],
+   "schema": "csoai.layer0-slice/0.1"
+  },
+  {
+   "axes_in_scope": [
+    "governance",
+    "safety",
+    "swarm",
+    "provenance",
+    "provenance-controls",
+    "custody-disclosure",
+    "distribution-integrity",
+    "serving-fidelity",
+    "measurer-integrity",
+    "interpretability-reproducibility",
+    "cross-reality",
+    "claim-maintenance",
+    "conformance",
+    "continuity",
+    "interop-conformance",
+    "machinery-conformity",
+    "lab-practice",
+    "regulator-transparency",
+    "regulatory-framework",
+    "watchdog-ingest",
+    "humanoid-deployment"
+   ],
+   "endpoints": {
+    "axis_cards": "gspc signed cards \u2014 verify per HOW-TO-VERIFY.md",
+    "board": "GET https://councilof.ai/api/gspc (or gspc board MCP tool)",
+    "capsules": "GET https://councilof.ai/measurement-capsules/latest.json",
+    "checklists": "gspc framework_readiness MCP tool (deterministic, free)",
+    "pulse": "gspc-pulse feed.json / latest.json (this lane)",
+    "verify": "https://councilof.ai/signed/HOW-TO-VERIFY.md"
+   },
+   "frameworks": [
+    "nis2",
+    "cra",
+    "iso-27001"
+   ],
+   "industry": "transport",
+   "note": "evidence would be measured here; not a conformity assessment; not legal advice",
+   "regulators": [
+    "National CSIRTs / NIS2 competent authorities",
+    "EU national market surveillance authorities (from 2027)",
+    "Accredited certification bodies (voluntary)"
+   ],
+   "schema": "csoai.layer0-slice/0.1"
+  }
+ ]
+}

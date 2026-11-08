@@ -1,0 +1,161 @@
+{
+  "schema": "csoai.gspc-pulse-latest/0.1",
+  "license": "CC-BY-4.0",
+  "attribution": "GSPC live pulse \u2014 CSOAI / Council of AI (councilof.ai) \u00b7 MEOK AI LABS",
+  "feed": "feed.json",
+  "latest": {
+    "anchors": {
+      "ots_state": "PENDING_CALENDAR_COMMITMENT",
+      "rekor_state": "INCLUDED (inclusion proof verifies)",
+      "xrpl_state": "PREPARED_NOT_SUBMITTED"
+    },
+    "board": {
+      "measured": 34,
+      "separated": 0,
+      "slots": 34,
+      "ties": 7,
+      "untested": 7
+    },
+    "capsules": {
+      "as_of": "2026-11-01T08:30:40Z",
+      "total": 11529
+    },
+    "cards": {
+      "declared": 335,
+      "head": "66856aca4a1f9390f0f51d89b8b96d984ab902852ed77b0254730758260ad1da",
+      "store": 336
+    },
+    "evidence": {
+      "corpus_as_of": "2026-11-01T15:09:42Z",
+      "dora_relevant": 529,
+      "signed_cards_total": 6016
+    },
+    "hf": {
+      "cohort_count": 29,
+      "fetched": "2026-11-04T03:00Z",
+      "fetched_trending": "2026-11-07T12:06:40Z",
+      "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
+      "new_30d_downloads": 2528205,
+      "top_downloads": 180607757,
+      "top_id": "sentence-transformers/all-MiniLM-L6-v2",
+      "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "top_trending": "speridlabs/idol",
+      "trend_score": 711,
+      "trending_license_mix": {
+        "apache-2.0": 3,
+        "mit": 1,
+        "other": 5
+      }
+    },
+    "kev": {
+      "count": 1769,
+      "epss_model": "v2026.06.15",
+      "epss_score_date": "2026-11-03T12:00:27Z",
+      "released": "2026-11-06T19:44:45.1797Z",
+      "top20": [
+        "CVE-2026-19868",
+        "CVE-2024-27834",
+        "CVE-2026-119977",
+        "CVE-2026-118527",
+        "CVE-2026-111357",
+        "CVE-2026-97229",
+        "CVE-2026-76418",
+        "CVE-2026-41709",
+        "CVE-2026-46300",
+        "CVE-2026-48356",
+        "CVE-2026-111497",
+        "CVE-2026-109618",
+        "CVE-2026-109619",
+        "CVE-2026-114625",
+        "CVE-2026-110447",
+        "CVE-2026-106931",
+        "CVE-2026-96656",
+        "CVE-2026-96655",
+        "CVE-2026-96654",
+        "CVE-2026-96652"
+      ],
+      "top5": [
+        {
+          "cve": "CVE-2026-119977",
+          "cwes": [
+            "CWE-367"
+          ],
+          "due": "2026-11-06",
+          "due_days_left": 1,
+          "epss": 0.006,
+          "percentile": 0.48751,
+          "ransomware": false
+        },
+        {
+          "cve": "CVE-2026-118527",
+          "cwes": [
+            "CWE-340"
+          ],
+          "due": "2026-11-13",
+          "due_days_left": 8,
+          "epss": null,
+          "percentile": null,
+          "ransomware": false
+        },
+        {
+          "cve": "CVE-2026-111357",
+          "cwes": [
+            "CWE-306",
+            "CWE-862",
+            "CWE-345"
+          ],
+          "due": "2026-11-02",
+          "due_days_left": -3,
+          "epss": 0.00533,
+          "percentile": 0.45064,
+          "ransomware": false
+        },
+        {
+          "cve": "CVE-2026-97229",
+          "cwes": [
+            "CWE-190"
+          ],
+          "due": "2026-11-01",
+          "due_days_left": -4,
+          "epss": 0.27692,
+          "percentile": 0.98089,
+          "ransomware": false
+        },
+        {
+          "cve": "CVE-2026-76418",
+          "cwes": [
+            "CWE-690"
+          ],
+          "due": "2026-11-01",
+          "due_days_left": -4,
+          "epss": 0.00821,
+          "percentile": 0.57342,
+          "ransomware": false
+        }
+      ]
+    },
+    "mcp": {
+      "answered": 210,
+      "as_of": "2026-11-02T12:50:46Z",
+      "auth_challenged": 253,
+      "enumerated": 500,
+      "partial": true,
+      "tools_total": 1818,
+      "unreachable": 24
+    },
+    "root": {
+      "as_of": "2026-11-01T15:09:42Z",
+      "card_count": 428
+    },
+    "ts": "2026-11-07T12:06:40Z",
+    "writer": "gspc-live-zcode",
+    "x402": {
+      "as_of": "2026-11-03T23:37:58Z",
+      "challenge_402": 100,
+      "financial_ok": 15,
+      "financial_probed": 16,
+      "financial_unreachable": 1,
+      "total": 100
+    }
+  }
+}
