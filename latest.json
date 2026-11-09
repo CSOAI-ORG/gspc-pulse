@@ -4,16 +4,12 @@
   "attribution": "GSPC live pulse \u2014 CSOAI / Council of AI (councilof.ai) \u00b7 MEOK AI LABS",
   "feed": "feed.json",
   "latest": {
-    "anchors": {
-      "ots_state": "PENDING_CALENDAR_COMMITMENT",
-      "rekor_state": "INCLUDED (inclusion proof verifies)",
-      "xrpl_state": "PREPARED_NOT_SUBMITTED"
-    },
     "board": {
       "measured": 34,
-      "separated": 0,
+      "separated_leads": 0,
       "slots": 34,
       "ties": 7,
+      "unmeasured": 0,
       "untested": 7
     },
     "capsules": {
@@ -23,35 +19,64 @@
     "cards": {
       "declared": 335,
       "head": "66856aca4a1f9390f0f51d89b8b96d984ab902852ed77b0254730758260ad1da",
-      "store": 336
+      "store": 335
     },
-    "evidence": {
-      "corpus_as_of": "2026-11-01T15:09:42Z",
-      "dora_relevant": 529,
-      "signed_cards_total": 6016
+    "did": {
+      "key_ids": [
+        "did:web:csoai.org#board-attestation-1",
+        "did:web:csoai.org#card-attestation-1",
+        "did:web:csoai.org#card-attestation-2",
+        "did:web:csoai.org#estate-chain-1",
+        "did:web:csoai.org#gspc-board-22axis-2026",
+        "did:web:csoai.org#route-attestation-1",
+        "did:web:csoai.org#site-release-1"
+      ]
+    },
+    "domains": {
+      "codes": {
+        "asisecurity-portal.com": "ERR",
+        "councilof.ai": "200",
+        "csoai.org": "308",
+        "diyhelp.ai": "200",
+        "fishkeeper.ai": "200",
+        "grabhire.ai": "200",
+        "haulage.app": "200",
+        "industrial-domains.com": "ERR",
+        "industrial-hire-ai.com": "ERR",
+        "koikeeper.ai": "200",
+        "loopfactory.ai": "200",
+        "muckaway.ai": "200",
+        "optomobile.ai": "ERR",
+        "planthire.ai": "200",
+        "pokerhud.ai": "200",
+        "proofof.ai": "301",
+        "safetyof.ai": "200",
+        "suicidestop.ai": "200",
+        "templeman-opticians.com": "200"
+      }
     },
     "hf": {
-      "cohort_count": 29,
-      "fetched": "2026-11-04T03:00Z",
-      "fetched_trending": "2026-11-07T12:06:40Z",
-      "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
-      "new_30d_downloads": 2528205,
-      "top_downloads": 180607757,
+      "top_downloads": 178968052,
       "top_id": "sentence-transformers/all-MiniLM-L6-v2",
-      "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "top_trending": "speridlabs/idol",
-      "trend_score": 711,
-      "trending_license_mix": {
-        "apache-2.0": 3,
-        "mit": 1,
-        "other": 5
-      }
+      "trend_score": 795
     },
     "kev": {
       "count": 1769,
-      "epss_model": "v2026.06.15",
-      "epss_score_date": "2026-11-03T12:00:27Z",
+      "perimeter_recent": [
+        "CVE-2026-19868",
+        "CVE-2026-118527",
+        "CVE-2026-111357",
+        "CVE-2026-76418",
+        "CVE-2025-61624",
+        "CVE-2026-76519",
+        "CVE-2026-104935",
+        "CVE-2026-88779",
+        "CVE-2026-104286",
+        "CVE-2026-88772"
+      ],
       "released": "2026-11-06T19:44:45.1797Z",
+      "rw_share_pct": 20.4,
       "top20": [
         "CVE-2026-19868",
         "CVE-2024-27834",
@@ -73,89 +98,17 @@
         "CVE-2026-96655",
         "CVE-2026-96654",
         "CVE-2026-96652"
-      ],
-      "top5": [
-        {
-          "cve": "CVE-2026-119977",
-          "cwes": [
-            "CWE-367"
-          ],
-          "due": "2026-11-06",
-          "due_days_left": 1,
-          "epss": 0.006,
-          "percentile": 0.48751,
-          "ransomware": false
-        },
-        {
-          "cve": "CVE-2026-118527",
-          "cwes": [
-            "CWE-340"
-          ],
-          "due": "2026-11-13",
-          "due_days_left": 8,
-          "epss": null,
-          "percentile": null,
-          "ransomware": false
-        },
-        {
-          "cve": "CVE-2026-111357",
-          "cwes": [
-            "CWE-306",
-            "CWE-862",
-            "CWE-345"
-          ],
-          "due": "2026-11-02",
-          "due_days_left": -3,
-          "epss": 0.00533,
-          "percentile": 0.45064,
-          "ransomware": false
-        },
-        {
-          "cve": "CVE-2026-97229",
-          "cwes": [
-            "CWE-190"
-          ],
-          "due": "2026-11-01",
-          "due_days_left": -4,
-          "epss": 0.27692,
-          "percentile": 0.98089,
-          "ransomware": false
-        },
-        {
-          "cve": "CVE-2026-76418",
-          "cwes": [
-            "CWE-690"
-          ],
-          "due": "2026-11-01",
-          "due_days_left": -4,
-          "epss": 0.00821,
-          "percentile": 0.57342,
-          "ransomware": false
-        }
       ]
     },
-    "mcp": {
-      "answered": 210,
-      "as_of": "2026-11-02T12:50:46Z",
-      "auth_challenged": 253,
-      "enumerated": 500,
-      "partial": true,
-      "tools_total": 1818,
-      "unreachable": 24
+    "meta": {
+      "kind": "public-surface-reproduction",
+      "runner": "m4-node"
     },
     "root": {
-      "as_of": "2026-11-01T15:09:42Z",
-      "card_count": 428
+      "as_of": "2026-11-07T20:54:37Z",
+      "card_count": 442,
+      "merkle_root": "bc2b1b4e6ecda0b25608fcfea1bdf3208d5161c12a7bd15a7e77615f27b78776"
     },
-    "ts": "2026-11-07T12:06:40Z",
-    "writer": "gspc-live-zcode",
-    "x402": {
-      "as_of": "2026-11-03T23:37:58Z",
-      "challenge_402": 100,
-      "financial_ok": 15,
-      "financial_probed": 16,
-      "financial_unreachable": 1,
-      "total": 100
-    }
+    "ts": "2026-11-09T01:54:33Z"
   }
 }

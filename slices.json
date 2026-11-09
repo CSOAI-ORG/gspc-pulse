@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T03:58:14Z",
+ "generated": "2026-11-09T02:15:10Z",
  "schema": "csoai.layer0-slices/0.1",
  "slices": [
   {
@@ -379,6 +379,7 @@
     "provenance-controls",
     "custody-disclosure",
     "company-practice",
+    "continuity",
     "openness",
     "regulator-transparency",
     "regulatory-framework",

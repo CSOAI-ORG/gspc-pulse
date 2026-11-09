@@ -3,10 +3,11 @@
   "doctrine": "measurement, not endorsement \u2014 never a certification; a failed fetch is absent, never zero",
   "license": "CC-BY-4.0",
   "attribution": "GSPC live pulse \u2014 CSOAI / Council of AI (councilof.ai) \u00b7 MEOK AI LABS",
-  "updated": "2026-11-07T12:06:40Z",
-  "row_count": 21,
+  "updated": "2026-11-09T01:54:33Z",
+  "row_count": 23,
   "runners": [
     "canonical",
+    "m4-node",
     "manual-reproduction"
   ],
   "sources": {
@@ -3568,6 +3569,215 @@
         "financial_unreachable": 1,
         "total": 100
       }
+    },
+    {
+      "anchors": {
+        "ots_state": "PENDING_CALENDAR_COMMITMENT",
+        "rekor_state": "INCLUDED (inclusion proof verifies)",
+        "xrpl_state": "PREPARED_NOT_SUBMITTED"
+      },
+      "board": {
+        "measured": 34,
+        "separated": 0,
+        "slots": 34,
+        "ties": 7,
+        "untested": 7
+      },
+      "capsules": {
+        "as_of": "2026-11-01T08:30:40Z",
+        "total": 11529
+      },
+      "cards": {
+        "declared": 335,
+        "head": "66856aca4a1f9390f0f51d89b8b96d984ab902852ed77b0254730758260ad1da",
+        "store": 336
+      },
+      "doors": {
+        "generated_at": "2026-09-14T10:50:00Z",
+        "next_door_date": "2026-12-01",
+        "next_door_regulator": "BIS Committee on Payments and Market Infrastructures (with IOSCO)",
+        "open_doors": 23
+      },
+      "evidence": {
+        "corpus_as_of": "2026-11-01T15:09:42Z",
+        "dora_relevant": 529,
+        "signed_cards_total": 6016
+      },
+      "gpai": {
+        "as_of": "2026-10-26T03:37:48.681Z",
+        "partial": 11,
+        "provisions": 126,
+        "unmeasured": 114,
+        "wired": 1
+      },
+      "hf": {
+        "fetched": "2026-11-08T03:10:20Z",
+        "fetched_trending": "2026-11-08T06:06:32Z",
+        "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
+        "new_30d_downloads": 2528205,
+        "top_downloads": 180607757,
+        "top_id": "sentence-transformers/all-MiniLM-L6-v2",
+        "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+        "top_trending": "speridlabs/idol",
+        "trend_score": 756
+      },
+      "kev": {
+        "count": 1769,
+        "released": "2026-11-06T19:44:45.1797Z",
+        "top20": [
+          "CVE-2026-19868",
+          "CVE-2024-27834",
+          "CVE-2026-119977",
+          "CVE-2026-118527",
+          "CVE-2026-111357",
+          "CVE-2026-97229",
+          "CVE-2026-76418",
+          "CVE-2026-41709",
+          "CVE-2026-46300",
+          "CVE-2026-48356",
+          "CVE-2026-111497",
+          "CVE-2026-109618",
+          "CVE-2026-109619",
+          "CVE-2026-114625",
+          "CVE-2026-110447",
+          "CVE-2026-106931",
+          "CVE-2026-96656",
+          "CVE-2026-96655",
+          "CVE-2026-96654",
+          "CVE-2026-96652"
+        ]
+      },
+      "mcp": {
+        "answered": 1040,
+        "as_of": "2026-11-04T04:34:49Z",
+        "auth_challenged": 1263,
+        "enumerated": 2459,
+        "partial": true,
+        "tools_total": 8665,
+        "unreachable": 100
+      },
+      "root": {
+        "as_of": "2026-11-07T20:54:37Z",
+        "card_count": 442
+      },
+      "ts": "2026-11-08T06:06:32Z",
+      "writer": "gspc-live-zcode",
+      "x402": {
+        "as_of": "2026-11-07T22:12:16Z",
+        "challenge_402": 97,
+        "financial_ok": 15,
+        "financial_probed": 16,
+        "financial_unreachable": 1,
+        "total": 100
+      }
+    },
+    {
+      "board": {
+        "measured": 34,
+        "separated_leads": 0,
+        "slots": 34,
+        "ties": 7,
+        "unmeasured": 0,
+        "untested": 7
+      },
+      "capsules": {
+        "as_of": "2026-11-01T08:30:40Z",
+        "total": 11529
+      },
+      "cards": {
+        "declared": 335,
+        "head": "66856aca4a1f9390f0f51d89b8b96d984ab902852ed77b0254730758260ad1da",
+        "store": 335
+      },
+      "did": {
+        "key_ids": [
+          "did:web:csoai.org#board-attestation-1",
+          "did:web:csoai.org#card-attestation-1",
+          "did:web:csoai.org#card-attestation-2",
+          "did:web:csoai.org#estate-chain-1",
+          "did:web:csoai.org#gspc-board-22axis-2026",
+          "did:web:csoai.org#route-attestation-1",
+          "did:web:csoai.org#site-release-1"
+        ]
+      },
+      "domains": {
+        "codes": {
+          "asisecurity-portal.com": "ERR",
+          "councilof.ai": "200",
+          "csoai.org": "308",
+          "diyhelp.ai": "200",
+          "fishkeeper.ai": "200",
+          "grabhire.ai": "200",
+          "haulage.app": "200",
+          "industrial-domains.com": "ERR",
+          "industrial-hire-ai.com": "ERR",
+          "koikeeper.ai": "200",
+          "loopfactory.ai": "200",
+          "muckaway.ai": "200",
+          "optomobile.ai": "ERR",
+          "planthire.ai": "200",
+          "pokerhud.ai": "200",
+          "proofof.ai": "301",
+          "safetyof.ai": "200",
+          "suicidestop.ai": "200",
+          "templeman-opticians.com": "200"
+        }
+      },
+      "hf": {
+        "top_downloads": 178968052,
+        "top_id": "sentence-transformers/all-MiniLM-L6-v2",
+        "top_trending": "speridlabs/idol",
+        "trend_score": 795
+      },
+      "kev": {
+        "count": 1769,
+        "perimeter_recent": [
+          "CVE-2026-19868",
+          "CVE-2026-118527",
+          "CVE-2026-111357",
+          "CVE-2026-76418",
+          "CVE-2025-61624",
+          "CVE-2026-76519",
+          "CVE-2026-104935",
+          "CVE-2026-88779",
+          "CVE-2026-104286",
+          "CVE-2026-88772"
+        ],
+        "released": "2026-11-06T19:44:45.1797Z",
+        "rw_share_pct": 20.4,
+        "top20": [
+          "CVE-2026-19868",
+          "CVE-2024-27834",
+          "CVE-2026-119977",
+          "CVE-2026-118527",
+          "CVE-2026-111357",
+          "CVE-2026-97229",
+          "CVE-2026-76418",
+          "CVE-2026-41709",
+          "CVE-2026-46300",
+          "CVE-2026-48356",
+          "CVE-2026-111497",
+          "CVE-2026-109618",
+          "CVE-2026-109619",
+          "CVE-2026-114625",
+          "CVE-2026-110447",
+          "CVE-2026-106931",
+          "CVE-2026-96656",
+          "CVE-2026-96655",
+          "CVE-2026-96654",
+          "CVE-2026-96652"
+        ]
+      },
+      "meta": {
+        "kind": "public-surface-reproduction",
+        "runner": "m4-node"
+      },
+      "root": {
+        "as_of": "2026-11-07T20:54:37Z",
+        "card_count": 442,
+        "merkle_root": "bc2b1b4e6ecda0b25608fcfea1bdf3208d5161c12a7bd15a7e77615f27b78776"
+      },
+      "ts": "2026-11-09T01:54:33Z"
     }
   ]
 }
