@@ -33,7 +33,8 @@ jobs:
         with:
           python-version: "3.12"
       - name: Pulse (frozen-gated append)
-        run: python node_runner.py
+        run: |
+          if [ -f node_runner.py ]; then python node_runner.py; else echo "runner not yet published - no-op"; fi
       - name: Commit frozen deltas only
         run: |
           git config user.name "gspc-pulse-bot"
