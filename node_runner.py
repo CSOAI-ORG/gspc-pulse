@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 HERE = os.path.dirname(os.path.abspath(__file__))
 JSONL = os.path.join(HERE, "pulse.jsonl")
 UA = {"User-Agent": "gspc-pulse-node/m4 (permissionless reproduction)"}
-DOMAINS = ["councilof.ai","safetyof.ai","muckaway.ai","grabhire.ai","templeman-opticians.com","fishkeeper.ai","csoai.org","proofof.ai","suicidestop.ai","planthire.ai","haulage.app","koikeeper.ai","diyhelp.ai","loopfactory.ai","pokerhud.ai","industrial-hire-ai.com","industrial-domains.com","asisecurity-portal.com","optomobile.ai"]
+DOMAINS = ["councilof.ai","meok.ai","safetyof.ai","muckaway.ai","grabhire.ai","templeman-opticians.com","fishkeeper.ai","csoai.org","proofof.ai","suicidestop.ai","planthire.ai","haulage.app","koikeeper.ai","diyhelp.ai","loopfactory.ai","pokerhud.ai","industrial-hire-ai.com","industrial-domains.com","asisecurity-portal.com","optomobile.ai"]
 
 def get(url, timeout=15):
     req = urllib.request.Request(url, headers=UA)
