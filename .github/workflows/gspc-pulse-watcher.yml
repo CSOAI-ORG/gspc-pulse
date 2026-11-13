@@ -2,8 +2,8 @@ name: gspc-pulse-watcher
 
 # Independent public-surface pulse watcher. Exit 2 means no frozen delta,
 # which is an expected successful no-op, not a failed workflow.
-# ci_pulse.py is the current 0.3.4 writer: trending + 30-day new-with-traction,
-# plus KEV, MCP and x402 source observations. Do not use the legacy node_runner.
+# ci_pulse.py is the current writer: trending + 30-day new-with-traction,
+# plus KEV, MCP and x402 source observations. Do not use legacy node_runner.
 
 on:
   schedule:
@@ -57,15 +57,19 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          if [[ "$GITHUB_REF" != "refs/heads/main" ]]; then
+            echo "Non-main ref validated; no write to main."
+            exit 0
+          fi
           git config user.name "gspc-pulse-bot"
           git config user.email "agents@csoai.org"
-          git fetch origin main
-          git rebase origin/main
           git add pulse.jsonl timeseries.csv feed.json latest.json llms.txt index.html
           git add alerts.jsonl REPORT.md packs/ dashboard.html RECONCILIATION.md verification-log.jsonl
           if git diff --cached --quiet; then
             echo "no changed pulse outputs — nothing to commit"
           else
             git commit -m "Agent: current GSPC pulse and derived evidence"
+            git fetch origin main
+            git -c rebase.autoStash=true rebase origin/main
             git push origin HEAD:main
           fi
