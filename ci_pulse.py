@@ -258,19 +258,45 @@ SECTION_OF = {
 
 
 def frozen_signature(snap):
-    """Frozen-layer signature. Sections absent from this snapshot (failed
-    fetches) are excluded from the gate — UNREACHABLE must never look like a
-    frozen change."""
+    """Return only frozen fields actually observed in this snapshot.
+
+    Missing sections/fields are excluded rather than converted to ``None``;
+    an unreachable source must never look like a real zero or a frozen delta.
+    Fluid SWAN/interop sections are intentionally absent from this signature.
+    """
     row = row_from(snap)
-    sig = {k: row.get(k) for k, sec in SECTION_OF.items() if sec in snap}
-    sig["did_key_ids"] = snap.get("did", {}).get("key_ids") if "did" in snap else None
-    sig["domain_codes"] = snap.get("domains", {}).get("codes") if "domains" in snap else None
+    sig = {
+        key: row.get(key)
+        for key, section in SECTION_OF.items()
+        if section in snap and row.get(key) is not None
+    }
+    if "did" in snap:
+        key_ids = (snap.get("did") or {}).get("key_ids")
+        if key_ids is not None:
+            sig["did_key_ids"] = key_ids
+    if "domains" in snap:
+        codes = (snap.get("domains") or {}).get("codes")
+        if codes is not None:
+            sig["domain_codes"] = codes
     if "anchors" in snap:
-        a = snap["anchors"]
-        sig["ots_state"] = a.get("ots_state")
-        sig["rekor_state"] = a.get("rekor_state")
-        sig["xrpl_state"] = a.get("xrpl_state")
+        anchors = snap.get("anchors") or {}
+        for key in ("ots_state", "rekor_state", "xrpl_state"):
+            if anchors.get(key) is not None:
+                sig[key] = anchors[key]
     return sig
+
+
+def frozen_delta(previous, current):
+    """Explain the observed frozen delta without treating missing fetches as changes."""
+    new = frozen_signature(current)
+    if previous is None:
+        return {"baseline": "first frozen snapshot for new surfaces"}
+    old = frozen_signature(previous)
+    return {
+        key: [old.get(key), value]
+        for key, value in sorted(new.items())
+        if old.get(key) != value
+    }
 
 
 def load_rows():
@@ -352,8 +378,8 @@ def main():
         print("all primary fetches failed — recording nothing (UNREACHABLE != 0)")
         return 1
     prev = rows[-1] if rows else None
-    sig = frozen_signature(snap)
-    if not fluid_only and prev is not None and frozen_signature(prev) == sig:
+    changed = frozen_delta(prev, snap)
+    if not fluid_only and prev is not None and not changed:
         print("no frozen change since %s — fluid row logged only:" % prev.get("ts"))
         print(json.dumps(snap, sort_keys=True)[:400])
         return 2
@@ -363,12 +389,6 @@ def main():
     rows = load_rows()
     write_csv(rows)
     build_feeds()
-    changed = {k: [ (prev_f := row_from(prev)).get(k), row_from(snap).get(k)]
-               for k in FROZEN_ROW_KEYS
-               if prev and row_from(prev).get(k) != row_from(snap).get(k)}
-    if prev is None or (snap.get("did") and not prev.get("did")) or \
-       (snap.get("domains") and not prev.get("domains")):
-        changed["baseline"] = "first frozen snapshot for new surfaces"
     print("frozen row appended %s; rows=%d; changed=%s"
           % (ts, len(rows), json.dumps(changed, default=str)[:600]))
     return 0
