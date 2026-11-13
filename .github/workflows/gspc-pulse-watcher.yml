@@ -1,15 +1,9 @@
 name: gspc-pulse-watcher
 
-# Independent public-surface pulse watcher — permissionless reproduction node.
-# Hourly; commits ONLY when the frozen layer moves (see ci_pulse.py).
-#
-# Activation notes (see m2/evidence/gspc-pulse/SCALE-PLAN.md §5):
-# - GitHub runs *scheduled* workflows only when this file exists on the DEFAULT
-#   branch; until the lane merges via the repo's protected release process, run
-#   it with workflow_dispatch (works from any branch), or FORK the repo — a fork
-#   with this file on its default branch becomes its own watcher node.
-# - Public HTTP surfaces only; independent reproduction cross-check of the
-#   board (the MCP tools remain the canonical reader on M2).
+# Independent public-surface pulse watcher. Exit 2 means no frozen delta,
+# which is an expected successful no-op, not a failed workflow.
+# ci_pulse.py is the current 0.3.4 writer: trending + 30-day new-with-traction,
+# plus KEV, MCP and x402 source observations. Do not use the legacy node_runner.
 
 on:
   schedule:
@@ -33,17 +27,45 @@ jobs:
         with:
           python-version: "3.12"
       - name: Pulse (frozen-gated append)
+        id: pulse
+        shell: bash
         run: |
-          if [ -f node_runner.py ]; then python node_runner.py; else echo "runner not yet published - no-op"; fi
-      - name: Commit frozen deltas only
+          set +e
+          python ci_pulse.py
+          rc=$?
+          set -e
+          case "$rc" in
+            0)
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+              ;;
+            2)
+              echo "changed=false" >> "$GITHUB_OUTPUT"
+              echo "No frozen change; successful no-op."
+              ;;
+            *)
+              echo "Pulse failed with exit code $rc"
+              exit "$rc"
+              ;;
+          esac
+      - name: Rebuild and validate derived reporting
+        if: steps.pulse.outputs.changed == "true"
         run: |
+          python lane_reports.py
+          python lane_reports.py --validate
+      - name: Commit frozen deltas and derived surfaces
+        if: steps.pulse.outputs.changed == "true"
+        shell: bash
+        run: |
+          set -euo pipefail
           git config user.name "gspc-pulse-bot"
           git config user.email "agents@csoai.org"
-          git pull --rebase origin "$(git branch --show-current)" || true
-          git add pulse.jsonl
+          git fetch origin main
+          git rebase origin/main
+          git add pulse.jsonl timeseries.csv feed.json latest.json llms.txt index.html
+          git add alerts.jsonl REPORT.md packs/ dashboard.html RECONCILIATION.md verification-log.jsonl
           if git diff --cached --quiet; then
-            echo "no frozen delta — nothing to commit"
+            echo "no changed pulse outputs — nothing to commit"
           else
-            git commit -m "Agent: ci pulse $(date -u +%FT%TZ) — frozen delta"
-            git push
+            git commit -m "Agent: current GSPC pulse and derived evidence"
+            git push origin HEAD:main
           fi
