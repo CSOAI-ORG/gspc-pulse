@@ -70,36 +70,46 @@ every row is self-describing about how fresh its numbers are.
 | a human scanning state | `index.html` — E-A-T header, series table, methodology |
 | an agent / LLM | `llms.txt` (discovery) → `latest.json` (one GET) → `feed.json` (history) |
 | an analyst | `timeseries.csv` — flat counters, pandas/R ready |
+| a dataset consumer | [Hugging Face dataset](https://huggingface.co/datasets/csoai/gspc-pulse) — JSONL and CSV viewer configs |
 | a verifier / auditor | `RECONCILIATION.md` + `verification-log.jsonl` + `PULSE-NODE.md` (run your own node) |
 | a compliance officer | `feed.json` ecosystem blocks (`mcp`/`x402`/`evidence`) + DORA-relevant signed cards |
 | a security responder | `watch/` reports + `kev.top5` EPSS/CWE/due-date joins in `feed.json` |
 
-## Series freeze (the pulse measures, and now the pulse is measured)
+## Series freeze and unsigned watcher observations
 
-Every append ends frozen: rows are canonically hashed, hash-chained, Merkle-rooted
-and the manifest is **Ed25519-signed** (`pulse_freeze.py`; artifacts
-`pulse-freeze-manifest.json` / `pulse-leaves.json` / `.sig`). Verify yourself:
-`python3 pulse_freeze.py verify` — prove one row: `prove --ts <ts>`. Tamper the
-series and verification breaks (self-test included). **Trust anchor:** the lane
-public key rides in the manifest; the private key never enters this repo (it
-lives in the pulse state dir) — trust chains to this repo's git history. This is
-signature-frozen, **not** ledger-frozen: OTS/Rekor/XRPL anchoring of the manifest
-remains owner-gated (SCALE-PLAN §3.1), and GSPC's pinned keys are unrelated to
-this lane key.
+The canonical M2 runner freezes a **signed prefix**: each committed row in that
+prefix is canonically hashed, hash-chained, Merkle-rooted and covered by the
+Ed25519 manifest (`pulse-freeze-manifest.json`, `pulse-leaves.json`, `.sig`).
+The manifest's `n_rows` is the exact number of signed rows. The public hourly
+GitHub Actions watcher has no private signing key; it may append later public-
+HTTP observations after that prefix. Those later rows are an **unsigned tail**,
+not covered by the signature and not presented as verified.
+
+Verify the boundary yourself: `python3 pulse_freeze.py verify` validates the
+signed prefix and reports the unsigned tail; `python3 pulse_freeze.py verify
+--require-full` fails unless every row is signed. `prove --ts <ts>` only proves
+a timestamp inside the signed prefix. The verifier's self-test tampers with a
+signed row and must fail. **Trust anchor:** the public key rides in the
+manifest; the private key never enters this repo (it lives in the pulse state
+dir) — trust chains to this repo's git history. This is signature-frozen,
+**not** ledger-frozen: OTS/Rekor/XRPL anchoring remains owner-gated
+(SCALE-PLAN §3.1), and GSPC's pinned keys are unrelated to this lane key.
 
 ## Automation
 
-Two independent runners write to this series (rows carry `meta.runner`):
+Two independent runners contribute to the observation series (rows carry `meta.runner`); only the canonical runner has authority to extend the signed prefix:
 
 1. **M2 canonical pulse** — a ZCode automation runs the full live pulse
    (gspc-live skill, sections 0–4; GSPC via the MCP tools) every 6 hours, then
    runs `archive_pulse.py` and commits narrowly (lane files only).
 2. **Public CI watcher** — `.github/workflows/gspc-pulse-watcher.yml` +
    `ci_pulse.py`: hourly, public-HTTP-only, independent reproduction
-   cross-check of the board plus estate surfaces (DID key ids, 19-domain
-   first-hop status sweep). Frozen-gated: commits only when the frozen layer
-   moves. `--fluid` appends a `kind: fluid-scan` row even without frozen
-   movement (swan/interop sections ride along but never trip the gate).
+   cross-check of the board plus estate surfaces (DID key ids, 20-domain
+   first-hop status sweep). Frozen-gated: commits only when the selected
+   public-source fields move. It appends an explicitly unsigned observation;
+   it never signs or extends the Ed25519 prefix. `--fluid` appends a
+   `kind: fluid-scan` row even without frozen movement (swan/interop sections
+   ride along but never trip the gate).
    Scheduled runs activate when this workflow reaches the default
    branch; `workflow_dispatch` works now; any fork becomes its own node.
 3. **Swan watch** — a ZCode automation (daily 09:00) running `ci_pulse.py
@@ -121,7 +131,7 @@ force):
 | Surface | For | File |
 |---|---|---|
 | One-GET current state | agents (fetch this first) | `latest.json` |
-| Full append-only series | pipelines, training, audits | `feed.json` (schema `csoai.gspc-pulse-feed/0.1`) |
+| Full append-only observations (signed prefix + any explicitly unsigned tail) | pipelines, analysis, audits | `feed.json` (schema `csoai.gspc-pulse-feed/0.1`) |
 | Tabular counters | pandas / R / spreadsheets | `timeseries.csv` |
 | Agent discovery | LLM agents | `llms.txt` |
 | Human dashboard | end users (self-contained, no build) | `index.html` |
@@ -154,7 +164,9 @@ certification.
 Rows `2026-11-03T05:37:18Z` and `2026-11-03T05:43:53Z` were taken live in an
 interactive session before this lane existed and are seeded verbatim from those
 fetches (head card `66856aca…` VERIFIED under `did:web:csoai.org#card-attestation-1`
-in the 05:43 pulse). Every later row is written by the automated archiver.
+in the 05:43 pulse). Later rows are written by the canonical archiver or the
+independent public watcher; `meta.runner` identifies the writer. The manifest's
+`n_rows` defines the signed prefix; later watcher rows are explicitly unsigned.
 
 Lane owner: ZCode agent (M2). GSPC data itself is only ever read from the
 connected GSPC MCP tools / councilof.ai surfaces — this lane measures, it does

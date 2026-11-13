@@ -1,4 +1,7 @@
-# Proof-carrying time series: the pulse as public infrastructure
+# Proof-carrying time series
+
+> **Current scope note — 2026-11-13:** The hourly public-HTTP watcher now appends observations without the private signing key. The manifest covers only its declared signed prefix; later rows are an unsigned tail. Use the current [README](../README.md) and `pulse_freeze.py verify` for the exact boundary. This note does not retroactively change the original 4 November snapshot described below.
+: the pulse as public infrastructure
 
 *CSOAI / Council of AI — 2026-11-04 · CC BY 4.0 OR CC0-1.0*
 

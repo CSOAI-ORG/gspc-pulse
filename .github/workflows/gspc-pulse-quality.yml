@@ -1,0 +1,29 @@
+name: gspc-pulse-quality
+
+on:
+  pull_request: {}
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install verification dependencies
+        run: python -m pip install --disable-pip-version-check cryptography pyyaml
+      - name: Run signed-prefix and mirror tests
+        run: python -m unittest discover -s tests -v
+      - name: Verify public signed prefix
+        run: python pulse_freeze.py verify
+      - name: Validate Hugging Face mirror payload
+        run: python ci/hf_dataset_mirror.py --check
+      - name: Validate derived reports
+        run: python lane_reports.py --validate
