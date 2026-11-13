@@ -92,6 +92,7 @@
         "industrial-hire-ai.com": "ERR",
         "koikeeper.ai": "200",
         "loopfactory.ai": "200",
+        "meok.ai": "200",
         "muckaway.ai": "200",
         "optomobile.ai": "ERR",
         "planthire.ai": "200",
@@ -103,12 +104,12 @@
       }
     },
     "hf": {
-      "fetched": "2026-11-13T02:11Z",
+      "fetched": "2026-11-13T02:43Z",
       "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
       "new_30d_downloads": 3635772,
       "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "top_trending": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-      "trend_score": 2916
+      "trend_score": 2922
     },
     "interop": {
       "mcp_trust": {
@@ -299,6 +300,6 @@
         }
       ]
     },
-    "ts": "2026-11-13T02:11:01Z"
+    "ts": "2026-11-13T02:43:24Z"
   }
 }

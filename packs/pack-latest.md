@@ -1,10 +1,10 @@
 # Evidence Pack — GSPC Live Pulse (rolling latest)
 
 **Cite as:** GSPC live pulse — CSOAI / Council of AI (councilof.ai), CC BY 4.0.
-**Snapshot:** 2026-11-13T02:11:01Z UTC · series: 25 rows since 2026-11-03.
+**Snapshot:** 2026-11-13T02:43:24Z UTC · series: 26 rows since 2026-11-03.
 
 Measurement, not endorsement; never a certification. Every value below was
-fetched LIVE at 2026-11-13T02:11:01Z and is traceable to its source surface at that moment.
+fetched LIVE at 2026-11-13T02:43:24Z and is traceable to its source surface at that moment.
 
 ## Frozen layer
 - GSPC board: 34 measured of 34 slots · separated leads 0 · ties 7 · untested 7
@@ -25,6 +25,7 @@ fetched LIVE at 2026-11-13T02:11:01Z and is traceable to its source surface at t
 - industrial-hire-ai.com: `ERR`
 - koikeeper.ai: `200`
 - loopfactory.ai: `200`
+- meok.ai: `200`
 - muckaway.ai: `200`
 - optomobile.ai: `ERR`
 - planthire.ai: `200`
@@ -125,6 +126,7 @@ fetched LIVE at 2026-11-13T02:11:01Z and is traceable to its source surface at t
       "industrial-hire-ai.com": "ERR",
       "koikeeper.ai": "200",
       "loopfactory.ai": "200",
+      "meok.ai": "200",
       "muckaway.ai": "200",
       "optomobile.ai": "ERR",
       "planthire.ai": "200",
@@ -136,12 +138,12 @@ fetched LIVE at 2026-11-13T02:11:01Z and is traceable to its source surface at t
     }
   },
   "hf": {
-    "fetched": "2026-11-13T02:11Z",
+    "fetched": "2026-11-13T02:43Z",
     "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
     "new_30d_downloads": 3635772,
     "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
     "top_trending": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-    "trend_score": 2916
+    "trend_score": 2922
   },
   "interop": {
     "mcp_trust": {
@@ -332,6 +334,6 @@ fetched LIVE at 2026-11-13T02:11:01Z and is traceable to its source surface at t
       }
     ]
   },
-  "ts": "2026-11-13T02:11:01Z"
+  "ts": "2026-11-13T02:43:24Z"
 }
 ```

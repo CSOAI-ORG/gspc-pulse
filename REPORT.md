@@ -2,12 +2,12 @@
 
 _Regenerated every pulse. Measurement, not endorsement; never a certification. License CC BY 4.0._
 
-- Rows: **25** (runners: canonical×3, github-actions×1, gspc-live-zcode×5, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
+- Rows: **26** (runners: canonical×3, github-actions×2, gspc-live-zcode×5, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
 - Fluid layers carried: interop-census, swan-scan
-- Latest: **2026-11-13T02:11:01Z**
+- Latest: **2026-11-13T02:43:24Z**
 - Alert cards (frozen deltas): **10**
 - Verification log entries: **28**
-- Domains OK (2xx first-hop): **13 / 19**
+- Domains OK (2xx first-hop): **14 / 20**
 
 ## Frozen-delta timeline (latest 12)
 
