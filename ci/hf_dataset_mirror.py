@@ -14,7 +14,6 @@ import shutil
 import subprocess
 import sys
 import tempfile
-from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -133,22 +132,6 @@ def _stage(root, directory, summary):
         shutil.copy2(source, directory / name)
     shutil.copy2(root / "hf" / "README.md", directory / "README.md")
 
-    hashes = {}
-    for name in DATA_FILES + ["README.md"]:
-        data = (directory / name).read_bytes()
-        hashes[name] = {"sha256": hashlib.sha256(data).hexdigest(), "bytes": len(data)}
-    receipt = {
-        "schema": "csoai.gspc-pulse-hf-mirror-receipt/0.1",
-        "published_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "source_repository": "CSOAI-ORG/gspc-pulse",
-        "source_revision": _source_revision(root),
-        "workflow_run_id": os.environ.get("GITHUB_RUN_ID"),
-        **summary,
-        "authority": "unsigned publication receipt; file hashes aid reproduction but are not a signature",
-        "files": hashes,
-    }
-    (directory / "mirror-receipt.json").write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
-
     digest = [
         "# GSPC Pulse — current mirror digest", "",
         "- Latest observation: `%s`" % summary["latest_ts"],
@@ -160,7 +143,27 @@ def _stage(root, directory, summary):
         "The publication receipt is unsigned and does not extend the signing authority.", "",
         "Source: https://github.com/CSOAI-ORG/gspc-pulse",
     ]
-    (directory / "DIGEST.md").write_text("\n".join(digest) + "\n", encoding="utf-8")
+    digest_text = "\n".join(digest) + "\n"
+    (directory / "DIGEST.md").write_text(digest_text, encoding="utf-8")
+
+    hashes = {}
+    for name in DATA_FILES + ["README.md"]:
+        data = (directory / name).read_bytes()
+        hashes[name] = {"sha256": hashlib.sha256(data).hexdigest(), "bytes": len(data)}
+    digest_bytes = digest_text.encode("utf-8")
+    hashes["DIGEST.md"] = {"sha256": hashlib.sha256(digest_bytes).hexdigest(), "bytes": len(digest_bytes)}
+    receipt = {
+        "schema": "csoai.gspc-pulse-hf-mirror-receipt/0.1",
+        "source_repository": "CSOAI-ORG/gspc-pulse",
+        "source_revision": _source_revision(root),
+        **summary,
+        "authority": "unsigned publication receipt; file hashes aid reproduction but are not a signature",
+        "files": hashes,
+    }
+    (directory / "mirror-receipt.json").write_text(
+        json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+    )
+    return receipt
 
 
 def main():
@@ -176,11 +179,23 @@ def main():
     token = os.environ.get("HF_TOKEN")
     if not token:
         raise SystemExit("HF_TOKEN is required for --publish")
-    from huggingface_hub import HfApi
+    from huggingface_hub import HfApi, hf_hub_download
+    from huggingface_hub.utils import EntryNotFoundError
     api = HfApi(token=token)
     api.repo_info(DATASET_ID, repo_type="dataset")  # fail closed if the target repo is absent
     with tempfile.TemporaryDirectory(prefix="gspc-hf-mirror-") as tmp:
-        _stage(ROOT, tmp, summary)
+        receipt = _stage(ROOT, tmp, summary)
+        try:
+            remote_path = hf_hub_download(
+                repo_id=DATASET_ID, repo_type="dataset", filename="mirror-receipt.json", token=token
+            )
+            remote_receipt = json.loads(Path(remote_path).read_text(encoding="utf-8"))
+        except EntryNotFoundError:
+            remote_receipt = None
+        if remote_receipt == receipt:
+            print("SKIP: Hugging Face mirror already matches source revision %s"
+                  % str(receipt.get("source_revision"))[:12])
+            return 0
         commit = api.upload_folder(
             folder_path=tmp,
             repo_id=DATASET_ID,
