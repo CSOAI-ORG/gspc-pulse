@@ -2,10 +2,10 @@
 
 _Regenerated every pulse. Measurement, not endorsement; never a certification. License CC BY 4.0._
 
-- Rows: **26** (runners: canonical×3, github-actions×2, gspc-live-zcode×5, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
+- Rows: **27** (runners: canonical×3, github-actions×3, gspc-live-zcode×5, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
 - Fluid layers carried: interop-census, swan-scan
-- Latest: **2026-11-13T02:43:24Z**
-- Alert cards (frozen deltas): **10**
+- Latest: **2026-11-13T15:22:51Z**
+- Alert cards (frozen deltas): **11**
 - Verification log entries: **28**
 - Domains OK (2xx first-hop): **14 / 20**
 
@@ -47,6 +47,8 @@ _Regenerated every pulse. Measurement, not endorsement; never a certification. L
 - `2026-11-13T02:11:01Z` — hf_top_id: "sentence-transformers/all-MiniLM-L6-v2" → **null**
 - `2026-11-13T02:11:01Z` — hf_top_new_30d: null → **"ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GG**
 - `2026-11-13T02:11:01Z` — hf_top_trending: "speridlabs/idol" → **"xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED**
+- `2026-11-13T15:22:51Z` — root_as_of: "2026-11-07T20:54:37Z" → **"2026-11-13T07:59:04Z"**
+- `2026-11-13T15:22:51Z` — root_card_count: 442 → **458**
 
 ## Verification cadence (latest 6)
 
