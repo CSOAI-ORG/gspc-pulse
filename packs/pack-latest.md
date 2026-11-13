@@ -1,17 +1,17 @@
 # Evidence Pack — GSPC Live Pulse (rolling latest)
 
 **Cite as:** GSPC live pulse — CSOAI / Council of AI (councilof.ai), CC BY 4.0.
-**Snapshot:** 2026-11-13T15:22:51Z UTC · series: 27 rows since 2026-11-03.
+**Snapshot:** 2026-11-13T21:58:18Z UTC · series: 28 rows since 2026-11-03.
 
 Measurement, not endorsement; never a certification. Every value below was
-fetched LIVE at 2026-11-13T15:22:51Z and is traceable to its source surface at that moment.
+fetched LIVE at 2026-11-13T21:58:18Z and is traceable to its source surface at that moment.
 
 ## Frozen layer
 - GSPC board: 34 measured of 34 slots · separated leads 0 · ties 7 · untested 7
 - Capsule index: 11529 capsules (as_of 2026-11-01T08:30:40Z)
-- Public root: 458 cards (as_of 2026-11-13T07:59:04Z)
+- Public root: 452 cards (as_of 2026-11-13T12:35:42Z)
 - Signed cards: 335 declared / 335 in store (two labelled numbers)
-- CISA KEV: 1779 entries (released 2026-11-10T19:03:29.8375Z)
+- CISA KEV: 1781 entries (released 2026-11-13T20:24:18.3008Z)
 
 ## Estate liveness (first-hop status codes)
 - asisecurity-portal.com: `ERR`
@@ -138,12 +138,12 @@ fetched LIVE at 2026-11-13T15:22:51Z and is traceable to its source surface at t
     }
   },
   "hf": {
-    "fetched": "2026-11-13T15:22Z",
+    "fetched": "2026-11-13T21:58Z",
     "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
     "new_30d_downloads": 3756059,
     "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
     "top_trending": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-    "trend_score": 2995
+    "trend_score": 3225
   },
   "interop": {
     "mcp_trust": {
@@ -157,16 +157,18 @@ fetched LIVE at 2026-11-13T15:22:51Z and is traceable to its source surface at t
       "unique_hosts": 500
     },
     "x402_trust": {
-      "as_of": "2026-11-13T07:07:05Z",
-      "challenge_402": 92,
-      "dead_404_or_unreachable": 7,
+      "as_of": "2026-11-13T19:57:14Z",
+      "challenge_402": 96,
+      "dead_404_or_unreachable": 1,
       "total": 100
     }
   },
   "kev": {
-    "count": 1779,
-    "released": "2026-11-10T19:03:29.8375Z",
+    "count": 1781,
+    "released": "2026-11-13T20:24:18.3008Z",
     "top20": [
+      "CVE-2026-114713",
+      "CVE-2026-123039",
       "CVE-2026-124194",
       "CVE-2026-111793",
       "CVE-2026-20320",
@@ -184,9 +186,7 @@ fetched LIVE at 2026-11-13T15:22:51Z and is traceable to its source surface at t
       "CVE-2026-111357",
       "CVE-2026-97229",
       "CVE-2026-76418",
-      "CVE-2026-41709",
-      "CVE-2026-46300",
-      "CVE-2026-48356"
+      "CVE-2026-41709"
     ]
   },
   "meta": {
@@ -194,11 +194,11 @@ fetched LIVE at 2026-11-13T15:22:51Z and is traceable to its source surface at t
     "runner": "github-actions"
   },
   "root": {
-    "as_of": "2026-11-13T07:59:04Z",
-    "card_count": 458
+    "as_of": "2026-11-13T12:35:42Z",
+    "card_count": 452
   },
   "swan": {
-    "cadence_last14": 15,
+    "cadence_last14": 17,
     "cadence_prior14": 18,
     "cadence_weekly": {
       "2026-W36": 1,
@@ -211,16 +211,16 @@ fetched LIVE at 2026-11-13T15:22:51Z and is traceable to its source surface at t
       "2026-W43": 8,
       "2026-W44": 10,
       "2026-W45": 3,
-      "2026-W46": 10
+      "2026-W46": 12
     },
-    "catalog_total": 1779,
+    "catalog_total": 1781,
     "cwe_top_recent": {
-      "CWE-1325": 2,
       "CWE-287": 2,
       "CWE-416": 3,
       "CWE-755": 2,
       "CWE-78": 3,
-      "CWE-824": 2
+      "CWE-824": 2,
+      "CWE-862": 2
     },
     "perimeter_recent": [
       {
@@ -277,17 +277,17 @@ fetched LIVE at 2026-11-13T15:22:51Z and is traceable to its source surface at t
     "ransomware_flagged_recent": 0,
     "ransomware_flagged_recent_cves": [],
     "ransomware_sample": {
-      "claimed_today": 1,
+      "claimed_today": 8,
       "sample_size": 100,
       "source_kind": "recent-100 leak-site sample, not a census",
       "top_groups_sample": {
         "Booba Project": 6,
         "Curious Worm": 10,
-        "incransom": 5,
+        "akira": 6,
         "interlock": 9,
         "thegentlemen": 22
       },
-      "window_first": "2026-11-09",
+      "window_first": "2026-11-10",
       "window_last": "2026-11-13"
     },
     "ransomware_share_pct": 20.3,
@@ -334,6 +334,6 @@ fetched LIVE at 2026-11-13T15:22:51Z and is traceable to its source surface at t
       }
     ]
   },
-  "ts": "2026-11-13T15:22:51Z"
+  "ts": "2026-11-13T21:58:18Z"
 }
 ```
