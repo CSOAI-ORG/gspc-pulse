@@ -144,95 +144,194 @@ def cmd_freeze(_):
     return 0
 
 
-def verify(manifest, quiet=False):
+def verify(manifest=None, quiet=False, require_full=False):
+    """Verify the Ed25519-signed prefix, and report any later unsigned tail.
+
+    The hourly public-HTTP watcher has no access to the private lane key. It may
+    append observations after the last signed row. Those rows are deliberately
+    not covered by the manifest and are never described as verified. Use
+    ``require_full=True`` when a consumer requires every row to be signed.
+    """
     if not (os.path.exists(MANIFEST) and os.path.exists(LEAVES)
             and os.path.exists(SIG)):
         print("freeze artifacts missing — run freeze first")
         return 2
-    manifest = json.load(open(MANIFEST))
-    leaves = json.load(open(LEAVES))
-    sig = bytes.fromhex(open(SIG).read().strip())
-    rows = load_rows()
-    ok = True
-    # 1. rows vs leaves
-    if [leaf_sha(r) for r in rows] != [l["sha"] for l in leaves]:
-        print("FAIL: pulse.jsonl does not match leaves (rows moved since freeze)")
-        ok = False
-    # 2. counts and endpoints
-    if manifest.get("n_rows") != len(rows):
-        print("FAIL: manifest n_rows %s != %d" % (manifest.get("n_rows"), len(rows)))
-        ok = False
-    if manifest.get("last_ts") != (rows[-1].get("ts") if rows else None):
-        print("FAIL: manifest last_ts stale")
-        ok = False
-    # 3. chain + merkle recomputation
-    shas = sorted(l["sha"] for l in leaves)
-    if manifest.get("chain_head") != chain_head([l["sha"] for l in leaves]):
-        print("FAIL: chain head mismatch")
-        ok = False
-    if manifest.get("merkle_root") != merkle_root(shas):
-        print("FAIL: merkle root mismatch")
-        ok = False
-    # 4. signature over canonical manifest bytes
-    payload = json.dumps(manifest, sort_keys=True,
-                         separators=(",", ":")).encode()
     try:
-        pub = Ed25519PublicKey.from_public_bytes(
-            bytes.fromhex(manifest["pubkey"]))
-        pub.verify(sig, payload)
-    except Exception as e:
-        print("FAIL: signature invalid: %s" % e)
+        with open(MANIFEST, encoding="utf-8") as handle:
+            manifest = json.load(handle)
+        with open(LEAVES, encoding="utf-8") as handle:
+            leaves = json.load(handle)
+        with open(SIG, encoding="utf-8") as handle:
+            sig = bytes.fromhex(handle.read().strip())
+        rows = load_rows()
+    except (OSError, ValueError, TypeError) as exc:
+        print("FAIL: freeze artifacts unreadable: %s" % exc)
+        return 1
+
+    ok = True
+    signature_ok = False
+    signed_count = manifest.get("n_rows")
+    if manifest.get("schema") != SCHEMA:
+        print("FAIL: manifest schema mismatch")
         ok = False
+    if type(signed_count) is not int or signed_count < 1:
+        print("FAIL: manifest n_rows must be a positive integer")
+        return 1
+    if len(leaves) != signed_count:
+        print("FAIL: manifest n_rows %d != %d signed leaves"
+              % (signed_count, len(leaves)))
+        ok = False
+    if len(rows) < signed_count:
+        print("FAIL: pulse.jsonl has %d rows but signed prefix requires %d"
+              % (len(rows), signed_count))
+        return 1
+
+    signed_rows = rows[:signed_count]
+    # The complete feed must remain well-formed and strictly time-ordered,
+    # including unsigned observations. This is a structural check, not a
+    # cryptographic claim about the tail.
+    timestamps = [row.get("ts") if isinstance(row, dict) else None for row in rows]
+    if any(not isinstance(ts, str) or not ts for ts in timestamps):
+        print("FAIL: every row must carry a non-empty timestamp")
+        ok = False
+    elif any(a >= b for a, b in zip(timestamps, timestamps[1:])):
+        print("FAIL: pulse rows are not strictly time-ordered and unique")
+        ok = False
+
+    if signed_rows:
+        if manifest.get("first_ts") != signed_rows[0].get("ts"):
+            print("FAIL: manifest first_ts does not match signed prefix")
+            ok = False
+        if manifest.get("last_ts") != signed_rows[-1].get("ts"):
+            print("FAIL: manifest last_ts does not match signed prefix")
+            ok = False
+    if manifest.get("leaf_count") != signed_count:
+        print("FAIL: manifest leaf_count does not match n_rows")
+        ok = False
+
+    # 1. Signed prefix rows vs leaves. Later public-watcher rows are not in
+    # this comparison: they are explicitly an unsigned observation tail.
+    if len(leaves) == signed_count:
+        for index, (row, leaf) in enumerate(zip(signed_rows, leaves)):
+            if not isinstance(leaf, dict):
+                print("FAIL: leaf %d is not an object" % index)
+                ok = False
+                break
+            if leaf.get("ts") != row.get("ts") or leaf.get("sha") != leaf_sha(row):
+                print("FAIL: signed row %d does not match its leaf" % index)
+                ok = False
+                break
+
+    # 2. Chain + Merkle recomputation over the signed leaves only.
+    try:
+        leaf_shas = [leaf["sha"] for leaf in leaves]
+        if manifest.get("chain_head") != chain_head(leaf_shas):
+            print("FAIL: chain head mismatch")
+            ok = False
+        if manifest.get("merkle_root") != merkle_root(sorted(leaf_shas)):
+            print("FAIL: Merkle root mismatch")
+            ok = False
+    except (KeyError, TypeError, ValueError):
+        print("FAIL: malformed signed leaves")
+        ok = False
+
+    # 3. The manifest fingerprint and Ed25519 signature are checked separately.
+    try:
+        pub_bytes = bytes.fromhex(manifest["pubkey"])
+        if hashlib.sha256(pub_bytes).hexdigest() != manifest.get("pubkey_fp"):
+            print("FAIL: public-key fingerprint mismatch")
+            ok = False
+        pub = Ed25519PublicKey.from_public_bytes(pub_bytes)
+        payload = json.dumps(manifest, sort_keys=True,
+                             separators=(",", ":")).encode()
+        pub.verify(sig, payload)
+        signature_ok = True
+    except Exception as exc:
+        print("FAIL: signature invalid: %s" % exc)
+        ok = False
+
+    tail = rows[signed_count:]
+    if tail:
+        first_tail = tail[0].get("ts")
+        last_tail = tail[-1].get("ts")
+        print("UNSIGNED TAIL: %d row(s), %s through %s; not covered by the Ed25519 signature"
+              % (len(tail), first_tail, last_tail))
+        if require_full:
+            print("FAIL: --require-full requested a signature for every row")
+            ok = False
+
     if not quiet or not ok:
-        print("%s: %d rows, chain %s, root %s, signature %s"
-              % ("VERIFIED" if ok else "BROKEN", len(rows),
-                 manifest.get("chain_head", "?")[:16],
-                 manifest.get("merkle_root", "?")[:16],
-                 "ok" if ok else "INVALID"))
+        if ok and not tail:
+            label = "VERIFIED FULL SERIES"
+        elif ok:
+            label = "VERIFIED SIGNED PREFIX"
+        elif signature_ok and tail and require_full:
+            label = "INCOMPLETE SIGNATURE COVERAGE"
+        else:
+            label = "BROKEN"
+        print("%s: %d signed row(s) through %s; %d unsigned tail row(s); chain %s; root %s; signature %s"
+              % (label, signed_count, manifest.get("last_ts"), len(tail),
+                 str(manifest.get("chain_head", "?"))[:16],
+                 str(manifest.get("merkle_root", "?"))[:16],
+                 "ok" if signature_ok else "INVALID"))
     return 0 if ok else 1
 
-
 def cmd_verify(a):
-    return verify(json.load(open(MANIFEST)) if os.path.exists(MANIFEST) else {},
-                  quiet=a.quiet)
+    return verify({}, quiet=a.quiet, require_full=a.require_full)
 
 
 def inclusion_proof(ts):
-    """Sibling path for one leaf against the merkle root; verifies locally."""
-    leaves = json.load(open(LEAVES))
-    shas = sorted(l["sha"] for l in leaves)
-    target = next((l["sha"] for l in leaves if l.get("ts") == ts), None)
-    if not target:
-        return None, "ts not in leaves"
-    pos = shas.index(target)
-    level = [bytes.fromhex(s) for s in shas]
+    """Sibling path for a timestamp in the signed prefix, never the unsigned tail."""
+    with open(LEAVES, encoding="utf-8") as handle:
+        leaves = json.load(handle)
+    with open(MANIFEST, encoding="utf-8") as handle:
+        manifest = json.load(handle)
+    signed_count = manifest.get("n_rows")
+    if type(signed_count) is not int or signed_count != len(leaves):
+        return None, "signed-prefix manifest/leaf count mismatch"
+    target_leaf = next((l for l in leaves if l.get("ts") == ts), None)
+    if not target_leaf:
+        return None, "timestamp is not in the signed prefix (unsigned tail cannot be proved)"
+    rows = load_rows()
+    signed_rows = rows[:signed_count]
+    row = next((r for r in signed_rows if r.get("ts") == ts), None)
+    if row is None or target_leaf.get("sha") != leaf_sha(row):
+        return None, "signed row does not match its committed leaf"
+    shas = [l["sha"] for l in leaves]
+    level = [bytes.fromhex(s) for s in sorted(shas)]
+    # Merkle leaves are sorted by digest; map the selected digest to its position.
+    pos = sorted(shas).index(target_leaf["sha"])
     if len(level) % 2:
         level.append(level[-1])
     proof = []
     while len(level) > 1:
         if pos % 2 == 1:
-            proof.append(("L", level[pos - 1].hex()))  # sibling is left
+            proof.append(("L", level[pos - 1].hex()))
         else:
-            proof.append(("R", level[pos + 1].hex()))  # sibling is right
+            proof.append(("R", level[pos + 1].hex()))
         level = [hashlib.sha256(level[i] + level[i + 1]).digest()
                  for i in range(0, len(level), 2)]
         pos //= 2
         if len(level) % 2 and len(level) > 1:
             level.append(level[-1])
-    acc = bytes.fromhex(target)
-    for side, sib in proof:
-        acc = (hashlib.sha256(bytes.fromhex(sib) + acc) if side == "L"
-               else hashlib.sha256(acc + bytes.fromhex(sib))).digest()
-    root = json.load(open(MANIFEST)).get("merkle_root")
+    acc = bytes.fromhex(target_leaf["sha"])
+    for side, sibling in proof:
+        acc = (hashlib.sha256(bytes.fromhex(sibling) + acc) if side == "L"
+               else hashlib.sha256(acc + bytes.fromhex(sibling))).digest()
+    root = manifest.get("merkle_root")
     return ("VALID" if acc.hex() == root else "INVALID"), root
 
 
 def cmd_prove(a):
+    if verify({}, quiet=True) != 0:
+        print("FAIL: signed prefix does not verify")
+        return 1
     verdict, root = inclusion_proof(a.ts)
     if verdict is None:
         print("FAIL: %s" % root)
         return 1
-    print("%s: ts %s inclusion against root %s" % (verdict, a.ts, root[:16]))
+    print("%s: ts %s inclusion against signed-prefix root %s"
+          % (verdict, a.ts, root[:16]))
     return 0 if verdict == "VALID" else 1
 
 
@@ -248,7 +347,7 @@ def cmd_self_test(_):
     try:
         rows = load_rows()
         if rows:
-            rows[-1]["kev"]["count"] += 1  # inject a lie
+            rows[0]["kev"]["count"] += 1  # tamper a row that is covered by the signed prefix
             shutil.copy2(JSONL, JSONL + ".bak")
             with open(JSONL, "w") as f:
                 f.write("\n".join(json.dumps(r, sort_keys=True) for r in rows))
@@ -262,6 +361,9 @@ def cmd_self_test(_):
                 shutil.copy2(dst, src)
             elif os.path.exists(src + ".bak"):
                 os.replace(src + ".bak", src)
+        # Never leave a scratch backup beside the public series.
+        if os.path.exists(JSONL + ".bak"):
+            os.remove(JSONL + ".bak")
         shutil.rmtree(tmp, ignore_errors=True)
     print("self-test: no rows to tamper")
     return 2
@@ -273,6 +375,8 @@ def main():
     sub.add_parser("freeze")
     v = sub.add_parser("verify")
     v.add_argument("--quiet", action="store_true")
+    v.add_argument("--require-full", action="store_true",
+                   help="fail if any rows follow the signed prefix")
     pr = sub.add_parser("prove")
     pr.add_argument("--ts", required=True)
     sub.add_parser("self-test")

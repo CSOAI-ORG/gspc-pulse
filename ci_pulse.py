@@ -31,7 +31,7 @@ import swan_watch  # noqa: E402
 UA = {"User-Agent": "gspc-pulse-watcher/0.1 (permissionless reproduction)"}
 DOMAINS = [
     "councilof.ai", "safetyof.ai", "muckaway.ai", "grabhire.ai",
-    "templeman-opticians.com", "fishkeeper.ai", "csoai.org", "proofof.ai",
+    "templeman-opticians.com", "fishkeeper.ai", "csoai.org", "meok.ai", "proofof.ai",
     "suicidestop.ai", "planthire.ai", "haulage.app", "koikeeper.ai",
     "diyhelp.ai", "loopfactory.ai", "pokerhud.ai", "industrial-hire-ai.com",
     "industrial-domains.com", "asisecurity-portal.com", "optomobile.ai",

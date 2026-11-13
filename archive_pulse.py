@@ -154,7 +154,7 @@ def build_feeds():
 - [HOW-TO-VERIFY.md](https://councilof.ai/signed/HOW-TO-VERIFY.md): pinned-key Ed25519 card verification
 - [gspc-verify](https://councilof.ai/gspc-verify): verify any signed card in the browser
 - [verification-log.jsonl](verification-log.jsonl): our verification cadence — head-card verdicts, inclusion sweeps, anchor states, each with ts + content sha256
-- pulse_freeze.py: the series itself is frozen — canonical row shas, hash-chain, Merkle root, Ed25519-signed manifest (`verify` / `prove --ts` / `self-test`); lane key, trust anchor = this repo's git history
+- pulse_freeze.py: verifies the Ed25519-signed prefix (`verify` / `prove --ts` / `self-test`); later public-watcher rows are an unsigned tail, explicitly reported and never proved; use `verify --require-full` to reject any tail; lane key trust anchor = this repo's git history
 - [RECONCILIATION.md](RECONCILIATION.md): declared vs carried vs store, frozen-framing vs live, anchoring gaps — measuring the measurer
 
 ## Reproduce (be a node)
@@ -318,7 +318,8 @@ def main():
     rows.sort(key=lambda r: r.get("ts") or "")
     write_csv(rows)
     build_feeds()
-    # freeze the series (chain + merkle + signature) so every append ends frozen
+    # The canonical runner freezes the signed prefix after append. The public
+    # HTTP watcher does not invoke this path because it has no private lane key.
     import subprocess
     try:
         rf = subprocess.run(

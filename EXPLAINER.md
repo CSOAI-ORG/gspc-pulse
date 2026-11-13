@@ -5,9 +5,10 @@
 ask for evidence. Users get marketing.
 
 **The idea.** Measure public facts about AI safety and security **on a
-schedule, from public sources, with no special access** — and make every
-measurement verifiable by anyone, forever. Like flight recorders, or
-Certificate Transparency for websites — but for AI safety.
+schedule, from public sources, with no special access** — publish a signed
+prefix anyone can verify, and label later observations that have not yet been
+signed. Like flight recorders and Certificate Transparency for websites — but
+for AI safety.
 
 **What we measure.** The GSPC board (34 axes: how model fleets handle
 safety, care, governance, jailbreaks…), the measurement-capsule index
@@ -16,10 +17,12 @@ KEV) with the odds it spreads (EPSS), the open-source model ecosystem
 (trending + brand-new releases), the health of the MCP/x402/A2A agent
 ecosystems, and 20 estate verticals' live endpoints.
 
-**The trick that makes it trustworthy.** Every measurement is hashed and
-chained; the chain is Merkle-rooted; the root is **Ed25519-signed**. Change
-one old number and the maths breaks publicly. You can check this yourself
-in one command — from the public mirror, without our repo, without our keys.
+**The trick that makes it verifiable.** The canonical runner hashes and
+chains each row, Merkle-roots the series and signs a precise prefix with
+Ed25519. The hourly public watcher has no signing key, so later observations
+are explicitly an unsigned tail. The verifier reports the signed-prefix
+boundary; it never calls the tail signed. Change a signed row and verification
+fails. Anyone can check the signed prefix from the public mirror.
 
 **The humans.** Every alert that matters becomes a **change request a human
 must approve** (in the estate's busabase workspace). Five independent
@@ -32,7 +35,7 @@ zero. Numbers without a timestamp are not ours.
 
 **For you, specifically:**
 - *Curious?* Read the daily findings (daily/LATEST.md) — plain language.
-- *An engineer?* `latest.json` → `feed.json`; verify with `pulse_freeze.py`.
+- *An engineer?* `latest.json` → `feed.json`; run `pulse_freeze.py verify` to check the signed prefix and identify any unsigned tail.
 - *A regulator?* The obligation index maps measurements to DORA/CRA/ISO/EU
   AI Act articles, with `counsel_confirmed` reported honestly.
 - *A gamer?* The games ARE the instruments — see games.md.
