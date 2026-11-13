@@ -1,34 +1,94 @@
 # Evidence Pack — GSPC Live Pulse (rolling latest)
 
 **Cite as:** GSPC live pulse — CSOAI / Council of AI (councilof.ai), CC BY 4.0.
-**Snapshot:** 2026-11-07T12:06:40Z UTC · series: 21 rows since 2026-11-03.
+**Snapshot:** 2026-11-13T02:11:01Z UTC · series: 25 rows since 2026-11-03.
 
 Measurement, not endorsement; never a certification. Every value below was
-fetched LIVE at 2026-11-07T12:06:40Z and is traceable to its source surface at that moment.
+fetched LIVE at 2026-11-13T02:11:01Z and is traceable to its source surface at that moment.
 
 ## Frozen layer
 - GSPC board: 34 measured of 34 slots · separated leads 0 · ties 7 · untested 7
 - Capsule index: 11529 capsules (as_of 2026-11-01T08:30:40Z)
-- Public root: 428 cards (as_of 2026-11-01T15:09:42Z)
-- Signed cards: 335 declared / 336 in store (two labelled numbers)
-- CISA KEV: 1769 entries (released 2026-11-06T19:44:45.1797Z)
+- Public root: 442 cards (as_of 2026-11-07T20:54:37Z)
+- Signed cards: 335 declared / 335 in store (two labelled numbers)
+- CISA KEV: 1779 entries (released 2026-11-10T19:03:29.8375Z)
 
 ## Estate liveness (first-hop status codes)
-—
+- asisecurity-portal.com: `ERR`
+- councilof.ai: `200`
+- csoai.org: `308`
+- diyhelp.ai: `200`
+- fishkeeper.ai: `200`
+- grabhire.ai: `200`
+- haulage.app: `200`
+- industrial-domains.com: `ERR`
+- industrial-hire-ai.com: `ERR`
+- koikeeper.ai: `200`
+- loopfactory.ai: `200`
+- muckaway.ai: `200`
+- optomobile.ai: `ERR`
+- planthire.ai: `200`
+- pokerhud.ai: `200`
+- proofof.ai: `301`
+- safetyof.ai: `200`
+- suicidestop.ai: `200`
+- templeman-opticians.com: `200`
 
 ## Full latest row
 ```json
 {
   "anchors": {
+    "as_of": "2026-10-28T08:53:00Z",
     "ots_state": "PENDING_CALENDAR_COMMITMENT",
     "rekor_state": "INCLUDED (inclusion proof verifies)",
     "xrpl_state": "PREPARED_NOT_SUBMITTED"
   },
   "board": {
     "measured": 34,
-    "separated": 0,
+    "separated_leads": 0,
     "slots": 34,
     "ties": 7,
+    "totals_keys": [
+      "axes",
+      "by_family",
+      "comparison_axes",
+      "count_grammar",
+      "externally_led_axes",
+      "fact_runs",
+      "financial_run_attestations",
+      "items",
+      "items_note",
+      "license",
+      "license_note",
+      "lid",
+      "mean_accuracy",
+      "mean_fleet_mean",
+      "mean_harm",
+      "mean_macro_f1",
+      "mean_note",
+      "mean_unparsed_rate",
+      "measured_axes",
+      "model_fleets",
+      "model_fleets_note",
+      "own_leaders_excluded",
+      "own_leaders_excluded_axes",
+      "own_model_exclusion_note",
+      "public_count",
+      "public_leader_count",
+      "quotable_axes",
+      "separated_leads",
+      "separation_public_count",
+      "separation_public_count_note",
+      "separation_scope_note",
+      "sweep_note",
+      "ties",
+      "uncarded_leader_note",
+      "uncarded_leaders_dropped",
+      "uncarded_leaders_dropped_axes",
+      "unmeasured_axes",
+      "untested_separations"
+    ],
+    "unmeasured": 0,
     "untested": 7
   },
   "capsules": {
@@ -38,36 +98,83 @@ fetched LIVE at 2026-11-07T12:06:40Z and is traceable to its source surface at t
   "cards": {
     "declared": 335,
     "head": "66856aca4a1f9390f0f51d89b8b96d984ab902852ed77b0254730758260ad1da",
-    "store": 336
+    "store": 335,
+    "store_source": "api_state.card_chain.bodies_verified_valid"
   },
-  "evidence": {
-    "corpus_as_of": "2026-11-01T15:09:42Z",
-    "dora_relevant": 529,
-    "signed_cards_total": 6016
+  "did": {
+    "key_ids": [
+      "did:web:csoai.org#board-attestation-1",
+      "did:web:csoai.org#card-attestation-1",
+      "did:web:csoai.org#card-attestation-2",
+      "did:web:csoai.org#estate-chain-1",
+      "did:web:csoai.org#gspc-board-22axis-2026",
+      "did:web:csoai.org#route-attestation-1",
+      "did:web:csoai.org#site-release-1"
+    ]
+  },
+  "domains": {
+    "codes": {
+      "asisecurity-portal.com": "ERR",
+      "councilof.ai": "200",
+      "csoai.org": "308",
+      "diyhelp.ai": "200",
+      "fishkeeper.ai": "200",
+      "grabhire.ai": "200",
+      "haulage.app": "200",
+      "industrial-domains.com": "ERR",
+      "industrial-hire-ai.com": "ERR",
+      "koikeeper.ai": "200",
+      "loopfactory.ai": "200",
+      "muckaway.ai": "200",
+      "optomobile.ai": "ERR",
+      "planthire.ai": "200",
+      "pokerhud.ai": "200",
+      "proofof.ai": "301",
+      "safetyof.ai": "200",
+      "suicidestop.ai": "200",
+      "templeman-opticians.com": "200"
+    }
   },
   "hf": {
-    "cohort_count": 29,
-    "fetched": "2026-11-04T03:00Z",
-    "fetched_trending": "2026-11-07T12:06:40Z",
+    "fetched": "2026-11-13T02:11Z",
     "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
-    "new_30d_downloads": 2528205,
-    "top_downloads": 180607757,
-    "top_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "new_30d_downloads": 3635772,
     "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-    "top_trending": "speridlabs/idol",
-    "trend_score": 711,
-    "trending_license_mix": {
-      "apache-2.0": 3,
-      "mit": 1,
-      "other": 5
+    "top_trending": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+    "trend_score": 2916
+  },
+  "interop": {
+    "mcp_trust": {
+      "as_of": "2026-11-09T13:18:09Z",
+      "auth_challenged_401_403": 252,
+      "dead_404_or_unreachable": 22,
+      "initialize_ok_open": 23,
+      "initialize_ok_tools_listed": 192,
+      "partial": true,
+      "registry_rows_seen": 2460,
+      "unique_hosts": 500
+    },
+    "x402_trust": {
+      "as_of": "2026-11-12T20:16:45Z",
+      "challenge_402": 99,
+      "dead_404_or_unreachable": 0,
+      "total": 100
     }
   },
   "kev": {
-    "count": 1769,
-    "epss_model": "v2026.06.15",
-    "epss_score_date": "2026-11-03T12:00:27Z",
-    "released": "2026-11-06T19:44:45.1797Z",
+    "count": 1779,
+    "released": "2026-11-10T19:03:29.8375Z",
     "top20": [
+      "CVE-2026-124194",
+      "CVE-2026-111793",
+      "CVE-2026-20320",
+      "CVE-2026-111560",
+      "CVE-2026-116606",
+      "CVE-2026-125350",
+      "CVE-2026-102895",
+      "CVE-2026-123158",
+      "CVE-2026-116779",
+      "CVE-2026-123218",
       "CVE-2026-19868",
       "CVE-2024-27834",
       "CVE-2026-119977",
@@ -77,100 +184,154 @@ fetched LIVE at 2026-11-07T12:06:40Z and is traceable to its source surface at t
       "CVE-2026-76418",
       "CVE-2026-41709",
       "CVE-2026-46300",
-      "CVE-2026-48356",
-      "CVE-2026-111497",
-      "CVE-2026-109618",
-      "CVE-2026-109619",
-      "CVE-2026-114625",
-      "CVE-2026-110447",
-      "CVE-2026-106931",
-      "CVE-2026-96656",
-      "CVE-2026-96655",
-      "CVE-2026-96654",
-      "CVE-2026-96652"
-    ],
-    "top5": [
+      "CVE-2026-48356"
+    ]
+  },
+  "meta": {
+    "kind": "public-surface-reproduction",
+    "runner": "github-actions"
+  },
+  "root": {
+    "as_of": "2026-11-07T20:54:37Z",
+    "card_count": 442
+  },
+  "swan": {
+    "cadence_last14": 15,
+    "cadence_prior14": 18,
+    "cadence_weekly": {
+      "2026-W36": 1,
+      "2026-W37": 14,
+      "2026-W38": 7,
+      "2026-W39": 12,
+      "2026-W40": 6,
+      "2026-W41": 5,
+      "2026-W42": 9,
+      "2026-W43": 8,
+      "2026-W44": 10,
+      "2026-W45": 3,
+      "2026-W46": 10
+    },
+    "catalog_total": 1779,
+    "cwe_top_recent": {
+      "CWE-1325": 2,
+      "CWE-287": 2,
+      "CWE-416": 3,
+      "CWE-755": 2,
+      "CWE-78": 3,
+      "CWE-824": 2
+    },
+    "perimeter_recent": [
       {
-        "cve": "CVE-2026-119977",
-        "cwes": [
-          "CWE-367"
-        ],
-        "due": "2026-11-06",
-        "due_days_left": 1,
-        "epss": 0.006,
-        "percentile": 0.48751,
-        "ransomware": false
-      },
-      {
-        "cve": "CVE-2026-118527",
-        "cwes": [
-          "CWE-340"
-        ],
+        "added": "2026-11-10",
+        "cve": "CVE-2026-116606",
         "due": "2026-11-13",
-        "due_days_left": 8,
-        "epss": null,
-        "percentile": null,
-        "ransomware": false
+        "epss": 0.08934,
+        "epss_date": "2026-11-12",
+        "epss_percentile": 0.95313,
+        "product": "Barracuda Email Security Gateway (ESG)",
+        "vendor": "Barracuda Networks"
       },
       {
+        "added": "2026-11-06",
+        "cve": "CVE-2026-19868",
+        "due": "2026-11-20",
+        "epss": 0.00532,
+        "epss_date": "2026-11-12",
+        "epss_percentile": 0.45457,
+        "product": "SonicOS SSLVPN",
+        "vendor": "SonicWall"
+      },
+      {
+        "added": "2026-10-30",
+        "cve": "CVE-2026-118527",
+        "due": "2026-11-13",
+        "epss": 0.00822,
+        "epss_date": "2026-11-12",
+        "epss_percentile": 0.57798,
+        "product": "Connect Secure",
+        "vendor": "Ivanti"
+      },
+      {
+        "added": "2026-10-30",
         "cve": "CVE-2026-111357",
-        "cwes": [
-          "CWE-306",
-          "CWE-862",
-          "CWE-345"
-        ],
         "due": "2026-11-02",
-        "due_days_left": -3,
         "epss": 0.00533,
-        "percentile": 0.45064,
-        "ransomware": false
+        "epss_date": "2026-11-12",
+        "epss_percentile": 0.45504,
+        "product": "Connect Secure",
+        "vendor": "Ivanti"
       },
       {
-        "cve": "CVE-2026-97229",
-        "cwes": [
-          "CWE-190"
-        ],
-        "due": "2026-11-01",
-        "due_days_left": -4,
-        "epss": 0.27692,
-        "percentile": 0.98089,
-        "ransomware": false
-      },
-      {
+        "added": "2026-10-29",
         "cve": "CVE-2026-76418",
-        "cwes": [
-          "CWE-690"
-        ],
         "due": "2026-11-01",
-        "due_days_left": -4,
         "epss": 0.00821,
-        "percentile": 0.57342,
-        "ransomware": false
+        "epss_date": "2026-11-12",
+        "epss_percentile": 0.57775,
+        "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
+        "vendor": "Cisco"
+      }
+    ],
+    "ransomware_flagged_recent": 0,
+    "ransomware_flagged_recent_cves": [],
+    "ransomware_sample": {
+      "claimed_today": 0,
+      "sample_size": 100,
+      "source_kind": "recent-100 leak-site sample, not a census",
+      "top_groups_sample": {
+        "Booba Project": 6,
+        "Curious Worm": 10,
+        "incransom": 5,
+        "interlock": 9,
+        "thegentlemen": 22
+      },
+      "window_first": "2026-11-09",
+      "window_last": "2026-11-12"
+    },
+    "ransomware_share_pct": 20.3,
+    "shortest_due_windows": [
+      {
+        "added": "2025-09-25",
+        "cve": "CVE-2025-20362",
+        "days": 1,
+        "product": "Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense",
+        "ransomware": "Unknown",
+        "vendor": "Cisco"
+      },
+      {
+        "added": "2025-09-25",
+        "cve": "CVE-2025-20333",
+        "days": 1,
+        "product": "Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense",
+        "ransomware": "Unknown",
+        "vendor": "Cisco"
+      },
+      {
+        "added": "2025-07-22",
+        "cve": "CVE-2025-49704",
+        "days": 1,
+        "product": "SharePoint",
+        "ransomware": "Known",
+        "vendor": "Microsoft"
+      },
+      {
+        "added": "2025-07-22",
+        "cve": "CVE-2025-49706",
+        "days": 1,
+        "product": "SharePoint",
+        "ransomware": "Known",
+        "vendor": "Microsoft"
+      },
+      {
+        "added": "2025-07-20",
+        "cve": "CVE-2025-53770",
+        "days": 1,
+        "product": "SharePoint",
+        "ransomware": "Known",
+        "vendor": "Microsoft"
       }
     ]
   },
-  "mcp": {
-    "answered": 210,
-    "as_of": "2026-11-02T12:50:46Z",
-    "auth_challenged": 253,
-    "enumerated": 500,
-    "partial": true,
-    "tools_total": 1818,
-    "unreachable": 24
-  },
-  "root": {
-    "as_of": "2026-11-01T15:09:42Z",
-    "card_count": 428
-  },
-  "ts": "2026-11-07T12:06:40Z",
-  "writer": "gspc-live-zcode",
-  "x402": {
-    "as_of": "2026-11-03T23:37:58Z",
-    "challenge_402": 100,
-    "financial_ok": 15,
-    "financial_probed": 16,
-    "financial_unreachable": 1,
-    "total": 100
-  }
+  "ts": "2026-11-13T02:11:01Z"
 }
 ```

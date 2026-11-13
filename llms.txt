@@ -3,7 +3,7 @@
 > Autonomous, append-only, multi-runner time series of LIVE measurements from
 > public surfaces (GSPC board, measurement capsules, signed cards, public root,
 > HuggingFace, CISA KEV + EPSS, DID keys, domain liveness, MCP/x402/ecosystem
-> censuses). 23 rows since 2026-11-03, committed to git (tamper-evident).
+> censuses). 25 rows since 2026-11-03, committed to git (tamper-evident).
 > CC-BY-4.0 — reuse freely with attribution. Measurement, not endorsement; never a
 > certification.
 
