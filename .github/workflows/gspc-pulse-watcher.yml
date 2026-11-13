@@ -48,12 +48,12 @@ jobs:
               ;;
           esac
       - name: Rebuild and validate derived reporting
-        if: steps.pulse.outputs.changed == "true"
+        if: \${{ fromJSON(steps.pulse.outputs.changed) }}
         run: |
           python lane_reports.py
           python lane_reports.py --validate
       - name: Commit frozen deltas and derived surfaces
-        if: steps.pulse.outputs.changed == "true"
+        if: \${{ fromJSON(steps.pulse.outputs.changed) }}
         shell: bash
         run: |
           set -euo pipefail
