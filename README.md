@@ -71,6 +71,11 @@ every row is self-describing about how fresh its numbers are.
 | an agent / LLM | `llms.txt` (discovery) → `latest.json` (one GET) → `feed.json` (history) |
 | an analyst | `timeseries.csv` — flat counters, pandas/R ready |
 | a dataset consumer | [Hugging Face dataset](https://huggingface.co/datasets/csoai/gspc-pulse) — JSONL and CSV viewer configs |
+
+The Hugging Face mirror is published hourly by the Council of AI repository's
+`gspc-pulse-hf-mirror.yml` workflow, using its existing repository-scoped
+credential. This data-source repository intentionally stores no Hugging Face
+secret. The publisher skips unchanged source revisions.
 | a verifier / auditor | `RECONCILIATION.md` + `verification-log.jsonl` + `PULSE-NODE.md` (run your own node) |
 | a compliance officer | `feed.json` ecosystem blocks (`mcp`/`x402`/`evidence`) + DORA-relevant signed cards |
 | a security responder | `watch/` reports + `kev.top5` EPSS/CWE/due-date joins in `feed.json` |

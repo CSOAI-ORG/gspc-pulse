@@ -66,6 +66,7 @@ public watcher is independent HTTP reproduction, not an authoritative GSPC
 measurement or a model inference run.
 
 - Source code and public history: https://github.com/CSOAI-ORG/gspc-pulse
+- Automated mirror publisher: `CSOAI-ORG/councilof-ai` workflow `gspc-pulse-hf-mirror.yml` (hourly, idempotent, using the Council repository's existing HF credential; no token is stored in this source repository)
 - GSPC verification: https://councilof.ai/gspc-verify
 - Live board: https://councilof.ai/api/gspc
 - Measurement capsules: https://councilof.ai/measurement-capsules/latest.json
