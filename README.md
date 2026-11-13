@@ -85,9 +85,16 @@ GitHub Actions watcher has no private signing key; it may append later public-
 HTTP observations after that prefix. Those later rows are an **unsigned tail**,
 not covered by the signature and not presented as verified.
 
-Verify the boundary yourself: `python3 pulse_freeze.py verify` validates the
-signed prefix and reports the unsigned tail; `python3 pulse_freeze.py verify
---require-full` fails unless every row is signed. `prove --ts <ts>` only proves
+Verify the boundary yourself (requires the `cryptography` package):
+
+```bash
+python3 -m pip install cryptography
+python3 pulse_freeze.py verify
+python3 pulse_freeze.py verify --require-full
+```
+
+`verify` validates the signed prefix and reports the unsigned tail;
+`--require-full` fails unless every row is signed. `prove --ts <ts>` only proves
 a timestamp inside the signed prefix. The verifier's self-test tampers with a
 signed row and must fail. **Trust anchor:** the public key rides in the
 manifest; the private key never enters this repo (it lives in the pulse state

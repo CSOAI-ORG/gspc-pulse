@@ -46,6 +46,7 @@ the current signed-prefix and unsigned-tail counts.
 Verify the signed prefix using the source repository's `pulse_freeze.py`:
 
 ```bash
+python3 -m pip install cryptography
 python3 pulse_freeze.py verify
 python3 pulse_freeze.py prove --ts 2026-11-07T12:06:40Z
 ```
