@@ -104,12 +104,12 @@
       }
     },
     "hf": {
-      "fetched": "2026-11-13T21:58Z",
+      "fetched": "2026-11-14T10:21Z",
       "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
-      "new_30d_downloads": 3756059,
+      "new_30d_downloads": 3983957,
       "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "top_trending": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-      "trend_score": 3225
+      "trend_score": 4372
     },
     "interop": {
       "mcp_trust": {
@@ -123,9 +123,9 @@
         "unique_hosts": 500
       },
       "x402_trust": {
-        "as_of": "2026-11-13T19:57:14Z",
-        "challenge_402": 96,
-        "dead_404_or_unreachable": 1,
+        "as_of": "2026-11-14T06:53:10Z",
+        "challenge_402": 99,
+        "dead_404_or_unreachable": 0,
         "total": 100
       }
     },
@@ -160,14 +160,13 @@
       "runner": "github-actions"
     },
     "root": {
-      "as_of": "2026-11-13T12:35:42Z",
-      "card_count": 452
+      "as_of": "2026-11-13T22:37:46Z",
+      "card_count": 453
     },
     "swan": {
-      "cadence_last14": 17,
+      "cadence_last14": 15,
       "cadence_prior14": 18,
       "cadence_weekly": {
-        "2026-W36": 1,
         "2026-W37": 14,
         "2026-W38": 7,
         "2026-W39": 12,
@@ -184,7 +183,7 @@
         "CWE-287": 2,
         "CWE-416": 3,
         "CWE-755": 2,
-        "CWE-78": 3,
+        "CWE-78": 2,
         "CWE-824": 2,
         "CWE-862": 2
       },
@@ -243,18 +242,18 @@
       "ransomware_flagged_recent": 0,
       "ransomware_flagged_recent_cves": [],
       "ransomware_sample": {
-        "claimed_today": 8,
+        "claimed_today": 2,
         "sample_size": 100,
         "source_kind": "recent-100 leak-site sample, not a census",
         "top_groups_sample": {
           "Booba Project": 6,
-          "Curious Worm": 10,
+          "Curious Worm": 12,
           "akira": 6,
-          "interlock": 9,
+          "play": 6,
           "thegentlemen": 22
         },
         "window_first": "2026-11-10",
-        "window_last": "2026-11-13"
+        "window_last": "2026-11-14"
       },
       "ransomware_share_pct": 20.3,
       "shortest_due_windows": [
@@ -300,6 +299,6 @@
         }
       ]
     },
-    "ts": "2026-11-13T21:58:18Z"
+    "ts": "2026-11-14T10:21:04Z"
   }
 }
