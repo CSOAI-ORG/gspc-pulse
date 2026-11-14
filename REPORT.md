@@ -6,7 +6,7 @@ _Regenerated every pulse. Measurement, not endorsement; never a certification. L
 - Fluid layers carried: interop-census, swan-scan
 - Latest: **2026-11-13T21:58:18Z**
 - Alert cards (frozen deltas): **12**
-- Verification log entries: **28**
+- Verification log entries: **29**
 - Domains OK (2xx first-hop): **14 / 20**
 
 ## Frozen-delta timeline (latest 12)
@@ -57,9 +57,9 @@ _Regenerated every pulse. Measurement, not endorsement; never a certification. L
 
 ## Verification cadence (latest 6)
 
-- `2026-11-08T04:02:52Z` — federation_row m4-node first ro: **ACCEPTED**
 - `2026-11-08T04:34:28Z` — distribution github release v: **LIVE**
 - `2026-11-08T04:34:28Z` — distribution web.archive.org : **CAPTURED**
 - `2026-11-08T04:34:28Z` — distribution gist CSOAI-ORG/e: **LIVE**
 - `2026-11-08T04:34:28Z` — distribution mcp registry pub: **PAYLOAD_READY_OWNER_DNS**
 - `2026-11-13T02:11:06Z` — verify_root_full public-root.json: **VALID**
+- `2026-11-14T02:26:11Z` — verify_root_full public-root.json: **VALID**
