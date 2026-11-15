@@ -2,18 +2,15 @@
 
 _Regenerated every pulse. Measurement, not endorsement; never a certification. License CC BY 4.0._
 
-- Rows: **31** (runners: canonical×3, github-actions×7, gspc-live-zcode×5, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
+- Rows: **32** (runners: canonical×3, github-actions×8, gspc-live-zcode×5, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
 - Fluid layers carried: interop-census, swan-scan
-- Latest: **2026-11-15T01:52:49Z**
-- Alert cards (frozen deltas): **15**
+- Latest: **2026-11-15T09:20:38Z**
+- Alert cards (frozen deltas): **16**
 - Verification log entries: **30**
 - Domains OK (2xx first-hop): **14 / 20**
 
 ## Frozen-delta timeline (latest 12)
 
-- `2026-11-04T03:14:05Z` — board_separated: 0 → **null**
-- `2026-11-04T03:14:05Z` — cards_store: 336 → **335**
-- `2026-11-04T03:14:05Z` — did_key_ids: null → **["did:web:csoai.org#board-attestation-1", "did:w**
 - `2026-11-04T03:14:05Z` — board_separated: 0 → **null**
 - `2026-11-04T03:14:05Z` — cards_store: 336 → **335**
 - `2026-11-04T03:14:05Z` — did_key_ids: null → **["did:web:csoai.org#board-attestation-1", "did:w**
@@ -51,6 +48,8 @@ _Regenerated every pulse. Measurement, not endorsement; never a certification. L
 - `2026-11-14T21:27:32Z` — root_card_count: 453 → **452**
 - `2026-11-15T01:52:49Z` — root_as_of: "2026-11-14T11:27:30Z" → **"2026-11-14T18:01:08Z"**
 - `2026-11-15T01:52:49Z` — root_card_count: 452 → **454**
+- `2026-11-15T09:20:38Z` — root_as_of: "2026-11-14T18:01:08Z" → **"2026-11-14T22:23:43Z"**
+- `2026-11-15T09:20:38Z` — root_card_count: 454 → **453**
 
 ## Verification cadence (latest 6)
 
