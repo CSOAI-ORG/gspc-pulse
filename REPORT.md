@@ -2,20 +2,15 @@
 
 _Regenerated every pulse. Measurement, not endorsement; never a certification. License CC BY 4.0._
 
-- Rows: **30** (runners: canonical×3, github-actions×6, gspc-live-zcode×5, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
+- Rows: **31** (runners: canonical×3, github-actions×7, gspc-live-zcode×5, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
 - Fluid layers carried: interop-census, swan-scan
-- Latest: **2026-11-14T21:27:32Z**
-- Alert cards (frozen deltas): **14**
-- Verification log entries: **29**
+- Latest: **2026-11-15T01:52:49Z**
+- Alert cards (frozen deltas): **15**
+- Verification log entries: **30**
 - Domains OK (2xx first-hop): **14 / 20**
 
 ## Frozen-delta timeline (latest 12)
 
-- `2026-11-03T12:06:01Z` — board_separated: null → **0**
-- `2026-11-03T12:06:01Z` — cards_store: 335 → **336**
-- `2026-11-03T12:06:01Z` — did_key_ids: ["did:web:csoai.org#board-attestation-1", "did:w → **null**
-- `2026-11-03T12:06:01Z` — hf_top_new_30d: null → **"ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GG**
-- `2026-11-03T12:06:01Z` — hf_top_trending: null → **"LiquidAI/LFM3-1.7B"**
 - `2026-11-04T03:14:05Z` — board_separated: 0 → **null**
 - `2026-11-04T03:14:05Z` — cards_store: 336 → **335**
 - `2026-11-04T03:14:05Z` — did_key_ids: null → **["did:web:csoai.org#board-attestation-1", "did:w**
@@ -54,12 +49,14 @@ _Regenerated every pulse. Measurement, not endorsement; never a certification. L
 - `2026-11-14T10:21:04Z` — root_card_count: 452 → **453**
 - `2026-11-14T21:27:32Z` — root_as_of: "2026-11-13T22:37:46Z" → **"2026-11-14T11:27:30Z"**
 - `2026-11-14T21:27:32Z` — root_card_count: 453 → **452**
+- `2026-11-15T01:52:49Z` — root_as_of: "2026-11-14T11:27:30Z" → **"2026-11-14T18:01:08Z"**
+- `2026-11-15T01:52:49Z` — root_card_count: 452 → **454**
 
 ## Verification cadence (latest 6)
 
-- `2026-11-08T04:34:28Z` — distribution github release v: **LIVE**
 - `2026-11-08T04:34:28Z` — distribution web.archive.org : **CAPTURED**
 - `2026-11-08T04:34:28Z` — distribution gist CSOAI-ORG/e: **LIVE**
 - `2026-11-08T04:34:28Z` — distribution mcp registry pub: **PAYLOAD_READY_OWNER_DNS**
 - `2026-11-13T02:11:06Z` — verify_root_full public-root.json: **VALID**
 - `2026-11-14T02:26:11Z` — verify_root_full public-root.json: **VALID**
+- `2026-11-15T01:52:56Z` — verify_root_full public-root.json: **VALID**

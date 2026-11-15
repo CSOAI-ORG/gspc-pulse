@@ -26,4 +26,4 @@ _finding: shown, never silently reconciled. Measurement, not endorsement._
 
 ## Public-root verification (independent, full recompute)
 
-- Latest: **VALID** at `2026-11-14T02:26:11Z` · {"leaves": 452, "levels": 9, "published": "00985d9a6ec3193f18242b15e8db9d075fd74b77459f4d17f04669fd692ff7e0", "recomputed": "00985d9a6ec3193f18242b15e8db9d075fd74b77459f4d17f04669f
+- Latest: **VALID** at `2026-11-15T01:52:56Z` · {"leaves": 454, "levels": 9, "published": "730061079e466d04bc6d47bb425bbfea6210aab1e7016a0a04d8c8fabdec94b2", "recomputed": "730061079e466d04bc6d47bb425bbfea6210aab1e7016a0a04d8c8f

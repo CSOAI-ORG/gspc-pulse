@@ -1,15 +1,15 @@
 # Evidence Pack — GSPC Live Pulse (rolling latest)
 
 **Cite as:** GSPC live pulse — CSOAI / Council of AI (councilof.ai), CC BY 4.0.
-**Snapshot:** 2026-11-14T21:27:32Z UTC · series: 30 rows since 2026-11-03.
+**Snapshot:** 2026-11-15T01:52:49Z UTC · series: 31 rows since 2026-11-03.
 
 Measurement, not endorsement; never a certification. Every value below was
-fetched LIVE at 2026-11-14T21:27:32Z and is traceable to its source surface at that moment.
+fetched LIVE at 2026-11-15T01:52:49Z and is traceable to its source surface at that moment.
 
 ## Frozen layer
 - GSPC board: 34 measured of 34 slots · separated leads 0 · ties 7 · untested 7
 - Capsule index: 11529 capsules (as_of 2026-11-01T08:30:40Z)
-- Public root: 452 cards (as_of 2026-11-14T11:27:30Z)
+- Public root: 454 cards (as_of 2026-11-14T18:01:08Z)
 - Signed cards: 335 declared / 335 in store (two labelled numbers)
 - CISA KEV: 1781 entries (released 2026-11-13T20:24:18.3008Z)
 
@@ -138,12 +138,12 @@ fetched LIVE at 2026-11-14T21:27:32Z and is traceable to its source surface at t
     }
   },
   "hf": {
-    "fetched": "2026-11-14T21:27Z",
+    "fetched": "2026-11-15T01:52Z",
     "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
     "new_30d_downloads": 3983957,
     "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
     "top_trending": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-    "trend_score": 4344
+    "trend_score": 4296
   },
   "interop": {
     "mcp_trust": {
@@ -157,7 +157,7 @@ fetched LIVE at 2026-11-14T21:27:32Z and is traceable to its source surface at t
       "unique_hosts": 500
     },
     "x402_trust": {
-      "as_of": "2026-11-14T18:24:58Z",
+      "as_of": "2026-11-14T22:40:08Z",
       "challenge_402": 99,
       "dead_404_or_unreachable": 0,
       "total": 100
@@ -194,8 +194,8 @@ fetched LIVE at 2026-11-14T21:27:32Z and is traceable to its source surface at t
     "runner": "github-actions"
   },
   "root": {
-    "as_of": "2026-11-14T11:27:30Z",
-    "card_count": 452
+    "as_of": "2026-11-14T18:01:08Z",
+    "card_count": 454
   },
   "swan": {
     "cadence_last14": 15,
@@ -319,6 +319,6 @@ fetched LIVE at 2026-11-14T21:27:32Z and is traceable to its source surface at t
       }
     ]
   },
-  "ts": "2026-11-14T21:27:32Z"
+  "ts": "2026-11-15T01:52:49Z"
 }
 ```
