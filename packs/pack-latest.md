@@ -1,10 +1,10 @@
 # Evidence Pack — GSPC Live Pulse (rolling latest)
 
 **Cite as:** GSPC live pulse — CSOAI / Council of AI (councilof.ai), CC BY 4.0.
-**Snapshot:** 2026-11-15T09:20:38Z UTC · series: 32 rows since 2026-11-03.
+**Snapshot:** 2026-11-17T03:50:01Z UTC · series: 33 rows since 2026-11-03.
 
 Measurement, not endorsement; never a certification. Every value below was
-fetched LIVE at 2026-11-15T09:20:38Z and is traceable to its source surface at that moment.
+fetched LIVE at 2026-11-17T03:50:01Z and is traceable to its source surface at that moment.
 
 ## Frozen layer
 - GSPC board: 34 measured of 34 slots · separated leads 0 · ties 7 · untested 7
@@ -109,6 +109,7 @@ fetched LIVE at 2026-11-15T09:20:38Z and is traceable to its source surface at t
       "did:web:csoai.org#card-attestation-2",
       "did:web:csoai.org#estate-chain-1",
       "did:web:csoai.org#gspc-board-22axis-2026",
+      "did:web:csoai.org#layer0-attestation-1",
       "did:web:csoai.org#route-attestation-1",
       "did:web:csoai.org#site-release-1"
     ]
@@ -138,12 +139,12 @@ fetched LIVE at 2026-11-15T09:20:38Z and is traceable to its source surface at t
     }
   },
   "hf": {
-    "fetched": "2026-11-15T09:20Z",
+    "fetched": "2026-11-17T03:50Z",
     "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
-    "new_30d_downloads": 3983957,
+    "new_30d_downloads": 4238563,
     "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
     "top_trending": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-    "trend_score": 4230
+    "trend_score": 3013.5
   },
   "interop": {
     "mcp_trust": {
@@ -157,9 +158,9 @@ fetched LIVE at 2026-11-15T09:20:38Z and is traceable to its source surface at t
       "unique_hosts": 500
     },
     "x402_trust": {
-      "as_of": "2026-11-15T06:58:00Z",
-      "challenge_402": 98,
-      "dead_404_or_unreachable": 0,
+      "as_of": "2026-11-16T22:25:57Z",
+      "challenge_402": 78,
+      "dead_404_or_unreachable": 17,
       "total": 100
     }
   },
@@ -214,11 +215,11 @@ fetched LIVE at 2026-11-15T09:20:38Z and is traceable to its source surface at t
     },
     "catalog_total": 1781,
     "cwe_top_recent": {
+      "CWE-140": 1,
       "CWE-287": 2,
-      "CWE-416": 3,
-      "CWE-755": 2,
+      "CWE-356": 1,
+      "CWE-732": 1,
       "CWE-78": 2,
-      "CWE-824": 2,
       "CWE-862": 2
     },
     "perimeter_recent": [
@@ -227,8 +228,8 @@ fetched LIVE at 2026-11-15T09:20:38Z and is traceable to its source surface at t
         "cve": "CVE-2026-116606",
         "due": "2026-11-13",
         "epss": 0.10947,
-        "epss_date": "2026-11-14",
-        "epss_percentile": 0.95956,
+        "epss_date": "2026-11-16",
+        "epss_percentile": 0.95957,
         "product": "Barracuda Email Security Gateway (ESG)",
         "vendor": "Barracuda Networks"
       },
@@ -237,8 +238,8 @@ fetched LIVE at 2026-11-15T09:20:38Z and is traceable to its source surface at t
         "cve": "CVE-2026-19868",
         "due": "2026-11-20",
         "epss": 0.00532,
-        "epss_date": "2026-11-14",
-        "epss_percentile": 0.45539,
+        "epss_date": "2026-11-16",
+        "epss_percentile": 0.45527,
         "product": "SonicOS SSLVPN",
         "vendor": "SonicWall"
       },
@@ -247,8 +248,8 @@ fetched LIVE at 2026-11-15T09:20:38Z and is traceable to its source surface at t
         "cve": "CVE-2026-118527",
         "due": "2026-11-13",
         "epss": 0.00822,
-        "epss_date": "2026-11-14",
-        "epss_percentile": 0.57883,
+        "epss_date": "2026-11-16",
+        "epss_percentile": 0.57886,
         "product": "Connect Secure",
         "vendor": "Ivanti"
       },
@@ -257,8 +258,8 @@ fetched LIVE at 2026-11-15T09:20:38Z and is traceable to its source surface at t
         "cve": "CVE-2026-111357",
         "due": "2026-11-02",
         "epss": 0.00533,
-        "epss_date": "2026-11-14",
-        "epss_percentile": 0.45585,
+        "epss_date": "2026-11-16",
+        "epss_percentile": 0.45573,
         "product": "Connect Secure",
         "vendor": "Ivanti"
       },
@@ -267,8 +268,8 @@ fetched LIVE at 2026-11-15T09:20:38Z and is traceable to its source surface at t
         "cve": "CVE-2026-76418",
         "due": "2026-11-01",
         "epss": 0.00821,
-        "epss_date": "2026-11-14",
-        "epss_percentile": 0.57859,
+        "epss_date": "2026-11-16",
+        "epss_percentile": 0.57862,
         "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
         "vendor": "Cisco"
       }
@@ -280,14 +281,14 @@ fetched LIVE at 2026-11-15T09:20:38Z and is traceable to its source surface at t
       "sample_size": 100,
       "source_kind": "recent-100 leak-site sample, not a census",
       "top_groups_sample": {
-        "Curious Worm": 12,
-        "akira": 6,
-        "play": 6,
-        "qilin": 4,
-        "thegentlemen": 22
+        "Curious Worm": 4,
+        "N0n": 13,
+        "PixelLeaks": 23,
+        "ShadowByt3$": 5,
+        "qilin": 20
       },
-      "window_first": "2026-11-10",
-      "window_last": "2026-11-14"
+      "window_first": "2026-11-13",
+      "window_last": "2026-11-16"
     },
     "ransomware_share_pct": 20.3,
     "shortest_due_windows": [
@@ -333,6 +334,6 @@ fetched LIVE at 2026-11-15T09:20:38Z and is traceable to its source surface at t
       }
     ]
   },
-  "ts": "2026-11-15T09:20:38Z"
+  "ts": "2026-11-17T03:50:01Z"
 }
 ```
