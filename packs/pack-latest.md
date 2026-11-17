@@ -1,10 +1,10 @@
 # Evidence Pack — GSPC Live Pulse (rolling latest)
 
 **Cite as:** GSPC live pulse — CSOAI / Council of AI (councilof.ai), CC BY 4.0.
-**Snapshot:** 2026-11-17T03:50:01Z UTC · series: 33 rows since 2026-11-03.
+**Snapshot:** 2026-11-17T13:20:22Z UTC · series: 34 rows since 2026-11-03.
 
 Measurement, not endorsement; never a certification. Every value below was
-fetched LIVE at 2026-11-17T03:50:01Z and is traceable to its source surface at that moment.
+fetched LIVE at 2026-11-17T13:20:22Z and is traceable to its source surface at that moment.
 
 ## Frozen layer
 - GSPC board: 34 measured of 34 slots · separated leads 0 · ties 7 · untested 7
@@ -139,12 +139,12 @@ fetched LIVE at 2026-11-17T03:50:01Z and is traceable to its source surface at t
     }
   },
   "hf": {
-    "fetched": "2026-11-17T03:50Z",
+    "fetched": "2026-11-17T13:20Z",
     "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
-    "new_30d_downloads": 4238563,
+    "new_30d_downloads": 4322841,
     "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-    "top_trending": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-    "trend_score": 3013.5
+    "top_trending": "MiniMaxAI/MiniMax-H3-Image",
+    "trend_score": 1149
   },
   "interop": {
     "mcp_trust": {
@@ -158,9 +158,9 @@ fetched LIVE at 2026-11-17T03:50:01Z and is traceable to its source surface at t
       "unique_hosts": 500
     },
     "x402_trust": {
-      "as_of": "2026-11-16T22:25:57Z",
-      "challenge_402": 78,
-      "dead_404_or_unreachable": 17,
+      "as_of": "2026-11-17T08:19:07Z",
+      "challenge_402": 81,
+      "dead_404_or_unreachable": 1,
       "total": 100
     }
   },
@@ -277,18 +277,18 @@ fetched LIVE at 2026-11-17T03:50:01Z and is traceable to its source surface at t
     "ransomware_flagged_recent": 0,
     "ransomware_flagged_recent_cves": [],
     "ransomware_sample": {
-      "claimed_today": 0,
+      "claimed_today": 12,
       "sample_size": 100,
       "source_kind": "recent-100 leak-site sample, not a census",
       "top_groups_sample": {
-        "Curious Worm": 4,
         "N0n": 13,
-        "PixelLeaks": 23,
+        "PixelLeaks": 24,
         "ShadowByt3$": 5,
-        "qilin": 20
+        "Vortex": 9,
+        "qilin": 19
       },
-      "window_first": "2026-11-13",
-      "window_last": "2026-11-16"
+      "window_first": "2026-11-15",
+      "window_last": "2026-11-17"
     },
     "ransomware_share_pct": 20.3,
     "shortest_due_windows": [
@@ -334,6 +334,6 @@ fetched LIVE at 2026-11-17T03:50:01Z and is traceable to its source surface at t
       }
     ]
   },
-  "ts": "2026-11-17T03:50:01Z"
+  "ts": "2026-11-17T13:20:22Z"
 }
 ```
