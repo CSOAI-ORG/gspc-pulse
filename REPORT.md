@@ -2,19 +2,15 @@
 
 _Regenerated every pulse. Measurement, not endorsement; never a certification. License CC BY 4.0._
 
-- Rows: **37** (runners: canonical×3, github-actions×12, gspc-live-zcode×6, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
+- Rows: **39** (runners: canonical×3, github-actions×13, gspc-live-zcode×7, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
 - Fluid layers carried: interop-census, swan-scan
-- Latest: **2026-11-20T12:08:13Z**
-- Alert cards (frozen deltas): **20**
+- Latest: **2026-11-20T18:07:30Z**
+- Alert cards (frozen deltas): **21**
 - Verification log entries: **34**
 - Domains OK (2xx first-hop): **14 / 20**
 
 ## Frozen-delta timeline (latest 12)
 
-- `2026-11-07T12:06:40Z` — board_separated: null → **0**
-- `2026-11-07T12:06:40Z` — cards_store: 335 → **336**
-- `2026-11-07T12:06:40Z` — hf_top_id: null → **"sentence-transformers/all-MiniLM-L6-v2"**
-- `2026-11-07T12:06:40Z` — hf_top_trending: "moonshotai/Kimi-K3.1-Pro" → **"speridlabs/idol"**
 - `2026-11-13T02:11:01Z` — anchors.ots_state: null → **"PENDING_CALENDAR_COMMITMENT"**
 - `2026-11-13T02:11:01Z` — anchors.rekor_state: null → **"INCLUDED (inclusion proof verifies)"**
 - `2026-11-13T02:11:01Z` — anchors.xrpl_state: null → **"PREPARED_NOT_SUBMITTED"**
@@ -47,6 +43,9 @@ _Regenerated every pulse. Measurement, not endorsement; never a certification. L
 - `2026-11-20T12:08:13Z` — cards_store: 336 → **335**
 - `2026-11-20T12:08:13Z` — hf_top_id: "sentence-transformers/all-MiniLM-L6-v2" → **null**
 - `2026-11-20T12:08:13Z` — hf_top_new_30d: null → **"ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GG**
+- `2026-11-20T18:07:30Z` — cards_store: 336 → **335**
+- `2026-11-20T18:07:30Z` — hf_top_id: "sentence-transformers/all-MiniLM-L6-v2" → **null**
+- `2026-11-20T18:07:30Z` — hf_top_new_30d: null → **"ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GG**
 
 ## Verification cadence (latest 6)
 
