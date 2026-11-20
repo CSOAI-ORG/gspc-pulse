@@ -1,17 +1,17 @@
 # Evidence Pack — GSPC Live Pulse (rolling latest)
 
 **Cite as:** GSPC live pulse — CSOAI / Council of AI (councilof.ai), CC BY 4.0.
-**Snapshot:** 2026-11-17T13:20:22Z UTC · series: 34 rows since 2026-11-03.
+**Snapshot:** 2026-11-20T06:09:40Z UTC · series: 35 rows since 2026-11-03.
 
 Measurement, not endorsement; never a certification. Every value below was
-fetched LIVE at 2026-11-17T13:20:22Z and is traceable to its source surface at that moment.
+fetched LIVE at 2026-11-20T06:09:40Z and is traceable to its source surface at that moment.
 
 ## Frozen layer
 - GSPC board: 34 measured of 34 slots · separated leads 0 · ties 7 · untested 7
 - Capsule index: 11529 capsules (as_of 2026-11-01T08:30:40Z)
-- Public root: 453 cards (as_of 2026-11-14T22:23:43Z)
+- Public root: 452 cards (as_of 2026-11-19T13:03:53Z)
 - Signed cards: 335 declared / 335 in store (two labelled numbers)
-- CISA KEV: 1781 entries (released 2026-11-13T20:24:18.3008Z)
+- CISA KEV: 1786 entries (released 2026-11-18T19:17:41.0354Z)
 
 ## Estate liveness (first-hop status codes)
 - asisecurity-portal.com: `ERR`
@@ -139,35 +139,40 @@ fetched LIVE at 2026-11-17T13:20:22Z and is traceable to its source surface at t
     }
   },
   "hf": {
-    "fetched": "2026-11-17T13:20Z",
+    "fetched": "2026-11-20T06:09Z",
     "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
-    "new_30d_downloads": 4322841,
+    "new_30d_downloads": 4422957,
     "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-    "top_trending": "MiniMaxAI/MiniMax-H3-Image",
-    "trend_score": 1149
+    "top_trending": "higurashi-ai/Haru-4B",
+    "trend_score": 308.5
   },
   "interop": {
     "mcp_trust": {
-      "as_of": "2026-11-09T13:18:09Z",
-      "auth_challenged_401_403": 252,
-      "dead_404_or_unreachable": 22,
+      "as_of": "2026-11-16T13:06:01Z",
+      "auth_challenged_401_403": 253,
+      "dead_404_or_unreachable": 24,
       "initialize_ok_open": 23,
-      "initialize_ok_tools_listed": 192,
+      "initialize_ok_tools_listed": 188,
       "partial": true,
-      "registry_rows_seen": 2460,
+      "registry_rows_seen": 2519,
       "unique_hosts": 500
     },
     "x402_trust": {
-      "as_of": "2026-11-17T08:19:07Z",
-      "challenge_402": 81,
-      "dead_404_or_unreachable": 1,
+      "as_of": "2026-11-19T20:53:37Z",
+      "challenge_402": 82,
+      "dead_404_or_unreachable": 14,
       "total": 100
     }
   },
   "kev": {
-    "count": 1781,
-    "released": "2026-11-13T20:24:18.3008Z",
+    "count": 1786,
+    "released": "2026-11-18T19:17:41.0354Z",
     "top20": [
+      "CVE-2024-10441",
+      "CVE-2026-40217",
+      "CVE-2026-90817",
+      "CVE-2026-90436",
+      "CVE-2026-115731",
       "CVE-2026-114713",
       "CVE-2026-123039",
       "CVE-2026-124194",
@@ -182,12 +187,7 @@ fetched LIVE at 2026-11-17T13:20:22Z and is traceable to its source surface at t
       "CVE-2026-123218",
       "CVE-2026-19868",
       "CVE-2024-27834",
-      "CVE-2026-119977",
-      "CVE-2026-118527",
-      "CVE-2026-111357",
-      "CVE-2026-97229",
-      "CVE-2026-76418",
-      "CVE-2026-41709"
+      "CVE-2026-119977"
     ]
   },
   "meta": {
@@ -195,14 +195,14 @@ fetched LIVE at 2026-11-17T13:20:22Z and is traceable to its source surface at t
     "runner": "github-actions"
   },
   "root": {
-    "as_of": "2026-11-14T22:23:43Z",
-    "card_count": 453
+    "as_of": "2026-11-19T13:03:53Z",
+    "card_count": 452
   },
   "swan": {
-    "cadence_last14": 15,
-    "cadence_prior14": 18,
+    "cadence_last14": 18,
+    "cadence_prior14": 14,
     "cadence_weekly": {
-      "2026-W37": 14,
+      "2026-W37": 4,
       "2026-W38": 7,
       "2026-W39": 12,
       "2026-W40": 6,
@@ -211,16 +211,17 @@ fetched LIVE at 2026-11-17T13:20:22Z and is traceable to its source surface at t
       "2026-W43": 8,
       "2026-W44": 10,
       "2026-W45": 3,
-      "2026-W46": 12
+      "2026-W46": 12,
+      "2026-W47": 5
     },
-    "catalog_total": 1781,
+    "catalog_total": 1786,
     "cwe_top_recent": {
-      "CWE-140": 1,
+      "CWE-116": 1,
       "CWE-287": 2,
-      "CWE-356": 1,
-      "CWE-732": 1,
+      "CWE-420": 1,
       "CWE-78": 2,
-      "CWE-862": 2
+      "CWE-862": 2,
+      "CWE-94": 2
     },
     "perimeter_recent": [
       {
@@ -228,8 +229,8 @@ fetched LIVE at 2026-11-17T13:20:22Z and is traceable to its source surface at t
         "cve": "CVE-2026-116606",
         "due": "2026-11-13",
         "epss": 0.10947,
-        "epss_date": "2026-11-16",
-        "epss_percentile": 0.95957,
+        "epss_date": "2026-11-19",
+        "epss_percentile": 0.95978,
         "product": "Barracuda Email Security Gateway (ESG)",
         "vendor": "Barracuda Networks"
       },
@@ -238,8 +239,8 @@ fetched LIVE at 2026-11-17T13:20:22Z and is traceable to its source surface at t
         "cve": "CVE-2026-19868",
         "due": "2026-11-20",
         "epss": 0.00532,
-        "epss_date": "2026-11-16",
-        "epss_percentile": 0.45527,
+        "epss_date": "2026-11-19",
+        "epss_percentile": 0.4573,
         "product": "SonicOS SSLVPN",
         "vendor": "SonicWall"
       },
@@ -248,8 +249,8 @@ fetched LIVE at 2026-11-17T13:20:22Z and is traceable to its source surface at t
         "cve": "CVE-2026-118527",
         "due": "2026-11-13",
         "epss": 0.00822,
-        "epss_date": "2026-11-16",
-        "epss_percentile": 0.57886,
+        "epss_date": "2026-11-19",
+        "epss_percentile": 0.58084,
         "product": "Connect Secure",
         "vendor": "Ivanti"
       },
@@ -258,39 +259,29 @@ fetched LIVE at 2026-11-17T13:20:22Z and is traceable to its source surface at t
         "cve": "CVE-2026-111357",
         "due": "2026-11-02",
         "epss": 0.00533,
-        "epss_date": "2026-11-16",
-        "epss_percentile": 0.45573,
+        "epss_date": "2026-11-19",
+        "epss_percentile": 0.45777,
         "product": "Connect Secure",
         "vendor": "Ivanti"
-      },
-      {
-        "added": "2026-10-29",
-        "cve": "CVE-2026-76418",
-        "due": "2026-11-01",
-        "epss": 0.00821,
-        "epss_date": "2026-11-16",
-        "epss_percentile": 0.57862,
-        "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
-        "vendor": "Cisco"
       }
     ],
     "ransomware_flagged_recent": 0,
     "ransomware_flagged_recent_cves": [],
     "ransomware_sample": {
-      "claimed_today": 12,
+      "claimed_today": 1,
       "sample_size": 100,
       "source_kind": "recent-100 leak-site sample, not a census",
       "top_groups_sample": {
-        "N0n": 13,
-        "PixelLeaks": 24,
-        "ShadowByt3$": 5,
+        "N0n": 25,
+        "SilentRansomGroup": 5,
+        "SoulGroup": 26,
         "Vortex": 9,
-        "qilin": 19
+        "rhysida": 5
       },
-      "window_first": "2026-11-15",
-      "window_last": "2026-11-17"
+      "window_first": "2026-11-18",
+      "window_last": "2026-11-20"
     },
-    "ransomware_share_pct": 20.3,
+    "ransomware_share_pct": 20.2,
     "shortest_due_windows": [
       {
         "added": "2025-09-25",
@@ -334,6 +325,6 @@ fetched LIVE at 2026-11-17T13:20:22Z and is traceable to its source surface at t
       }
     ]
   },
-  "ts": "2026-11-17T13:20:22Z"
+  "ts": "2026-11-20T06:09:40Z"
 }
 ```

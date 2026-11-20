@@ -2,18 +2,15 @@
 
 _Regenerated every pulse. Measurement, not endorsement; never a certification. License CC BY 4.0._
 
-- Rows: **34** (runners: canonical×3, github-actions×10, gspc-live-zcode×5, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
+- Rows: **35** (runners: canonical×3, github-actions×11, gspc-live-zcode×5, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
 - Fluid layers carried: interop-census, swan-scan
-- Latest: **2026-11-17T13:20:22Z**
-- Alert cards (frozen deltas): **18**
-- Verification log entries: **32**
+- Latest: **2026-11-20T06:09:40Z**
+- Alert cards (frozen deltas): **19**
+- Verification log entries: **33**
 - Domains OK (2xx first-hop): **14 / 20**
 
 ## Frozen-delta timeline (latest 12)
 
-- `2026-11-04T06:09:05Z` — board_separated: null → **0**
-- `2026-11-04T06:09:05Z` — cards_store: 335 → **336**
-- `2026-11-04T06:09:05Z` — hf_top_id: null → **"sentence-transformers/all-MiniLM-L6-v2"**
 - `2026-11-04T12:06:24Z` — board_separated: null → **0**
 - `2026-11-04T12:06:24Z` — cards_store: 335 → **336**
 - `2026-11-04T12:06:24Z` — hf_top_id: null → **"sentence-transformers/all-MiniLM-L6-v2"**
@@ -45,12 +42,18 @@ _Regenerated every pulse. Measurement, not endorsement; never a certification. L
 - `2026-11-15T09:20:38Z` — root_card_count: 454 → **453**
 - `2026-11-17T03:50:01Z` — did_key_ids: ["did:web:csoai.org#board-attestation-1", "did:w → **["did:web:csoai.org#board-attestation-1", "did:w**
 - `2026-11-17T13:20:22Z` — hf_top_trending: "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED → **"MiniMaxAI/MiniMax-H3-Image"**
+- `2026-11-20T06:09:40Z` — hf_top_trending: "MiniMaxAI/MiniMax-H3-Image" → **"higurashi-ai/Haru-4B"**
+- `2026-11-20T06:09:40Z` — kev_count: 1781 → **1786**
+- `2026-11-20T06:09:40Z` — kev_new_ids: **["CVE-2024-10441", "CVE-2026-40217", "CVE-2026-90817", "CVE-2026-90436", "CVE-20**
+- `2026-11-20T06:09:40Z` — kev_released: "2026-11-13T20:24:18.3008Z" → **"2026-11-18T19:17:41.0354Z"**
+- `2026-11-20T06:09:40Z` — root_as_of: "2026-11-14T22:23:43Z" → **"2026-11-19T13:03:53Z"**
+- `2026-11-20T06:09:40Z` — root_card_count: 453 → **452**
 
 ## Verification cadence (latest 6)
 
-- `2026-11-08T04:34:28Z` — distribution mcp registry pub: **PAYLOAD_READY_OWNER_DNS**
 - `2026-11-13T02:11:06Z` — verify_root_full public-root.json: **VALID**
 - `2026-11-14T02:26:11Z` — verify_root_full public-root.json: **VALID**
 - `2026-11-15T01:52:56Z` — verify_root_full public-root.json: **VALID**
 - `2026-11-16T02:02:21Z` — verify_root_full public-root.json: **VALID**
 - `2026-11-17T03:50:06Z` — verify_root_full public-root.json: **VALID**
+- `2026-11-20T06:09:49Z` — verify_root_full public-root.json: **VALID**
