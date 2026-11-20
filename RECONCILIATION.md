@@ -4,7 +4,7 @@ _Where two independent runners read the same field on the same day and
 _disagreed, plus standing framing/live divergences. Disagreement is the
 _finding: shown, never silently reconciled. Measurement, not endorsement._
 
-- Disputed field-days: **10**
+- Disputed field-days: **11**
 - `2026-11-03` — cards_store = 335 (manual-reproduction); cards_store = 336 (canonical, gspc-live-zcode)
 - `2026-11-04` — cards_store = 335 (manual-reproduction); cards_store = 336 (gspc-live-zcode, gspc-live@0.3.4, gspc-live@0.5.0)
 - `2026-11-07` — cards_store = 335 (manual-reproduction); cards_store = 336 (gspc-live-zcode)
@@ -14,6 +14,7 @@ _finding: shown, never silently reconciled. Measurement, not endorsement._
 - `2026-11-14` — root_card_count = 452 (github-actions); root_card_count = 453 (github-actions)
 - `2026-11-15` — root_card_count = 453 (github-actions); root_card_count = 454 (github-actions)
 - `2026-11-20` — cards_store = 335 (github-actions); cards_store = 336 (gspc-live-zcode)
+- `2026-11-20` — kev_count = 1786 (github-actions, gspc-live-zcode); kev_count = 1790 (github-actions)
 - `2026-11-20` — root_card_count = 452 (github-actions); root_card_count = 453 (github-actions, gspc-live-zcode)
 
 ## Known standing divergences (two/three labelled numbers)

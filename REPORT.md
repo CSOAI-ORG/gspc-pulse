@@ -2,21 +2,15 @@
 
 _Regenerated every pulse. Measurement, not endorsement; never a certification. License CC BY 4.0._
 
-- Rows: **39** (runners: canonical×3, github-actions×13, gspc-live-zcode×7, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
+- Rows: **40** (runners: canonical×3, github-actions×14, gspc-live-zcode×7, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
 - Fluid layers carried: interop-census, swan-scan
-- Latest: **2026-11-20T18:07:30Z**
-- Alert cards (frozen deltas): **21**
+- Latest: **2026-11-20T20:12:04Z**
+- Alert cards (frozen deltas): **22**
 - Verification log entries: **34**
 - Domains OK (2xx first-hop): **14 / 20**
 
 ## Frozen-delta timeline (latest 12)
 
-- `2026-11-13T02:11:01Z` — anchors.ots_state: null → **"PENDING_CALENDAR_COMMITMENT"**
-- `2026-11-13T02:11:01Z` — anchors.rekor_state: null → **"INCLUDED (inclusion proof verifies)"**
-- `2026-11-13T02:11:01Z` — anchors.xrpl_state: null → **"PREPARED_NOT_SUBMITTED"**
-- `2026-11-13T02:11:01Z` — hf_top_id: "sentence-transformers/all-MiniLM-L6-v2" → **null**
-- `2026-11-13T02:11:01Z` — hf_top_new_30d: null → **"ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GG**
-- `2026-11-13T02:11:01Z` — hf_top_trending: "speridlabs/idol" → **"xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED**
 - `2026-11-13T15:22:51Z` — root_as_of: "2026-11-07T20:54:37Z" → **"2026-11-13T07:59:04Z"**
 - `2026-11-13T15:22:51Z` — root_card_count: 442 → **458**
 - `2026-11-13T21:58:18Z` — kev_count: 1779 → **1781**
@@ -46,6 +40,9 @@ _Regenerated every pulse. Measurement, not endorsement; never a certification. L
 - `2026-11-20T18:07:30Z` — cards_store: 336 → **335**
 - `2026-11-20T18:07:30Z` — hf_top_id: "sentence-transformers/all-MiniLM-L6-v2" → **null**
 - `2026-11-20T18:07:30Z` — hf_top_new_30d: null → **"ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GG**
+- `2026-11-20T20:12:04Z` — kev_count: 1786 → **1790**
+- `2026-11-20T20:12:04Z` — kev_new_ids: **["CVE-2026-129448", "CVE-2026-123890", "CVE-2025-42884", "CVE-2026-76466"]**
+- `2026-11-20T20:12:04Z` — kev_released: "2026-11-18T19:17:41.0354Z" → **"2026-11-20T17:48:39.1516Z"**
 
 ## Verification cadence (latest 6)
 

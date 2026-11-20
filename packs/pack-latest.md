@@ -1,17 +1,17 @@
 # Evidence Pack — GSPC Live Pulse (rolling latest)
 
 **Cite as:** GSPC live pulse — CSOAI / Council of AI (councilof.ai), CC BY 4.0.
-**Snapshot:** 2026-11-20T18:07:30Z UTC · series: 39 rows since 2026-11-03.
+**Snapshot:** 2026-11-20T20:12:04Z UTC · series: 40 rows since 2026-11-03.
 
 Measurement, not endorsement; never a certification. Every value below was
-fetched LIVE at 2026-11-20T18:07:30Z and is traceable to its source surface at that moment.
+fetched LIVE at 2026-11-20T20:12:04Z and is traceable to its source surface at that moment.
 
 ## Frozen layer
 - GSPC board: 34 measured of 34 slots · separated leads 0 · ties 7 · untested 7
 - Capsule index: 11529 capsules (as_of 2026-11-01T08:30:40Z)
 - Public root: 453 cards (as_of 2026-11-20T03:09:27Z)
 - Signed cards: 335 declared / 335 in store (two labelled numbers)
-- CISA KEV: 1786 entries (released 2026-11-18T19:17:41.0354Z)
+- CISA KEV: 1790 entries (released 2026-11-20T17:48:39.1516Z)
 
 ## Estate liveness (first-hop status codes)
 - asisecurity-portal.com: `ERR`
@@ -139,12 +139,12 @@ fetched LIVE at 2026-11-20T18:07:30Z and is traceable to its source surface at t
     }
   },
   "hf": {
-    "fetched": "2026-11-20T18:07Z",
+    "fetched": "2026-11-20T20:12Z",
     "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
     "new_30d_downloads": 4462709,
     "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
     "top_trending": "higurashi-ai/Haru-4B",
-    "trend_score": 310
+    "trend_score": 310.5
   },
   "interop": {
     "mcp_trust": {
@@ -165,9 +165,13 @@ fetched LIVE at 2026-11-20T18:07:30Z and is traceable to its source surface at t
     }
   },
   "kev": {
-    "count": 1786,
-    "released": "2026-11-18T19:17:41.0354Z",
+    "count": 1790,
+    "released": "2026-11-20T17:48:39.1516Z",
     "top20": [
+      "CVE-2026-129448",
+      "CVE-2026-123890",
+      "CVE-2025-42884",
+      "CVE-2026-76466",
       "CVE-2024-10441",
       "CVE-2026-40217",
       "CVE-2026-90817",
@@ -183,11 +187,7 @@ fetched LIVE at 2026-11-20T18:07:30Z and is traceable to its source surface at t
       "CVE-2026-125350",
       "CVE-2026-102895",
       "CVE-2026-123158",
-      "CVE-2026-116779",
-      "CVE-2026-123218",
-      "CVE-2026-19868",
-      "CVE-2024-27834",
-      "CVE-2026-119977"
+      "CVE-2026-116779"
     ]
   },
   "meta": {
@@ -199,7 +199,7 @@ fetched LIVE at 2026-11-20T18:07:30Z and is traceable to its source surface at t
     "card_count": 453
   },
   "swan": {
-    "cadence_last14": 18,
+    "cadence_last14": 22,
     "cadence_prior14": 14,
     "cadence_weekly": {
       "2026-W37": 4,
@@ -212,13 +212,13 @@ fetched LIVE at 2026-11-20T18:07:30Z and is traceable to its source surface at t
       "2026-W44": 10,
       "2026-W45": 3,
       "2026-W46": 12,
-      "2026-W47": 5
+      "2026-W47": 9
     },
-    "catalog_total": 1786,
+    "catalog_total": 1790,
     "cwe_top_recent": {
-      "CWE-116": 1,
       "CWE-287": 2,
-      "CWE-420": 1,
+      "CWE-288": 2,
+      "CWE-502": 2,
       "CWE-78": 2,
       "CWE-862": 2,
       "CWE-94": 2
@@ -268,7 +268,7 @@ fetched LIVE at 2026-11-20T18:07:30Z and is traceable to its source surface at t
     "ransomware_flagged_recent": 0,
     "ransomware_flagged_recent_cves": [],
     "ransomware_sample": {
-      "claimed_today": 9,
+      "claimed_today": 12,
       "sample_size": 100,
       "source_kind": "recent-100 leak-site sample, not a census",
       "top_groups_sample": {
@@ -276,7 +276,7 @@ fetched LIVE at 2026-11-20T18:07:30Z and is traceable to its source surface at t
         "SilentRansomGroup": 5,
         "SoulGroup": 26,
         "Vortex": 9,
-        "spacebears": 4
+        "rhysida": 4
       },
       "window_first": "2026-11-18",
       "window_last": "2026-11-20"
@@ -325,6 +325,6 @@ fetched LIVE at 2026-11-20T18:07:30Z and is traceable to its source surface at t
       }
     ]
   },
-  "ts": "2026-11-20T18:07:30Z"
+  "ts": "2026-11-20T20:12:04Z"
 }
 ```
