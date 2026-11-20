@@ -156,9 +156,13 @@ def build_report():
     if alerts:
         lines += ["", "## Frozen-delta timeline (latest 12)", ""]
         for a in alerts[-12:]:
-            for k, (a0, a1) in a.get("changes", {}).items():
-                lines.append("- `%s` — %s: %s → **%s**" % (
-                    a["ts"], k, json.dumps(a0)[:48], json.dumps(a1)[:48]))
+            for k, v in a.get("changes", {}).items():
+                if isinstance(v, list) and len(v) == 2:
+                    lines.append("- `%s` — %s: %s → **%s**" % (
+                        a["ts"], k, json.dumps(v[0])[:48], json.dumps(v[1])[:48]))
+                else:
+                    lines.append("- `%s` — %s: **%s**" % (
+                        a["ts"], k, json.dumps(v)[:80]))
     if vlog:
         lines += ["", "## Verification cadence (latest 6)", ""]
         for v in vlog[-6:]:
@@ -376,8 +380,10 @@ Measurement, not endorsement; never a certification. CC BY 4.0.</p>
 const d=JSON.parse(document.getElementById('data').textContent);
 const fa=document.querySelector('#alerts tbody');
 for(const a of d.alerts){
-  const ch=Object.entries(a.changes||{}).map(([k,pn])=>
-    k+': '+JSON.stringify(pn[0])+' → <b>'+JSON.stringify(pn[1])+'</b>').join('<br>');
+  const ch=Object.entries(a.changes||{}).map(([k,v])=>
+    (Array.isArray(v)&&v.length===2)
+      ? k+': '+JSON.stringify(v[0])+' → <b>'+JSON.stringify(v[1])+'</b>'
+      : k+': <b>'+JSON.stringify(v)+'</b>').join('<br>');
   const tr=document.createElement('tr');
   tr.innerHTML='<td>'+a.ts+'</td><td>'+ch+'</td>'; fa.appendChild(tr);
 }
