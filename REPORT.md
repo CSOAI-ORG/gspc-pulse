@@ -2,19 +2,15 @@
 
 _Regenerated every pulse. Measurement, not endorsement; never a certification. License CC BY 4.0._
 
-- Rows: **35** (runners: canonical×3, github-actions×11, gspc-live-zcode×5, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
+- Rows: **37** (runners: canonical×3, github-actions×12, gspc-live-zcode×6, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
 - Fluid layers carried: interop-census, swan-scan
-- Latest: **2026-11-20T06:09:40Z**
-- Alert cards (frozen deltas): **19**
-- Verification log entries: **33**
+- Latest: **2026-11-20T12:08:13Z**
+- Alert cards (frozen deltas): **20**
+- Verification log entries: **34**
 - Domains OK (2xx first-hop): **14 / 20**
 
 ## Frozen-delta timeline (latest 12)
 
-- `2026-11-04T12:06:24Z` — board_separated: null → **0**
-- `2026-11-04T12:06:24Z` — cards_store: 335 → **336**
-- `2026-11-04T12:06:24Z` — hf_top_id: null → **"sentence-transformers/all-MiniLM-L6-v2"**
-- `2026-11-04T12:06:24Z` — hf_top_trending: "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B" → **"LiquidAI/LFM3-1.7B"**
 - `2026-11-07T12:06:40Z` — board_separated: null → **0**
 - `2026-11-07T12:06:40Z` — cards_store: 335 → **336**
 - `2026-11-07T12:06:40Z` — hf_top_id: null → **"sentence-transformers/all-MiniLM-L6-v2"**
@@ -48,12 +44,15 @@ _Regenerated every pulse. Measurement, not endorsement; never a certification. L
 - `2026-11-20T06:09:40Z` — kev_released: "2026-11-13T20:24:18.3008Z" → **"2026-11-18T19:17:41.0354Z"**
 - `2026-11-20T06:09:40Z` — root_as_of: "2026-11-14T22:23:43Z" → **"2026-11-19T13:03:53Z"**
 - `2026-11-20T06:09:40Z` — root_card_count: 453 → **452**
+- `2026-11-20T12:08:13Z` — cards_store: 336 → **335**
+- `2026-11-20T12:08:13Z` — hf_top_id: "sentence-transformers/all-MiniLM-L6-v2" → **null**
+- `2026-11-20T12:08:13Z` — hf_top_new_30d: null → **"ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GG**
 
 ## Verification cadence (latest 6)
 
-- `2026-11-13T02:11:06Z` — verify_root_full public-root.json: **VALID**
 - `2026-11-14T02:26:11Z` — verify_root_full public-root.json: **VALID**
 - `2026-11-15T01:52:56Z` — verify_root_full public-root.json: **VALID**
 - `2026-11-16T02:02:21Z` — verify_root_full public-root.json: **VALID**
 - `2026-11-17T03:50:06Z` — verify_root_full public-root.json: **VALID**
 - `2026-11-20T06:09:49Z` — verify_root_full public-root.json: **VALID**
+- `2026-11-20T12:07:56Z` — verify_card 66856aca4a1f9390: **VALID**

@@ -105,12 +105,12 @@
       }
     },
     "hf": {
-      "fetched": "2026-11-20T06:09Z",
+      "fetched": "2026-11-20T12:08Z",
       "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
-      "new_30d_downloads": 4422957,
+      "new_30d_downloads": 4462709,
       "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "top_trending": "higurashi-ai/Haru-4B",
-      "trend_score": 308.5
+      "trend_score": 305
     },
     "interop": {
       "mcp_trust": {
@@ -124,9 +124,9 @@
         "unique_hosts": 500
       },
       "x402_trust": {
-        "as_of": "2026-11-19T20:53:37Z",
-        "challenge_402": 82,
-        "dead_404_or_unreachable": 14,
+        "as_of": "2026-11-20T07:38:33Z",
+        "challenge_402": 75,
+        "dead_404_or_unreachable": 0,
         "total": 100
       }
     },
@@ -161,8 +161,8 @@
       "runner": "github-actions"
     },
     "root": {
-      "as_of": "2026-11-19T13:03:53Z",
-      "card_count": 452
+      "as_of": "2026-11-20T03:09:27Z",
+      "card_count": 453
     },
     "swan": {
       "cadence_last14": 18,
@@ -234,7 +234,7 @@
       "ransomware_flagged_recent": 0,
       "ransomware_flagged_recent_cves": [],
       "ransomware_sample": {
-        "claimed_today": 1,
+        "claimed_today": 7,
         "sample_size": 100,
         "source_kind": "recent-100 leak-site sample, not a census",
         "top_groups_sample": {
@@ -242,7 +242,7 @@
           "SilentRansomGroup": 5,
           "SoulGroup": 26,
           "Vortex": 9,
-          "rhysida": 5
+          "lockbit5": 5
         },
         "window_first": "2026-11-18",
         "window_last": "2026-11-20"
@@ -291,6 +291,6 @@
         }
       ]
     },
-    "ts": "2026-11-20T06:09:40Z"
+    "ts": "2026-11-20T12:08:13Z"
   }
 }

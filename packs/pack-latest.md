@@ -1,15 +1,15 @@
 # Evidence Pack — GSPC Live Pulse (rolling latest)
 
 **Cite as:** GSPC live pulse — CSOAI / Council of AI (councilof.ai), CC BY 4.0.
-**Snapshot:** 2026-11-20T06:09:40Z UTC · series: 35 rows since 2026-11-03.
+**Snapshot:** 2026-11-20T12:08:13Z UTC · series: 37 rows since 2026-11-03.
 
 Measurement, not endorsement; never a certification. Every value below was
-fetched LIVE at 2026-11-20T06:09:40Z and is traceable to its source surface at that moment.
+fetched LIVE at 2026-11-20T12:08:13Z and is traceable to its source surface at that moment.
 
 ## Frozen layer
 - GSPC board: 34 measured of 34 slots · separated leads 0 · ties 7 · untested 7
 - Capsule index: 11529 capsules (as_of 2026-11-01T08:30:40Z)
-- Public root: 452 cards (as_of 2026-11-19T13:03:53Z)
+- Public root: 453 cards (as_of 2026-11-20T03:09:27Z)
 - Signed cards: 335 declared / 335 in store (two labelled numbers)
 - CISA KEV: 1786 entries (released 2026-11-18T19:17:41.0354Z)
 
@@ -139,12 +139,12 @@ fetched LIVE at 2026-11-20T06:09:40Z and is traceable to its source surface at t
     }
   },
   "hf": {
-    "fetched": "2026-11-20T06:09Z",
+    "fetched": "2026-11-20T12:08Z",
     "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
-    "new_30d_downloads": 4422957,
+    "new_30d_downloads": 4462709,
     "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
     "top_trending": "higurashi-ai/Haru-4B",
-    "trend_score": 308.5
+    "trend_score": 305
   },
   "interop": {
     "mcp_trust": {
@@ -158,9 +158,9 @@ fetched LIVE at 2026-11-20T06:09:40Z and is traceable to its source surface at t
       "unique_hosts": 500
     },
     "x402_trust": {
-      "as_of": "2026-11-19T20:53:37Z",
-      "challenge_402": 82,
-      "dead_404_or_unreachable": 14,
+      "as_of": "2026-11-20T07:38:33Z",
+      "challenge_402": 75,
+      "dead_404_or_unreachable": 0,
       "total": 100
     }
   },
@@ -195,8 +195,8 @@ fetched LIVE at 2026-11-20T06:09:40Z and is traceable to its source surface at t
     "runner": "github-actions"
   },
   "root": {
-    "as_of": "2026-11-19T13:03:53Z",
-    "card_count": 452
+    "as_of": "2026-11-20T03:09:27Z",
+    "card_count": 453
   },
   "swan": {
     "cadence_last14": 18,
@@ -268,7 +268,7 @@ fetched LIVE at 2026-11-20T06:09:40Z and is traceable to its source surface at t
     "ransomware_flagged_recent": 0,
     "ransomware_flagged_recent_cves": [],
     "ransomware_sample": {
-      "claimed_today": 1,
+      "claimed_today": 7,
       "sample_size": 100,
       "source_kind": "recent-100 leak-site sample, not a census",
       "top_groups_sample": {
@@ -276,7 +276,7 @@ fetched LIVE at 2026-11-20T06:09:40Z and is traceable to its source surface at t
         "SilentRansomGroup": 5,
         "SoulGroup": 26,
         "Vortex": 9,
-        "rhysida": 5
+        "lockbit5": 5
       },
       "window_first": "2026-11-18",
       "window_last": "2026-11-20"
@@ -325,6 +325,6 @@ fetched LIVE at 2026-11-20T06:09:40Z and is traceable to its source surface at t
       }
     ]
   },
-  "ts": "2026-11-20T06:09:40Z"
+  "ts": "2026-11-20T12:08:13Z"
 }
 ```
