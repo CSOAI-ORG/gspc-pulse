@@ -10,3 +10,8 @@
   count 335 (the other side of the 335/336 reconciliation, from real distance)
 - Rows are synced into this file from the node by the M2 lane and admitted per
   PULSE-NODE.md (rows-only, same schema, runner tag)
+
+## Status (2026-11-21)
+
+- **micro2** (`sov33-owem-micro2`): OFFLINE from the DC fleet since ~2026-11-14 (last seen 157h+). Its hourly cron stopped with the box; 1 row admitted (2026-11-08T03:59:57Z). Rejoin = box back online, node resumes.
+- **MacBook** (`NICHOLASs-MacBook-Air-2.local`, M4): ACTIVE, hourly cron 23 * * * *, 23 rows admitted through 2026-11-20T19:23:01Z.
