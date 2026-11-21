@@ -105,12 +105,12 @@
       }
     },
     "hf": {
-      "fetched": "2026-11-21T10:57Z",
+      "fetched": "2026-11-21T12:07Z",
       "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
       "new_30d_downloads": 4500696,
       "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "top_trending": "thinkingmachines/Inkling-2-Mini",
-      "trend_score": 885
+      "trend_score": 933
     },
     "interop": {
       "mcp_trust": {
@@ -161,8 +161,8 @@
       "runner": "github-actions"
     },
     "root": {
-      "as_of": "2026-11-20T03:09:27Z",
-      "card_count": 453
+      "as_of": "2026-11-20T11:37:40Z",
+      "card_count": 451
     },
     "swan": {
       "cadence_last14": 21,
@@ -213,15 +213,15 @@
       "ransomware_flagged_recent": 0,
       "ransomware_flagged_recent_cves": [],
       "ransomware_sample": {
-        "claimed_today": 1,
+        "claimed_today": 3,
         "sample_size": 100,
         "source_kind": "recent-100 leak-site sample, not a census",
         "top_groups_sample": {
-          "N0n": 8,
           "PixelLeaks": 5,
           "SoulGroup": 26,
           "Vortex": 9,
-          "everest": 10
+          "everest": 10,
+          "rhysida": 5
         },
         "window_first": "2026-11-18",
         "window_last": "2026-11-21"
@@ -270,6 +270,6 @@
         }
       ]
     },
-    "ts": "2026-11-21T10:57:11Z"
+    "ts": "2026-11-21T12:07:55Z"
   }
 }
