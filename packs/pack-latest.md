@@ -1,10 +1,10 @@
 # Evidence Pack — GSPC Live Pulse (rolling latest)
 
 **Cite as:** GSPC live pulse — CSOAI / Council of AI (councilof.ai), CC BY 4.0.
-**Snapshot:** 2026-11-21T00:07:25Z UTC · series: 42 rows since 2026-11-03.
+**Snapshot:** 2026-11-21T10:57:11Z UTC · series: 43 rows since 2026-11-03.
 
 Measurement, not endorsement; never a certification. Every value below was
-fetched LIVE at 2026-11-21T00:07:25Z and is traceable to its source surface at that moment.
+fetched LIVE at 2026-11-21T10:57:11Z and is traceable to its source surface at that moment.
 
 ## Frozen layer
 - GSPC board: 34 measured of 34 slots · separated leads 0 · ties 7 · untested 7
@@ -139,12 +139,12 @@ fetched LIVE at 2026-11-21T00:07:25Z and is traceable to its source surface at t
     }
   },
   "hf": {
-    "fetched": "2026-11-21T00:07Z",
+    "fetched": "2026-11-21T10:57Z",
     "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
-    "new_30d_downloads": 4462709,
+    "new_30d_downloads": 4500696,
     "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-    "top_trending": "higurashi-ai/Haru-4B",
-    "trend_score": 313
+    "top_trending": "thinkingmachines/Inkling-2-Mini",
+    "trend_score": 885
   },
   "interop": {
     "mcp_trust": {
@@ -158,9 +158,9 @@ fetched LIVE at 2026-11-21T00:07:25Z and is traceable to its source surface at t
       "unique_hosts": 500
     },
     "x402_trust": {
-      "as_of": "2026-11-20T20:39:11Z",
-      "challenge_402": 97,
-      "dead_404_or_unreachable": 1,
+      "as_of": "2026-11-21T07:34:59Z",
+      "challenge_402": 85,
+      "dead_404_or_unreachable": 15,
       "total": 100
     }
   },
@@ -247,18 +247,18 @@ fetched LIVE at 2026-11-21T00:07:25Z and is traceable to its source surface at t
     "ransomware_flagged_recent": 0,
     "ransomware_flagged_recent_cves": [],
     "ransomware_sample": {
-      "claimed_today": 0,
+      "claimed_today": 1,
       "sample_size": 100,
       "source_kind": "recent-100 leak-site sample, not a census",
       "top_groups_sample": {
-        "N0n": 25,
-        "SilentRansomGroup": 5,
+        "N0n": 8,
+        "PixelLeaks": 5,
         "SoulGroup": 26,
         "Vortex": 9,
-        "rhysida": 5
+        "everest": 10
       },
       "window_first": "2026-11-18",
-      "window_last": "2026-11-20"
+      "window_last": "2026-11-21"
     },
     "ransomware_share_pct": 20.2,
     "shortest_due_windows": [
@@ -304,6 +304,6 @@ fetched LIVE at 2026-11-21T00:07:25Z and is traceable to its source surface at t
       }
     ]
   },
-  "ts": "2026-11-21T00:07:25Z"
+  "ts": "2026-11-21T10:57:11Z"
 }
 ```
