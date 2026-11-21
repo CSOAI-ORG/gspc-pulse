@@ -1,10 +1,10 @@
 # Evidence Pack — GSPC Live Pulse (rolling latest)
 
 **Cite as:** GSPC live pulse — CSOAI / Council of AI (councilof.ai), CC BY 4.0.
-**Snapshot:** 2026-11-21T12:07:55Z UTC · series: 45 rows since 2026-11-03.
+**Snapshot:** 2026-11-21T18:07:30Z UTC · series: 47 rows since 2026-11-03.
 
 Measurement, not endorsement; never a certification. Every value below was
-fetched LIVE at 2026-11-21T12:07:55Z and is traceable to its source surface at that moment.
+fetched LIVE at 2026-11-21T18:07:30Z and is traceable to its source surface at that moment.
 
 ## Frozen layer
 - GSPC board: 34 measured of 34 slots · separated leads 0 · ties 7 · untested 7
@@ -139,12 +139,12 @@ fetched LIVE at 2026-11-21T12:07:55Z and is traceable to its source surface at t
     }
   },
   "hf": {
-    "fetched": "2026-11-21T12:07Z",
+    "fetched": "2026-11-21T18:07Z",
     "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
     "new_30d_downloads": 4500696,
     "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
     "top_trending": "thinkingmachines/Inkling-2-Mini",
-    "trend_score": 933
+    "trend_score": 588.5
   },
   "interop": {
     "mcp_trust": {
@@ -227,9 +227,9 @@ fetched LIVE at 2026-11-21T12:07:55Z and is traceable to its source surface at t
         "added": "2026-11-10",
         "cve": "CVE-2026-116606",
         "due": "2026-11-13",
-        "epss": 0.10947,
-        "epss_date": "2026-11-20",
-        "epss_percentile": 0.95991,
+        "epss": 0.7452,
+        "epss_date": "2026-11-21",
+        "epss_percentile": 0.99506,
         "product": "Barracuda Email Security Gateway (ESG)",
         "vendor": "Barracuda Networks"
       },
@@ -237,9 +237,9 @@ fetched LIVE at 2026-11-21T12:07:55Z and is traceable to its source surface at t
         "added": "2026-11-06",
         "cve": "CVE-2026-19868",
         "due": "2026-11-20",
-        "epss": 0.00532,
-        "epss_date": "2026-11-20",
-        "epss_percentile": 0.4587,
+        "epss": 0.0804,
+        "epss_date": "2026-11-21",
+        "epss_percentile": 0.94918,
         "product": "SonicOS SSLVPN",
         "vendor": "SonicWall"
       }
@@ -247,7 +247,7 @@ fetched LIVE at 2026-11-21T12:07:55Z and is traceable to its source surface at t
     "ransomware_flagged_recent": 0,
     "ransomware_flagged_recent_cves": [],
     "ransomware_sample": {
-      "claimed_today": 3,
+      "claimed_today": 4,
       "sample_size": 100,
       "source_kind": "recent-100 leak-site sample, not a census",
       "top_groups_sample": {
@@ -304,6 +304,6 @@ fetched LIVE at 2026-11-21T12:07:55Z and is traceable to its source surface at t
       }
     ]
   },
-  "ts": "2026-11-21T12:07:55Z"
+  "ts": "2026-11-21T18:07:30Z"
 }
 ```
