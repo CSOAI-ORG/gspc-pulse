@@ -38,3 +38,4 @@
 {"kind": "federation_sync", "note": "12-day unadmitted backlog cleared; nodes/m4 now 24 rows (micro2 + MacBook)", "rows": 23, "subject": "nodes/m4 MacBook backlog", "ts": "2026-11-21T06:08:58Z", "verdict": "ADMITTED", "window": "2026-11-09 - 2026-11-20"}
 {"kind": "fleet_status", "note": "DC fleet last seen ~2026-11-14; cron stopped with box; rejoin pending", "subject": "sov33-owem-micro2", "ts": "2026-11-21T06:08:58Z", "verdict": "OFFLINE"}
 {"kind": "governance_seal", "note": "flapping (404->503); still owner-gated until backend returns", "subject": "csoai_sign retry", "ts": "2026-11-21T06:08:58Z", "verdict": "BACKEND_503"}
+{"kind": "verify_card", "pinned_key": "did:web:csoai.org#card-attestation-1", "subject": "66856aca4a1f9390f0f51d89b8b96d984ab902852ed77b0254730758260ad1da", "ts": "2026-11-21T12:07:30Z", "verdict": "VALID"}
