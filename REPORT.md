@@ -2,17 +2,15 @@
 
 _Regenerated every pulse. Measurement, not endorsement; never a certification. License CC BY 4.0._
 
-- Rows: **40** (runners: canonical×3, github-actions×14, gspc-live-zcode×7, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
+- Rows: **42** (runners: canonical×3, github-actions×15, gspc-live-zcode×8, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
 - Fluid layers carried: interop-census, swan-scan
-- Latest: **2026-11-20T20:12:04Z**
-- Alert cards (frozen deltas): **22**
-- Verification log entries: **34**
+- Latest: **2026-11-21T00:07:25Z**
+- Alert cards (frozen deltas): **23**
+- Verification log entries: **36**
 - Domains OK (2xx first-hop): **14 / 20**
 
 ## Frozen-delta timeline (latest 12)
 
-- `2026-11-13T15:22:51Z` — root_as_of: "2026-11-07T20:54:37Z" → **"2026-11-13T07:59:04Z"**
-- `2026-11-13T15:22:51Z` — root_card_count: 442 → **458**
 - `2026-11-13T21:58:18Z` — kev_count: 1779 → **1781**
 - `2026-11-13T21:58:18Z` — kev_new_ids: "CVE-2026-114713" → **"CVE-2026-123039"**
 - `2026-11-13T21:58:18Z` — kev_released: "2026-11-10T19:03:29.8375Z" → **"2026-11-13T20:24:18.3008Z"**
@@ -43,12 +41,15 @@ _Regenerated every pulse. Measurement, not endorsement; never a certification. L
 - `2026-11-20T20:12:04Z` — kev_count: 1786 → **1790**
 - `2026-11-20T20:12:04Z` — kev_new_ids: **["CVE-2026-129448", "CVE-2026-123890", "CVE-2025-42884", "CVE-2026-76466"]**
 - `2026-11-20T20:12:04Z` — kev_released: "2026-11-18T19:17:41.0354Z" → **"2026-11-20T17:48:39.1516Z"**
+- `2026-11-21T00:07:25Z` — cards_store: 336 → **335**
+- `2026-11-21T00:07:25Z` — hf_top_id: "sentence-transformers/all-MiniLM-L6-v2" → **null**
+- `2026-11-21T00:07:25Z` — hf_top_new_30d: null → **"ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GG**
 
 ## Verification cadence (latest 6)
 
-- `2026-11-14T02:26:11Z` — verify_root_full public-root.json: **VALID**
-- `2026-11-15T01:52:56Z` — verify_root_full public-root.json: **VALID**
 - `2026-11-16T02:02:21Z` — verify_root_full public-root.json: **VALID**
 - `2026-11-17T03:50:06Z` — verify_root_full public-root.json: **VALID**
 - `2026-11-20T06:09:49Z` — verify_root_full public-root.json: **VALID**
 - `2026-11-20T12:07:56Z` — verify_card 66856aca4a1f9390: **VALID**
+- `2026-11-21T00:07:04Z` — verify_card 66856aca4a1f9390: **VALID**
+- `2026-11-21T00:07:31Z` — verify_root_full public-root.json: **VALID**
