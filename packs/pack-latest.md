@@ -1,15 +1,15 @@
 # Evidence Pack — GSPC Live Pulse (rolling latest)
 
 **Cite as:** GSPC live pulse — CSOAI / Council of AI (councilof.ai), CC BY 4.0.
-**Snapshot:** 2026-11-21T18:07:30Z UTC · series: 47 rows since 2026-11-03.
+**Snapshot:** 2026-11-21T23:12:03Z UTC · series: 48 rows since 2026-11-03.
 
 Measurement, not endorsement; never a certification. Every value below was
-fetched LIVE at 2026-11-21T18:07:30Z and is traceable to its source surface at that moment.
+fetched LIVE at 2026-11-21T23:12:03Z and is traceable to its source surface at that moment.
 
 ## Frozen layer
 - GSPC board: 34 measured of 34 slots · separated leads 0 · ties 7 · untested 7
 - Capsule index: 11529 capsules (as_of 2026-11-01T08:30:40Z)
-- Public root: 451 cards (as_of 2026-11-20T11:37:40Z)
+- Public root: 453 cards (as_of 2026-11-21T12:59:35Z)
 - Signed cards: 335 declared / 335 in store (two labelled numbers)
 - CISA KEV: 1790 entries (released 2026-11-20T17:48:39.1516Z)
 
@@ -139,12 +139,12 @@ fetched LIVE at 2026-11-21T18:07:30Z and is traceable to its source surface at t
     }
   },
   "hf": {
-    "fetched": "2026-11-21T18:07Z",
+    "fetched": "2026-11-21T23:12Z",
     "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
     "new_30d_downloads": 4500696,
     "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
     "top_trending": "thinkingmachines/Inkling-2-Mini",
-    "trend_score": 588.5
+    "trend_score": 662.5
   },
   "interop": {
     "mcp_trust": {
@@ -158,9 +158,9 @@ fetched LIVE at 2026-11-21T18:07:30Z and is traceable to its source surface at t
       "unique_hosts": 500
     },
     "x402_trust": {
-      "as_of": "2026-11-21T07:34:59Z",
-      "challenge_402": 85,
-      "dead_404_or_unreachable": 15,
+      "as_of": "2026-11-21T19:38:58Z",
+      "challenge_402": 77,
+      "dead_404_or_unreachable": 17,
       "total": 100
     }
   },
@@ -195,8 +195,8 @@ fetched LIVE at 2026-11-21T18:07:30Z and is traceable to its source surface at t
     "runner": "github-actions"
   },
   "root": {
-    "as_of": "2026-11-20T11:37:40Z",
-    "card_count": 451
+    "as_of": "2026-11-21T12:59:35Z",
+    "card_count": 453
   },
   "swan": {
     "cadence_last14": 21,
@@ -247,17 +247,17 @@ fetched LIVE at 2026-11-21T18:07:30Z and is traceable to its source surface at t
     "ransomware_flagged_recent": 0,
     "ransomware_flagged_recent_cves": [],
     "ransomware_sample": {
-      "claimed_today": 4,
+      "claimed_today": 16,
       "sample_size": 100,
       "source_kind": "recent-100 leak-site sample, not a census",
       "top_groups_sample": {
         "PixelLeaks": 5,
-        "SoulGroup": 26,
-        "Vortex": 9,
+        "SoulGroup": 27,
         "everest": 10,
-        "rhysida": 5
+        "rhysida": 5,
+        "safepay": 9
       },
-      "window_first": "2026-11-18",
+      "window_first": "2026-11-19",
       "window_last": "2026-11-21"
     },
     "ransomware_share_pct": 20.2,
@@ -304,6 +304,6 @@ fetched LIVE at 2026-11-21T18:07:30Z and is traceable to its source surface at t
       }
     ]
   },
-  "ts": "2026-11-21T18:07:30Z"
+  "ts": "2026-11-21T23:12:03Z"
 }
 ```

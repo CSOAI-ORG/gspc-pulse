@@ -105,12 +105,12 @@
       }
     },
     "hf": {
-      "fetched": "2026-11-21T18:07Z",
+      "fetched": "2026-11-21T23:12Z",
       "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
       "new_30d_downloads": 4500696,
       "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "top_trending": "thinkingmachines/Inkling-2-Mini",
-      "trend_score": 588.5
+      "trend_score": 662.5
     },
     "interop": {
       "mcp_trust": {
@@ -124,9 +124,9 @@
         "unique_hosts": 500
       },
       "x402_trust": {
-        "as_of": "2026-11-21T07:34:59Z",
-        "challenge_402": 85,
-        "dead_404_or_unreachable": 15,
+        "as_of": "2026-11-21T19:38:58Z",
+        "challenge_402": 77,
+        "dead_404_or_unreachable": 17,
         "total": 100
       }
     },
@@ -161,8 +161,8 @@
       "runner": "github-actions"
     },
     "root": {
-      "as_of": "2026-11-20T11:37:40Z",
-      "card_count": 451
+      "as_of": "2026-11-21T12:59:35Z",
+      "card_count": 453
     },
     "swan": {
       "cadence_last14": 21,
@@ -213,17 +213,17 @@
       "ransomware_flagged_recent": 0,
       "ransomware_flagged_recent_cves": [],
       "ransomware_sample": {
-        "claimed_today": 4,
+        "claimed_today": 16,
         "sample_size": 100,
         "source_kind": "recent-100 leak-site sample, not a census",
         "top_groups_sample": {
           "PixelLeaks": 5,
-          "SoulGroup": 26,
-          "Vortex": 9,
+          "SoulGroup": 27,
           "everest": 10,
-          "rhysida": 5
+          "rhysida": 5,
+          "safepay": 9
         },
-        "window_first": "2026-11-18",
+        "window_first": "2026-11-19",
         "window_last": "2026-11-21"
       },
       "ransomware_share_pct": 20.2,
@@ -270,6 +270,6 @@
         }
       ]
     },
-    "ts": "2026-11-21T18:07:30Z"
+    "ts": "2026-11-21T23:12:03Z"
   }
 }
