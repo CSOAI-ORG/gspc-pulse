@@ -2,16 +2,15 @@
 
 _Regenerated every pulse. Measurement, not endorsement; never a certification. License CC BY 4.0._
 
-- Rows: **52** (runners: canonical×3, github-actions×21, gspc-live-zcode×12, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
+- Rows: **54** (runners: canonical×3, github-actions×22, gspc-live-zcode×13, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
 - Fluid layers carried: interop-census, swan-scan
-- Latest: **2026-11-22T06:07:32Z**
-- Alert cards (frozen deltas): **29**
+- Latest: **2026-11-22T12:07:18Z**
+- Alert cards (frozen deltas): **30**
 - Verification log entries: **43**
-- Domains OK (2xx first-hop): **14 / 20**
+- Domains OK (2xx first-hop): **13 / 20**
 
 ## Frozen-delta timeline (latest 12)
 
-- `2026-11-17T13:20:22Z` — hf_top_trending: "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED → **"MiniMaxAI/MiniMax-H3-Image"**
 - `2026-11-20T06:09:40Z` — hf_top_trending: "MiniMaxAI/MiniMax-H3-Image" → **"higurashi-ai/Haru-4B"**
 - `2026-11-20T06:09:40Z` — kev_count: 1781 → **1786**
 - `2026-11-20T06:09:40Z` — kev_new_ids: **["CVE-2024-10441", "CVE-2026-40217", "CVE-2026-90817", "CVE-2026-90436", "CVE-20**
@@ -45,6 +44,9 @@ _Regenerated every pulse. Measurement, not endorsement; never a certification. L
 - `2026-11-22T06:07:32Z` — cards_store: 336 → **335**
 - `2026-11-22T06:07:32Z` — hf_top_id: "sentence-transformers/all-MiniLM-L6-v2" → **null**
 - `2026-11-22T06:07:32Z` — hf_top_new_30d: null → **"ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GG**
+- `2026-11-22T12:07:18Z` — cards_store: 336 → **335**
+- `2026-11-22T12:07:18Z` — hf_top_id: "sentence-transformers/all-MiniLM-L6-v2" → **null**
+- `2026-11-22T12:07:18Z` — hf_top_new_30d: null → **"ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GG**
 
 ## Verification cadence (latest 6)
 
