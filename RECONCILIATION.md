@@ -4,7 +4,7 @@ _Where two independent runners read the same field on the same day and
 _disagreed, plus standing framing/live divergences. Disagreement is the
 _finding: shown, never silently reconciled. Measurement, not endorsement._
 
-- Disputed field-days: **13**
+- Disputed field-days: **14**
 - `2026-11-03` — cards_store = 335 (manual-reproduction); cards_store = 336 (canonical, gspc-live-zcode)
 - `2026-11-04` — cards_store = 335 (manual-reproduction); cards_store = 336 (gspc-live-zcode, gspc-live@0.3.4, gspc-live@0.5.0)
 - `2026-11-07` — cards_store = 335 (manual-reproduction); cards_store = 336 (gspc-live-zcode)
@@ -18,6 +18,7 @@ _finding: shown, never silently reconciled. Measurement, not endorsement._
 - `2026-11-20` — root_card_count = 452 (github-actions); root_card_count = 453 (github-actions, gspc-live-zcode)
 - `2026-11-21` — cards_store = 335 (github-actions); cards_store = 336 (gspc-live-zcode)
 - `2026-11-21` — root_card_count = 451 (github-actions, gspc-live-zcode); root_card_count = 453 (github-actions, gspc-live-zcode)
+- `2026-11-22` — cards_store = 335 (github-actions); cards_store = 336 (gspc-live-zcode)
 
 ## Known standing divergences (two/three labelled numbers)
 
@@ -32,4 +33,4 @@ _finding: shown, never silently reconciled. Measurement, not endorsement._
 
 ## Public-root verification (independent, full recompute)
 
-- Latest: **VALID** at `2026-11-21T00:07:31Z` · {"leaves": 453, "levels": 9, "published": "3948272d016a5c9fac17f5fa7770dfc12e142920eeabee970bf1827c1d23aaed", "recomputed": "3948272d016a5c9fac17f5fa7770dfc12e142920eeabee970bf1827
+- Latest: **VALID** at `2026-11-22T00:07:25Z` · {"leaves": 453, "levels": 9, "published": "811a726aa778d1ad63872c6ead8a1d2ef456475a3547dbf370d37f571d561836", "recomputed": "811a726aa778d1ad63872c6ead8a1d2ef456475a3547dbf370d37f5
