@@ -1,15 +1,15 @@
 # Evidence Pack — GSPC Live Pulse (rolling latest)
 
 **Cite as:** GSPC live pulse — CSOAI / Council of AI (councilof.ai), CC BY 4.0.
-**Snapshot:** 2026-11-22T00:07:19Z UTC · series: 50 rows since 2026-11-03.
+**Snapshot:** 2026-11-22T06:07:32Z UTC · series: 52 rows since 2026-11-03.
 
 Measurement, not endorsement; never a certification. Every value below was
-fetched LIVE at 2026-11-22T00:07:19Z and is traceable to its source surface at that moment.
+fetched LIVE at 2026-11-22T06:07:32Z and is traceable to its source surface at that moment.
 
 ## Frozen layer
 - GSPC board: 34 measured of 34 slots · separated leads 0 · ties 7 · untested 7
 - Capsule index: 11529 capsules (as_of 2026-11-01T08:30:40Z)
-- Public root: 453 cards (as_of 2026-11-21T12:59:35Z)
+- Public root: 452 cards (as_of 2026-11-21T23:11:50Z)
 - Signed cards: 335 declared / 335 in store (two labelled numbers)
 - CISA KEV: 1790 entries (released 2026-11-20T17:48:39.1516Z)
 
@@ -139,12 +139,12 @@ fetched LIVE at 2026-11-22T00:07:19Z and is traceable to its source surface at t
     }
   },
   "hf": {
-    "fetched": "2026-11-22T00:07Z",
+    "fetched": "2026-11-22T06:07Z",
     "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
     "new_30d_downloads": 4500696,
     "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
     "top_trending": "thinkingmachines/Inkling-2-Mini",
-    "trend_score": 673
+    "trend_score": 722.5
   },
   "interop": {
     "mcp_trust": {
@@ -195,8 +195,8 @@ fetched LIVE at 2026-11-22T00:07:19Z and is traceable to its source surface at t
     "runner": "github-actions"
   },
   "root": {
-    "as_of": "2026-11-21T12:59:35Z",
-    "card_count": 453
+    "as_of": "2026-11-21T23:11:50Z",
+    "card_count": 452
   },
   "swan": {
     "cadence_last14": 21,
@@ -304,6 +304,6 @@ fetched LIVE at 2026-11-22T00:07:19Z and is traceable to its source surface at t
       }
     ]
   },
-  "ts": "2026-11-22T00:07:19Z"
+  "ts": "2026-11-22T06:07:32Z"
 }
 ```

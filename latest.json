@@ -105,12 +105,12 @@
       }
     },
     "hf": {
-      "fetched": "2026-11-22T00:07Z",
+      "fetched": "2026-11-22T06:07Z",
       "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
       "new_30d_downloads": 4500696,
       "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "top_trending": "thinkingmachines/Inkling-2-Mini",
-      "trend_score": 673
+      "trend_score": 722.5
     },
     "interop": {
       "mcp_trust": {
@@ -161,8 +161,8 @@
       "runner": "github-actions"
     },
     "root": {
-      "as_of": "2026-11-21T12:59:35Z",
-      "card_count": 453
+      "as_of": "2026-11-21T23:11:50Z",
+      "card_count": 452
     },
     "swan": {
       "cadence_last14": 21,
@@ -270,6 +270,6 @@
         }
       ]
     },
-    "ts": "2026-11-22T00:07:19Z"
+    "ts": "2026-11-22T06:07:32Z"
   }
 }
