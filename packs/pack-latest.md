@@ -1,10 +1,10 @@
 # Evidence Pack — GSPC Live Pulse (rolling latest)
 
 **Cite as:** GSPC live pulse — CSOAI / Council of AI (councilof.ai), CC BY 4.0.
-**Snapshot:** 2026-11-22T18:07:20Z UTC · series: 56 rows since 2026-11-03.
+**Snapshot:** 2026-11-23T00:07:15Z UTC · series: 58 rows since 2026-11-03.
 
 Measurement, not endorsement; never a certification. Every value below was
-fetched LIVE at 2026-11-22T18:07:20Z and is traceable to its source surface at that moment.
+fetched LIVE at 2026-11-23T00:07:15Z and is traceable to its source surface at that moment.
 
 ## Frozen layer
 - GSPC board: 34 measured of 34 slots · separated leads 0 · ties 7 · untested 7
@@ -139,12 +139,12 @@ fetched LIVE at 2026-11-22T18:07:20Z and is traceable to its source surface at t
     }
   },
   "hf": {
-    "fetched": "2026-11-22T18:07Z",
+    "fetched": "2026-11-23T00:07Z",
     "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
-    "new_30d_downloads": 4529938,
-    "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+    "new_30d_downloads": 652592,
+    "top_new_30d": "Abiray/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-GGUF",
     "top_trending": "thinkingmachines/Inkling-2-Mini",
-    "trend_score": 859
+    "trend_score": 910.5
   },
   "interop": {
     "mcp_trust": {
@@ -247,7 +247,7 @@ fetched LIVE at 2026-11-22T18:07:20Z and is traceable to its source surface at t
     "ransomware_flagged_recent": 0,
     "ransomware_flagged_recent_cves": [],
     "ransomware_sample": {
-      "claimed_today": 6,
+      "claimed_today": 0,
       "sample_size": 100,
       "source_kind": "recent-100 leak-site sample, not a census",
       "top_groups_sample": {
@@ -304,6 +304,6 @@ fetched LIVE at 2026-11-22T18:07:20Z and is traceable to its source surface at t
       }
     ]
   },
-  "ts": "2026-11-22T18:07:20Z"
+  "ts": "2026-11-23T00:07:15Z"
 }
 ```

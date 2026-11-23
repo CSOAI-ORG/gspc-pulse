@@ -105,12 +105,12 @@
       }
     },
     "hf": {
-      "fetched": "2026-11-22T18:07Z",
+      "fetched": "2026-11-23T00:07Z",
       "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
-      "new_30d_downloads": 4529938,
-      "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "new_30d_downloads": 652592,
+      "top_new_30d": "Abiray/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-GGUF",
       "top_trending": "thinkingmachines/Inkling-2-Mini",
-      "trend_score": 859
+      "trend_score": 910.5
     },
     "interop": {
       "mcp_trust": {
@@ -213,7 +213,7 @@
       "ransomware_flagged_recent": 0,
       "ransomware_flagged_recent_cves": [],
       "ransomware_sample": {
-        "claimed_today": 6,
+        "claimed_today": 0,
         "sample_size": 100,
         "source_kind": "recent-100 leak-site sample, not a census",
         "top_groups_sample": {
@@ -270,6 +270,6 @@
         }
       ]
     },
-    "ts": "2026-11-22T18:07:20Z"
+    "ts": "2026-11-23T00:07:15Z"
   }
 }
