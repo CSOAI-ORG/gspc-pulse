@@ -1,17 +1,17 @@
 # Evidence Pack — GSPC Live Pulse (rolling latest)
 
 **Cite as:** GSPC live pulse — CSOAI / Council of AI (councilof.ai), CC BY 4.0.
-**Snapshot:** 2026-11-24T10:54:45Z UTC · series: 60 rows since 2026-11-03.
+**Snapshot:** 2026-11-24T21:09:50Z UTC · series: 61 rows since 2026-11-03.
 
 Measurement, not endorsement; never a certification. Every value below was
-fetched LIVE at 2026-11-24T10:54:45Z and is traceable to its source surface at that moment.
+fetched LIVE at 2026-11-24T21:09:50Z and is traceable to its source surface at that moment.
 
 ## Frozen layer
 - GSPC board: 34 measured of 34 slots · separated leads 0 · ties 7 · untested 7
 - Capsule index: 10629 capsules (as_of 2026-11-24T00:42:20Z)
 - Public root: 452 cards (as_of 2026-11-21T23:11:50Z)
 - Signed cards: 335 declared / 335 in store (two labelled numbers)
-- CISA KEV: 1792 entries (released 2026-11-23T19:43:55.7979Z)
+- CISA KEV: 1795 entries (released 2026-11-24T17:47:46.199Z)
 
 ## Estate liveness (first-hop status codes)
 - asisecurity-portal.com: `ERR`
@@ -139,12 +139,12 @@ fetched LIVE at 2026-11-24T10:54:45Z and is traceable to its source surface at t
     }
   },
   "hf": {
-    "fetched": "2026-11-24T10:54Z",
+    "fetched": "2026-11-24T21:10Z",
     "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
     "new_30d_downloads": 562174,
     "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-Coder-GGUF",
     "top_trending": "thinkingmachines/Inkling-2-Mini",
-    "trend_score": 1172
+    "trend_score": 1226
   },
   "interop": {
     "mcp_trust": {
@@ -165,9 +165,12 @@ fetched LIVE at 2026-11-24T10:54:45Z and is traceable to its source surface at t
     }
   },
   "kev": {
-    "count": 1792,
-    "released": "2026-11-23T19:43:55.7979Z",
+    "count": 1795,
+    "released": "2026-11-24T17:47:46.199Z",
     "top20": [
+      "CVE-2026-132224",
+      "CVE-2026-131914",
+      "CVE-2026-132165",
       "CVE-2026-133968",
       "CVE-2026-134624",
       "CVE-2026-129448",
@@ -184,10 +187,7 @@ fetched LIVE at 2026-11-24T10:54:45Z and is traceable to its source surface at t
       "CVE-2026-124194",
       "CVE-2026-111793",
       "CVE-2026-20320",
-      "CVE-2026-111560",
-      "CVE-2026-116606",
-      "CVE-2026-125350",
-      "CVE-2026-102895"
+      "CVE-2026-111560"
     ]
   },
   "meta": {
@@ -199,7 +199,7 @@ fetched LIVE at 2026-11-24T10:54:45Z and is traceable to its source surface at t
     "card_count": 452
   },
   "swan": {
-    "cadence_last14": 19,
+    "cadence_last14": 22,
     "cadence_prior14": 15,
     "cadence_weekly": {
       "2026-W38": 6,
@@ -212,14 +212,14 @@ fetched LIVE at 2026-11-24T10:54:45Z and is traceable to its source surface at t
       "2026-W45": 3,
       "2026-W46": 12,
       "2026-W47": 9,
-      "2026-W48": 2
+      "2026-W48": 5
     },
-    "catalog_total": 1792,
+    "catalog_total": 1795,
     "cwe_top_recent": {
-      "CWE-24": 1,
       "CWE-287": 2,
       "CWE-288": 2,
-      "CWE-502": 2,
+      "CWE-502": 3,
+      "CWE-642": 1,
       "CWE-78": 2,
       "CWE-94": 2
     },
@@ -229,8 +229,8 @@ fetched LIVE at 2026-11-24T10:54:45Z and is traceable to its source surface at t
         "cve": "CVE-2026-116606",
         "due": "2026-11-13",
         "epss": 0.7452,
-        "epss_date": "2026-11-23",
-        "epss_percentile": 0.99506,
+        "epss_date": "2026-11-24",
+        "epss_percentile": 0.99502,
         "product": "Barracuda Email Security Gateway (ESG)",
         "vendor": "Barracuda Networks"
       },
@@ -239,8 +239,8 @@ fetched LIVE at 2026-11-24T10:54:45Z and is traceable to its source surface at t
         "cve": "CVE-2026-19868",
         "due": "2026-11-20",
         "epss": 0.0804,
-        "epss_date": "2026-11-23",
-        "epss_percentile": 0.94923,
+        "epss_date": "2026-11-24",
+        "epss_percentile": 0.94865,
         "product": "SonicOS SSLVPN",
         "vendor": "SonicWall"
       }
@@ -250,17 +250,17 @@ fetched LIVE at 2026-11-24T10:54:45Z and is traceable to its source surface at t
       "CVE-2024-10441"
     ],
     "ransomware_sample": {
-      "claimed_today": 4,
+      "claimed_today": 14,
       "sample_size": 100,
       "source_kind": "recent-100 leak-site sample, not a census",
       "top_groups_sample": {
         "N0n": 27,
-        "PixelLeaks": 6,
+        "PixelLeaks": 5,
         "medusalocker": 5,
-        "safepay": 19,
-        "spacebears": 4
+        "qilin": 6,
+        "safepay": 18
       },
-      "window_first": "2026-11-20",
+      "window_first": "2026-11-21",
       "window_last": "2026-11-24"
     },
     "ransomware_share_pct": 20.2,
@@ -307,6 +307,6 @@ fetched LIVE at 2026-11-24T10:54:45Z and is traceable to its source surface at t
       }
     ]
   },
-  "ts": "2026-11-24T10:54:45Z"
+  "ts": "2026-11-24T21:09:50Z"
 }
 ```
