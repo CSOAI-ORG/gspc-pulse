@@ -1,14 +1,14 @@
 # Evidence Pack — GSPC Live Pulse (rolling latest)
 
 **Cite as:** GSPC live pulse — CSOAI / Council of AI (councilof.ai), CC BY 4.0.
-**Snapshot:** 2026-11-24T00:49:20Z UTC · series: 59 rows since 2026-11-03.
+**Snapshot:** 2026-11-24T10:54:45Z UTC · series: 60 rows since 2026-11-03.
 
 Measurement, not endorsement; never a certification. Every value below was
-fetched LIVE at 2026-11-24T00:49:20Z and is traceable to its source surface at that moment.
+fetched LIVE at 2026-11-24T10:54:45Z and is traceable to its source surface at that moment.
 
 ## Frozen layer
 - GSPC board: 34 measured of 34 slots · separated leads 0 · ties 7 · untested 7
-- Capsule index: 11529 capsules (as_of 2026-11-01T08:30:40Z)
+- Capsule index: 10629 capsules (as_of 2026-11-24T00:42:20Z)
 - Public root: 452 cards (as_of 2026-11-21T23:11:50Z)
 - Signed cards: 335 declared / 335 in store (two labelled numbers)
 - CISA KEV: 1792 entries (released 2026-11-23T19:43:55.7979Z)
@@ -39,9 +39,9 @@ fetched LIVE at 2026-11-24T00:49:20Z and is traceable to its source surface at t
 ```json
 {
   "anchors": {
-    "as_of": "2026-10-28T08:53:00Z",
+    "as_of": "2026-11-24T00:42:26Z",
     "ots_state": "PENDING_CALENDAR_COMMITMENT",
-    "rekor_state": "INCLUDED (inclusion proof verifies)",
+    "rekor_state": null,
     "xrpl_state": "PREPARED_NOT_SUBMITTED"
   },
   "board": {
@@ -93,8 +93,8 @@ fetched LIVE at 2026-11-24T00:49:20Z and is traceable to its source surface at t
     "untested": 7
   },
   "capsules": {
-    "as_of": "2026-11-01T08:30:40Z",
-    "total": 11529
+    "as_of": "2026-11-24T00:42:20Z",
+    "total": 10629
   },
   "cards": {
     "declared": 335,
@@ -139,27 +139,27 @@ fetched LIVE at 2026-11-24T00:49:20Z and is traceable to its source surface at t
     }
   },
   "hf": {
-    "fetched": "2026-11-24T00:49Z",
+    "fetched": "2026-11-24T10:54Z",
     "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
-    "new_30d_downloads": 548645,
+    "new_30d_downloads": 562174,
     "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-Coder-GGUF",
     "top_trending": "thinkingmachines/Inkling-2-Mini",
-    "trend_score": 1121
+    "trend_score": 1172
   },
   "interop": {
     "mcp_trust": {
-      "as_of": "2026-11-16T13:06:01Z",
-      "auth_challenged_401_403": 253,
+      "as_of": "2026-11-23T15:16:55Z",
+      "auth_challenged_401_403": 252,
       "dead_404_or_unreachable": 24,
       "initialize_ok_open": 23,
-      "initialize_ok_tools_listed": 188,
+      "initialize_ok_tools_listed": 191,
       "partial": true,
-      "registry_rows_seen": 2519,
+      "registry_rows_seen": 2601,
       "unique_hosts": 500
     },
     "x402_trust": {
-      "as_of": "2026-11-23T08:00:03Z",
-      "challenge_402": 75,
+      "as_of": "2026-11-24T10:15:18Z",
+      "challenge_402": 92,
       "dead_404_or_unreachable": 0,
       "total": 100
     }
@@ -250,18 +250,18 @@ fetched LIVE at 2026-11-24T00:49:20Z and is traceable to its source surface at t
       "CVE-2024-10441"
     ],
     "ransomware_sample": {
-      "claimed_today": 0,
+      "claimed_today": 4,
       "sample_size": 100,
       "source_kind": "recent-100 leak-site sample, not a census",
       "top_groups_sample": {
         "N0n": 27,
-        "PixelLeaks": 8,
-        "everest": 5,
+        "PixelLeaks": 6,
         "medusalocker": 5,
-        "safepay": 18
+        "safepay": 19,
+        "spacebears": 4
       },
       "window_first": "2026-11-20",
-      "window_last": "2026-11-23"
+      "window_last": "2026-11-24"
     },
     "ransomware_share_pct": 20.2,
     "shortest_due_windows": [
@@ -307,6 +307,6 @@ fetched LIVE at 2026-11-24T00:49:20Z and is traceable to its source surface at t
       }
     ]
   },
-  "ts": "2026-11-24T00:49:20Z"
+  "ts": "2026-11-24T10:54:45Z"
 }
 ```
