@@ -6,7 +6,7 @@ _Regenerated every pulse. Measurement, not endorsement; never a certification. L
 - Fluid layers carried: interop-census, swan-scan
 - Latest: **2026-11-24T21:09:50Z**
 - Alert cards (frozen deltas): **35**
-- Verification log entries: **46**
+- Verification log entries: **47**
 - Domains OK (2xx first-hop): **13 / 20**
 
 ## Frozen-delta timeline (latest 12)
@@ -48,9 +48,9 @@ _Regenerated every pulse. Measurement, not endorsement; never a certification. L
 
 ## Verification cadence (latest 6)
 
-- `2026-11-21T12:07:30Z` — verify_card 66856aca4a1f9390: **VALID**
 - `2026-11-22T00:07:03Z` — verify_card 66856aca4a1f9390: **VALID**
 - `2026-11-22T00:07:25Z` — verify_root_full public-root.json: **VALID**
 - `2026-11-23T00:06:59Z` — verify_card 66856aca4a1f9390: **VALID**
 - `2026-11-23T00:07:29Z` — verify_root_full public-root.json: **VALID**
 - `2026-11-24T00:49:36Z` — verify_root_full public-root.json: **VALID**
+- `2026-11-25T04:15:10Z` — verify_root_full public-root.json: **VALID**
