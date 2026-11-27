@@ -1,17 +1,17 @@
 # Evidence Pack — GSPC Live Pulse (rolling latest)
 
 **Cite as:** GSPC live pulse — CSOAI / Council of AI (councilof.ai), CC BY 4.0.
-**Snapshot:** 2026-11-26T00:18:48Z UTC · series: 62 rows since 2026-11-03.
+**Snapshot:** 2026-11-27T21:57:00Z UTC · series: 63 rows since 2026-11-03.
 
 Measurement, not endorsement; never a certification. Every value below was
-fetched LIVE at 2026-11-26T00:18:48Z and is traceable to its source surface at that moment.
+fetched LIVE at 2026-11-27T21:57:00Z and is traceable to its source surface at that moment.
 
 ## Frozen layer
 - GSPC board: 34 measured of 34 slots · separated leads 0 · ties 7 · untested 7
-- Capsule index: 10629 capsules (as_of 2026-11-24T00:42:20Z)
+- Capsule index: 10629 capsules (as_of 2026-11-27T07:11:08Z)
 - Public root: 452 cards (as_of 2026-11-21T23:11:50Z)
 - Signed cards: 335 declared / 335 in store (two labelled numbers)
-- CISA KEV: 1805 entries (released 2026-11-25T19:48:12.4344Z)
+- CISA KEV: 1808 entries (released 2026-11-27T18:03:12.5733Z)
 
 ## Estate liveness (first-hop status codes)
 - asisecurity-portal.com: `ERR`
@@ -39,7 +39,7 @@ fetched LIVE at 2026-11-26T00:18:48Z and is traceable to its source surface at t
 ```json
 {
   "anchors": {
-    "as_of": "2026-11-24T00:42:26Z",
+    "as_of": "2026-11-27T07:11:14Z",
     "ots_state": "PENDING_CALENDAR_COMMITMENT",
     "rekor_state": null,
     "xrpl_state": "PREPARED_NOT_SUBMITTED"
@@ -93,7 +93,7 @@ fetched LIVE at 2026-11-26T00:18:48Z and is traceable to its source surface at t
     "untested": 7
   },
   "capsules": {
-    "as_of": "2026-11-24T00:42:20Z",
+    "as_of": "2026-11-27T07:11:08Z",
     "total": 10629
   },
   "cards": {
@@ -139,12 +139,12 @@ fetched LIVE at 2026-11-26T00:18:48Z and is traceable to its source surface at t
     }
   },
   "hf": {
-    "fetched": "2026-11-26T00:19Z",
+    "fetched": "2026-11-27T21:57Z",
     "method": "trending + new-with-traction (30d cohort) \u2014 no downloads leaderboard ever",
-    "new_30d_downloads": 592600,
+    "new_30d_downloads": 616383,
     "top_new_30d": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-Coder-GGUF",
     "top_trending": "thinkingmachines/Inkling-2-Mini",
-    "trend_score": 1321.5
+    "trend_score": 1368
   },
   "interop": {
     "mcp_trust": {
@@ -158,16 +158,19 @@ fetched LIVE at 2026-11-26T00:18:48Z and is traceable to its source surface at t
       "unique_hosts": 500
     },
     "x402_trust": {
-      "as_of": "2026-11-25T21:55:37Z",
-      "challenge_402": 92,
-      "dead_404_or_unreachable": 3,
+      "as_of": "2026-11-27T08:56:35Z",
+      "challenge_402": 13,
+      "dead_404_or_unreachable": 86,
       "total": 100
     }
   },
   "kev": {
-    "count": 1805,
-    "released": "2026-11-25T19:48:12.4344Z",
+    "count": 1808,
+    "released": "2026-11-27T18:03:12.5733Z",
     "top20": [
+      "CVE-2026-120705",
+      "CVE-2026-129243",
+      "CVE-2026-136716",
       "CVE-2026-103406",
       "CVE-2026-133469",
       "CVE-2025-41450",
@@ -184,10 +187,7 @@ fetched LIVE at 2026-11-26T00:18:48Z and is traceable to its source surface at t
       "CVE-2026-133968",
       "CVE-2026-134624",
       "CVE-2026-129448",
-      "CVE-2026-123890",
-      "CVE-2025-42884",
-      "CVE-2026-76466",
-      "CVE-2024-10441"
+      "CVE-2026-123890"
     ]
   },
   "meta": {
@@ -199,8 +199,8 @@ fetched LIVE at 2026-11-26T00:18:48Z and is traceable to its source surface at t
     "card_count": 452
   },
   "swan": {
-    "cadence_last14": 26,
-    "cadence_prior14": 17,
+    "cadence_last14": 29,
+    "cadence_prior14": 15,
     "cadence_weekly": {
       "2026-W38": 3,
       "2026-W39": 12,
@@ -212,16 +212,16 @@ fetched LIVE at 2026-11-26T00:18:48Z and is traceable to its source surface at t
       "2026-W45": 3,
       "2026-W46": 12,
       "2026-W47": 9,
-      "2026-W48": 15
+      "2026-W48": 18
     },
-    "catalog_total": 1805,
+    "catalog_total": 1808,
     "cwe_top_recent": {
-      "CWE-287": 2,
-      "CWE-288": 2,
       "CWE-502": 3,
-      "CWE-636": 2,
+      "CWE-611": 2,
       "CWE-78": 4,
-      "CWE-94": 2
+      "CWE-863": 2,
+      "CWE-91": 2,
+      "CWE-918": 2
     },
     "perimeter_recent": [
       {
@@ -229,8 +229,8 @@ fetched LIVE at 2026-11-26T00:18:48Z and is traceable to its source surface at t
         "cve": "CVE-2026-116606",
         "due": "2026-11-13",
         "epss": 0.13801,
-        "epss_date": "2026-11-25",
-        "epss_percentile": 0.9718,
+        "epss_date": "2026-11-27",
+        "epss_percentile": 0.97184,
         "product": "Barracuda Email Security Gateway (ESG)",
         "vendor": "Barracuda Networks"
       },
@@ -239,8 +239,8 @@ fetched LIVE at 2026-11-26T00:18:48Z and is traceable to its source surface at t
         "cve": "CVE-2026-19868",
         "due": "2026-11-20",
         "epss": 0.0054,
-        "epss_date": "2026-11-25",
-        "epss_percentile": 0.3892,
+        "epss_date": "2026-11-27",
+        "epss_percentile": 0.38965,
         "product": "SonicOS SSLVPN",
         "vendor": "SonicWall"
       }
@@ -250,20 +250,20 @@ fetched LIVE at 2026-11-26T00:18:48Z and is traceable to its source surface at t
       "CVE-2024-10441"
     ],
     "ransomware_sample": {
-      "claimed_today": 0,
+      "claimed_today": 15,
       "sample_size": 100,
       "source_kind": "recent-100 leak-site sample, not a census",
       "top_groups_sample": {
-        "N0n": 18,
-        "SilentRansomGroup": 10,
-        "aurora": 6,
-        "safepay": 9,
-        "thegentlemen": 10
+        "Inception": 6,
+        "N0n": 21,
+        "PixelLeaks": 6,
+        "iah6477": 6,
+        "rhysida": 6
       },
-      "window_first": "2026-11-23",
-      "window_last": "2026-11-25"
+      "window_first": "2026-11-24",
+      "window_last": "2026-11-27"
     },
-    "ransomware_share_pct": 20.1,
+    "ransomware_share_pct": 20.0,
     "shortest_due_windows": [
       {
         "added": "2025-09-25",
@@ -307,6 +307,6 @@ fetched LIVE at 2026-11-26T00:18:48Z and is traceable to its source surface at t
       }
     ]
   },
-  "ts": "2026-11-26T00:18:48Z"
+  "ts": "2026-11-27T21:57:00Z"
 }
 ```

@@ -2,18 +2,15 @@
 
 _Regenerated every pulse. Measurement, not endorsement; never a certification. License CC BY 4.0._
 
-- Rows: **62** (runners: canonical×3, github-actions×28, gspc-live-zcode×15, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
+- Rows: **63** (runners: canonical×3, github-actions×29, gspc-live-zcode×15, gspc-live@0.3.4×1, gspc-live@0.5.0×1, m4-node×3, manual-reproduction×11)
 - Fluid layers carried: interop-census, swan-scan
-- Latest: **2026-11-26T00:18:48Z**
-- Alert cards (frozen deltas): **36**
+- Latest: **2026-11-27T21:57:00Z**
+- Alert cards (frozen deltas): **37**
 - Verification log entries: **49**
 - Domains OK (2xx first-hop): **13 / 20**
 
 ## Frozen-delta timeline (latest 12)
 
-- `2026-11-21T12:07:55Z` — cards_store: 336 → **335**
-- `2026-11-21T12:07:55Z` — hf_top_id: "sentence-transformers/all-MiniLM-L6-v2" → **null**
-- `2026-11-21T12:07:55Z` — hf_top_new_30d: null → **"ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GG**
 - `2026-11-21T18:07:30Z` — cards_store: 336 → **335**
 - `2026-11-21T18:07:30Z` — hf_top_id: "sentence-transformers/all-MiniLM-L6-v2" → **null**
 - `2026-11-21T18:07:30Z` — hf_top_new_30d: null → **"ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GG**
@@ -47,6 +44,10 @@ _Regenerated every pulse. Measurement, not endorsement; never a certification. L
 - `2026-11-26T00:18:48Z` — kev_count: 1795 → **1805**
 - `2026-11-26T00:18:48Z` — kev_new_ids: **["CVE-2026-103406", "CVE-2026-133469", "CVE-2025-41450", "CVE-2023-25914", "CVE-**
 - `2026-11-26T00:18:48Z` — kev_released: "2026-11-24T17:47:46.199Z" → **"2026-11-25T19:48:12.4344Z"**
+- `2026-11-27T21:57:00Z` — capsules_as_of: "2026-11-24T00:42:20Z" → **"2026-11-27T07:11:08Z"**
+- `2026-11-27T21:57:00Z` — kev_count: 1805 → **1808**
+- `2026-11-27T21:57:00Z` — kev_new_ids: **["CVE-2026-120705", "CVE-2026-129243", "CVE-2026-136716"]**
+- `2026-11-27T21:57:00Z` — kev_released: "2026-11-25T19:48:12.4344Z" → **"2026-11-27T18:03:12.5733Z"**
 
 ## Verification cadence (latest 6)
 
